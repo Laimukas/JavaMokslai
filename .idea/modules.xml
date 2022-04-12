@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaAntraSavaite/JavaAntraSavaite.iml" filepath="$PROJECT_DIR$/JavaAntraSavaite/JavaAntraSavaite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaMokslai.iml" filepath="$PROJECT_DIR$/.idea/JavaMokslai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PirmasProjektas/PirmasProjektas.iml" filepath="$PROJECT_DIR$/PirmasProjektas/PirmasProjektas.iml" />
+    </modules>
+  </component>
+</project>
