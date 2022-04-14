@@ -76,24 +76,21 @@ public class PamokaSuDziugu {
         // Sukurti metoda apskaiciuotiPerimetra(x, y)
         // Sukurti metoda apskaiciuotiPlota(x, y)
         // Iskviesti is main ir atspausdinti rezultata kai krastine x = 4, o krastine y = 3.6
-     /*/   double perimetras = staciakampioPerimetras(4, 3.6);
-        double plotas = staciakampioPlotas(4,3.6);
-
-        System.out.println("Perimetras: "+perimetras);
-        System.out.println("Plotas: "+plotas);
+        double pirmaKrastine = 4;
+        double antraKrastine = 3.6;
+        double perimetras = staciakampioPerimetras(pirmaKrastine, antraKrastine);
+        double plotas = staciakampioPlotas(pirmaKrastine, antraKrastine);
+        System.out.println("Perimetras: " + perimetras);
+        System.out.println("Plotas: " + plotas);
 
     }
-
     public static double staciakampioPerimetras(double x, double y) {
-        double stacPer = 2 * (x + y);
-        return stacPer;
+        return x * 2 + y * 2;
 
     }
+    public static double staciakampioPlotas(double x, double y) {
+        return x * y;
 
-    public static double staciakampioPlotas(double a, double b) {
-        double stacPlo = a * b;
-        return stacPlo;
-*/
     }
 
 
