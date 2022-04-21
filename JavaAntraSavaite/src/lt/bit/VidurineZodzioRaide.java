@@ -1,10 +1,13 @@
 package lt.bit;
 
+import java.sql.SQLOutput;
+
 public class VidurineZodzioRaide {
     public static void main(String[] args) {
-        String tekstas = "labas";
+        String tekstas = "vyniotinis";
+        System.out.println("Turimas zodis: "+tekstas);
         char raide = vidurineRaide(tekstas);
-        System.out.println(raide);
+        System.out.println("Vidurine zodzio raide yra: "+raide);
     }
     // labas
     // [1]

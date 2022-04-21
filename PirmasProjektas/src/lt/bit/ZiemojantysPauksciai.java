@@ -18,22 +18,23 @@ public class ZiemojantysPauksciai {
         arr[0] = pirma;
         arr[1] = antra;
         arr[2] = trecia;
-        System.out.println("Kiekvienos rusies pauksciu liko ziemoti"+ Arrays.toString(arr));
+        System.out.println("Kiekvienos rusies pauksciu liko ziemoti" + Arrays.toString(arr));
         // Calling getMax() method for getting max value
         int max = getMax(arr);
-        System.out.println("Daugiausia liko ziemoti: "+max);
+        System.out.println("Daugiausia liko ziemoti: " + max);
 
         // Calling getMin() method for getting min value
         int min = getMin(arr);
-        System.out.println("Maziausia liko ziemoti: "+min);
+        System.out.println("Maziausia liko ziemoti: " + min);
         int skirtumas = max - min;
-        System.out.println("Skirtumas tarp didziausio ir maziausio kiekio: "+skirtumas);
+        System.out.println("Skirtumas tarp didziausio ir maziausio kiekio: " + skirtumas);
     }
+
     // Method for getting the maximum value
-    public static int getMax(int[] inputArray){
+    public static int getMax(int[] inputArray) {
         int maxValue = inputArray[0];
-        for(int i=1;i < inputArray.length;i++){
-            if(inputArray[i] > maxValue){
+        for (int i = 1; i < inputArray.length; i++) {
+            if (inputArray[i] > maxValue) {
                 maxValue = inputArray[i];
             }
         }
@@ -41,10 +42,10 @@ public class ZiemojantysPauksciai {
     }
 
     // Method for getting the minimum value
-    public static int getMin(int[] inputArray){
+    public static int getMin(int[] inputArray) {
         int minValue = inputArray[0];
-        for(int i=1;i<inputArray.length;i++){
-            if(inputArray[i] < minValue){
+        for (int i = 1; i < inputArray.length; i++) {
+            if (inputArray[i] < minValue) {
                 minValue = inputArray[i];
             }
         }
