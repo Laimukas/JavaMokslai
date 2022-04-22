@@ -42,4 +42,38 @@ public class SkaitomDuomenis {
 
         return masyvas;
     }
+
+//    public static int[] apskaiciuojamMasyvoSuma(String failoKelias) {
+//        int[] masyvas =null;
+//
+//        try{
+//            BufferedReader br = new BufferedReader(new FileReader(failoKelias));
+//            String eilute = br.readLine();
+//            int masyvoIlgis = Integer.parseInt(eilute);
+//            masyvas = new int[masyvoIlgis];
+//            String eilute2 = br.readLine();
+//            String[] reiksmes = eilute2.split(",");
+//            for (int i=0;i<masyvoIlgis;i++){
+//                masyvas[i]=Integer.parseInt(reiksmes[i]);
+//            }
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//        return masyvas;
+//    }
+//
+//    public static int grazinamMasyvoSuma(int[] array) {
+//        int sum = 0;
+//        for (int value : array) {
+//            sum += value;
+//        }
+//        return sum;
+//    }
+//    public static double surandamVidurki(int[] array) {
+//        int sum = surandamVidurki(array);
+//        return (double) sum / array.length;
+//    }
 }
