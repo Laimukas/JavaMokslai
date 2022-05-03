@@ -15,10 +15,10 @@ public class Statybininkas {
         System.out.println("Kokia plytos kaina Lt?");
         double plytosKaina = sc.nextDouble();
 
-        double plytuKiekis = (sienosIlgis*sienosAukstis)/(0.2*0.1);
+        int plytuKiekis = (int) Math.ceil((sienosIlgis*sienosAukstis)/(0.2*0.1));//cia panaudojom Math metoda kad gautume tik sveika skaiciu, nepriklausomai ar nors kiek yra po kablelio
 
         System.out.println("Reikalingas plytu kiekis yra: " + plytuKiekis);
-        System.out.println("Plytos kainuos: " + plytuKiekis*plytosKaina + " Lt");
+        System.out.println("Plytos kainuos: " + String.format("%.2f",plytuKiekis*plytosKaina )+ " Lt");//cia String format panaudojom kad po kablelio ismestu norimus du skaicius
     }
 
 }
