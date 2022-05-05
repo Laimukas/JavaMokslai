@@ -1,4 +1,8 @@
 package lt.bit;
+//Šeima išsirengė į kelionę automobiliu. Jie pripildė kuro baką, kurio talpa t litrų ir
+//nusprendė važiuoti tol, kol bake bus degalų. Lyginėmis kelionės dienomis automobilis suvartos n
+//litrų degalų, o nelyginėmis - 2n litrų. Parašykite programą, kuri surastų, kiek dienų truks šeimos
+//kelionė.
 
 import java.util.Scanner;
 
@@ -10,23 +14,18 @@ public class Degalai {
         System.out.println("Iveskite kuro sanaudas n: ");
         int n = in.nextInt();
         int sunaudotaDegalu = 0;
-        int keliautosDienos=0;
-        int dienos = Integer.MAX_VALUE;
-        for (int i = 1; i <= dienos; i++) ;
-
-//        if (sunaudotaDegalu <= t) {
-//            if (i % 2 == 0) {
-//                sunaudotaDegalu = sunaudotaDegalu + n;
-//keliautosDienos=keliautosDienos+1;
-//            } else {
-//                sunaudotaDegalu = sunaudotaDegalu + 2 * n;
-//            }
-//        } else {
-//            dienos = i + 1;
-//
-//        }
-//        System.out.println("Keliausim dienu: " + dienos);
-
-
+        int maxKeliautosDienos = t / n;
+        int nukeliautosDienos = 0;
+        int i;
+        for (i = 1; i <= maxKeliautosDienos; i++) {
+            if (i % 2 == 0 && sunaudotaDegalu <= t) {
+                sunaudotaDegalu = sunaudotaDegalu + n;
+                nukeliautosDienos++;
+            } else if (i % 2 == 1 && sunaudotaDegalu <= t) {
+                sunaudotaDegalu = sunaudotaDegalu + 2 * n;
+                nukeliautosDienos++;
+            }
+        }
+        System.out.println("Keliauti bus galima: " + nukeliautosDienos+ " d.");
     }
 }
