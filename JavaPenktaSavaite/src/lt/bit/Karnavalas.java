@@ -19,7 +19,7 @@ public class Karnavalas {
         System.out.println("Iveskite kokius balus gavo mokiniai(ivedus 0 ciklas nutruks): ");
         for (int i = 1; i < max; i++) {
             Scanner in = new Scanner(System.in);
-            double balai = in.nextDouble();
+            int balai = in.nextInt();
             if (balai != 0 && balai >= 5) {
                 didesniuUz5++;
                 mokiniuKiekis++;
