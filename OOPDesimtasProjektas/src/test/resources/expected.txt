@@ -1,0 +1,6 @@
+zodis: labas , skaicius: 3
+zodis: witam , skaicius: 1
+zodis: priviet , skaicius: 1
+zodis: hello , skaicius: 2
+zodis: . , skaicius: 1
+zodis: bonjour , skaicius: 1

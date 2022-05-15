@@ -1,10 +1,10 @@
 
 b
 java:S2259M"GA "NullPointerException" could be thrown; "maxPlotas" is nullable here.(¡Æñ„þÿÿÿÿ
-f
-java:S2259@"KA "NullPointerException" could be thrown; "maxPerimetras" is nullable here.(Âªê¥øÿÿÿÿ
 k
 java:S2259"U"NullPointerException" will be thrown when invoking method "didziausiasPerimetras()".(£©üŠ
+f
+java:S2259@"KA "NullPointerException" could be thrown; "maxPerimetras" is nullable here.(Âªê¥øÿÿÿÿ
 a
 java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ù¥­p
 N	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿ–¸â

@@ -1,8 +1,4 @@
 
-]
--JavaSestaSavaite/src/lt/bit/Figuros/Main.java,e\b\ebae059c81c279d8adeb92c3c04db21f8ef60582
-_
-/JavaSestaSavaite/src/lt/bit/Figuros/Figura.java,a\8\a8d92fc15c7fe29ef5971f5c3d9b0497f863efc8
 b
 2JavaSestaSavaite/src/lt/bit/Figuros/Kvadratas.java,2\c\2cf96febe2f1ca50f366d2454f40d77c92162364
 e
@@ -19,3 +15,9 @@ d
 4JavaKetvirtaSavaite/src/lt/bit/StaciakampisMain.java,c\2\c2915e6dc71a7f098208195b1a4d032c081f2b4d
 T
 $OOPEightProject/src/lt/bit/Main.java,8\3\830413a74020a6c66684a4fcac9bc443fd6525f6
+_
+/JavaSestaSavaite/src/lt/bit/Figuros/Figura.java,a\8\a8d92fc15c7fe29ef5971f5c3d9b0497f863efc8
+l
+<JavaSestaSavaite/src/lt/bit/Bendrabutis/BendrabutisMain.java,7\9\79e7fcad82a94a3be308a84b7a74533e1a581ef7
+]
+-JavaSestaSavaite/src/lt/bit/Figuros/Main.java,e\b\ebae059c81c279d8adeb92c3c04db21f8ef60582

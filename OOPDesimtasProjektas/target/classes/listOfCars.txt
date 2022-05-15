@@ -1,0 +1,4 @@
+Model: BMW, Height: 140.20, Weight: 1400.00, Year: 2006 
+Model: Audi, Height: 120.20, Weight: 1200.00, Year: 2008 
+Model: Mercedes-Benz, Height: 150.40, Weight: 1600.00, Year: 2011 
+Model: Toyota, Height: 90.49, Weight: 980.00, Year: 2004 
