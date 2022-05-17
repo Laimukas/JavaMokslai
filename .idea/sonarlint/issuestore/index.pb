@@ -1,23 +1,3 @@
 
-b
-2JavaSestaSavaite/src/lt/bit/Figuros/Kvadratas.java,2\c\2cf96febe2f1ca50f366d2454f40d77c92162364
-e
-5JavaSestaSavaite/src/lt/bit/Figuros/Staciakampis.java,0\b\0b6206c83dac529e218e5da0d3e8389348f0a94d
-n
->JavaSestaSavaite/src/lt/bit/Figuros/LygiakrastisTrikampis.java,a\5\a549fd5fc4b3ff5318eb5126770dcfaf24464abc
-d
-4JavaSestaSavaite/src/lt/bit/Figuros/Apskritimas.java,a\f\af3b4586c8781845eaa76f235bcf1ca4dade3c85
-l
-<OOPEightProject/src/lt/bit/multithread/ManoPenktojiGija.java,8\4\842957dd89482393346e90bea4b3724f7f958dd4
-`
-0JavaKetvirtaSavaite/src/lt/bit/Staciakampis.java,2\4\24b4b72c939f932da417e9cf756c95fe8b51aff4
-d
-4JavaKetvirtaSavaite/src/lt/bit/StaciakampisMain.java,c\2\c2915e6dc71a7f098208195b1a4d032c081f2b4d
 T
 $OOPEightProject/src/lt/bit/Main.java,8\3\830413a74020a6c66684a4fcac9bc443fd6525f6
-_
-/JavaSestaSavaite/src/lt/bit/Figuros/Figura.java,a\8\a8d92fc15c7fe29ef5971f5c3d9b0497f863efc8
-l
-<JavaSestaSavaite/src/lt/bit/Bendrabutis/BendrabutisMain.java,7\9\79e7fcad82a94a3be308a84b7a74533e1a581ef7
-]
--JavaSestaSavaite/src/lt/bit/Figuros/Main.java,e\b\ebae059c81c279d8adeb92c3c04db21f8ef60582
