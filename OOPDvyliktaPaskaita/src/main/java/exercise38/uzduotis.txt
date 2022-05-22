@@ -1,0 +1,5 @@
+1 ) meniu juosta
+1.1 ) Ipilti kavos (pasirinkimas)
+1.1.1) skirtingos talpos, pvz 100 ml, 150 ml, 200ml (patikros -> 200, 150ml).
+1.2) Pripilti vandens (talpa mašinos 1l)
+1.3) Iseiti

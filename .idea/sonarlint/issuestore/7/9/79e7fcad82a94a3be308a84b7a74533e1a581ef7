@@ -1,0 +1,17 @@
+
+[
+java:S1192>"FDefine a constant instead of duplicating this literal " Lt.
+" 3 times.(¿ìð
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ø·í¨úÿÿÿÿ
+\
+java:S2259"FA "NullPointerException" could be thrown; "duomenys" is nullable here.(àøúñ
+`
+java:S2259"J"NullPointerException" will be thrown when invoking method "spausdinti()".(ûÞù«
+g
+java:S2095#"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ñ¶Ýªúÿÿÿÿ
+b
+java:S20959"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ƒÀáâ
+Q	java:S125"<This block of commented-out lines of code should be removed.(€‰àÐ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(àøúñ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(áå­ýÿÿÿÿ
+V	java:S125?"<This block of commented-out lines of code should be removed.(­õœùÿÿÿÿ

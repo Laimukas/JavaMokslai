@@ -8,9 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="OOPVienuoliktaPaskaita" />
+        <module name="OOPDvyliktaPaskaita" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="OOPDvyliktaPaskaita" target="18" />
       <module name="OOPVienuoliktaPaskaita" target="14" />
     </bytecodeTargetLevel>
   </component>
