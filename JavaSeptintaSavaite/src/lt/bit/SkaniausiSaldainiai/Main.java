@@ -1,8 +1,6 @@
 package lt.bit.SkaniausiSaldainiai;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -11,19 +9,16 @@ public class Main {
     public static void main(String[] args) {
 
         String failoKelias = "JavaSeptintaSavaite/src/lt/bit/SkaniausiSaldainiai/duomenys.txt";
-
+        String rezultatuFailoKelias = "JavaSeptintaSavaite/src/lt/bit/SkaniausiSaldainiai/rezultatai.txt";
         List<Gamintojas> gamintojai = skaityti(failoKelias);
-        System.out.println("pries rikiavima");
-        System.out.println(gamintojai);
 
         rikiuotiSaldainius(gamintojai);
-        System.out.println("po rikiavimo");
-        System.out.println(gamintojai);
 
         //atspausdinti i konsole kad atrodytu kaip uzduoties rezultatai
+        spausdintiGamintojus(gamintojai);
 
         //atspausdinti i faila kad atrodytu kaip uzduoties rezultatai
-
+        spausdintiGamintojus(rezultatuFailoKelias, gamintojai);
     }
 
     public static List<Gamintojas> skaityti(String failoKelias) {
@@ -64,4 +59,33 @@ public class Main {
         }
     }
 
+    public static void spausdintiGamintojus(List<Gamintojas> gamintojai){
+        for (int i =0;i< gamintojai.size();i++){
+            Gamintojas gamintojas = gamintojai.get(i);
+            System.out.println(gamintojai.get(i).getPavadinimas());
+            for (int j =0;j<gamintojas.getSaldainiai().size();j++){
+                Saldainis saldainis= gamintojas.getSaldainiai().get(j);
+                System.out.println(String.format("%-25s",saldainis.getPavadinimas())+saldainis.getIvertinimas());
+            }
+        }
+    }
+
+    public static void spausdintiGamintojus(String failoKelias, List<Gamintojas> gamintojai){
+        try{
+            BufferedWriter bw = new BufferedWriter(new FileWriter(failoKelias));
+            for (int i =0;i< gamintojai.size();i++){
+                Gamintojas gamintojas = gamintojai.get(i);
+                bw.write(gamintojai.get(i).getPavadinimas()+"\n");
+              //  bw.newLine();  cia vietoj +"\n"
+                for (int j =0;j<gamintojas.getSaldainiai().size();j++){
+                    Saldainis saldainis= gamintojas.getSaldainiai().get(j);
+                    bw.write(String.format("%-25s",saldainis.getPavadinimas())+saldainis.getIvertinimas()+"\n");
+              //      bw.newLine();  cia vietoj +"\n"
+                }
+            }
+            bw.close();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 }
