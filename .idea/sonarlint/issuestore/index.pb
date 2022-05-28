@@ -145,5 +145,3 @@ l
 <JavaSeptintaSavaite/src/lt/bit/SkaniausiSaldainiai/Main.java,4\5\45510585f872798dcdb487340590e158b138c7a2
 q
 AJavaSeptintaSavaite/src/lt/bit/SkaniausiSaldainiai/Saldainis.java,3\4\34ab3d75aaa54c4599abe28ea4b8097c74df29a3
-l
-<JavaAstuntaSavaite/src/lt/bit/IdomiausiFilmai/rezultatai.txt,7\d\7ddb8d292f94ceea5a4581fa96c983eee4fc8be7
