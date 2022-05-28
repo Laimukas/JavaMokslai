@@ -9,10 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="OOPVienuoliktaPaskaita" />
         <module name="OOPDvyliktaPaskaita" />
+        <module name="OOPTryliktaPaskaita" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="OOPDvyliktaPaskaita" target="18" />
+      <module name="OOPTryliktaPaskaita" target="18" />
       <module name="OOPVienuoliktaPaskaita" target="14" />
     </bytecodeTargetLevel>
   </component>
