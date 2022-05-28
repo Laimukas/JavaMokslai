@@ -1,0 +1,6 @@
+
+|
+java:S1319"aThe type of "x" should be an interface such as "List" rather than the implementation "ArrayList".(‰Çñúÿÿÿÿ
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(Ü’ÇÇúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒ©Ğ»ÿÿÿÿÿ
+P	java:S125"<This block of commented-out lines of code should be removed.(·å

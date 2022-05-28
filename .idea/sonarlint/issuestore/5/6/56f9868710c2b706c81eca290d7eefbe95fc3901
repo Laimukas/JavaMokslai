@@ -1,0 +1,25 @@
+
+c
+java:S1192"HDefine a constant instead of duplicating this literal "Adresas" 3 times.(´Äòûÿÿÿÿ
+f
+java:S1192"KDefine a constant instead of duplicating this literal "Pavardenis" 3 times.(ô†¤Šşÿÿÿÿ
+d
+java:S1192"IDefine a constant instead of duplicating this literal "Vardenis" 3 times.(ô†¤Šşÿÿÿÿ
+W
+java:S1854%"ARemove this useless assignment to local variable "mbSunkvezimis".(·£Ñç
+[
+java:S1854"@Remove this useless assignment to local variable "naujasZmogus".(áã²ıÿÿÿÿ
+^
+java:S1854"CRemove this useless assignment to local variable "darVienasZmogus".(İ¶÷Îıÿÿÿÿ
+O
+java:S1481"4Remove this unused "darVienasZmogus" local variable.(İ¶÷Îıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(£ÀÆ
+L
+java:S1481"1Remove this unused "naujasZmogus" local variable.(áã²ıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ï®Éê
+V	java:S125""<This block of commented-out lines of code should be removed.(ÓĞÀùÿÿÿÿ
+H
+java:S1481%"2Remove this unused "mbSunkvezimis" local variable.(·£Ñç
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(öİ¿ı
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(¼ÈÍ÷úÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(ùæŸİıÿÿÿÿ

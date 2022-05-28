@@ -1,0 +1,16 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µ¢Æãüÿÿÿÿ
+V	java:S125	"<This block of commented-out lines of code should be removed.(šãÚØþÿÿÿÿ
+t
+java:S1210W"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ÿœµšÿÿÿÿÿ
+V	java:S125\"<This block of commented-out lines of code should be removed.(½Ìéùÿÿÿÿ
+:
+java:S2676q"Use the original value instead.(ç¢ö¯ûÿÿÿÿ
+O
+java:S1128"3Remove this unused import 'java.io.BufferedWriter'.(¬õº/8Ïö€‹0
+Q
+java:S1128"/Remove this unused import 'java.io.FileWriter'.(Ã‘ÅÃýÿÿÿÿ8Ïö€‹0
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8Ðö€‹0
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Ðö€‹0
