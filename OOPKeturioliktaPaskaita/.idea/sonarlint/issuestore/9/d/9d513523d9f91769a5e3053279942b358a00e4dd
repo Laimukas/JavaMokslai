@@ -1,0 +1,20 @@
+
+y
+java:S11929"WDefine a constant instead of duplicating this literal "Ilgiausias zodis yra: " 3 times.(ñÕŞâüÿÿÿÿ8¾ İÿ0
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ù³È!
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(ñÕ’¸ùÿÿÿÿ8â¡İÿ0
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(öÉçÿÿÿÿÿ8ä¡İÿ0
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(Å¸Ş8ä¡İÿ0
+U	java:S1062"9Replace this use of System.out or System.err by a logger.(æ«¯º8ä¡İÿ0
+U	java:S1063"9Replace this use of System.out or System.err by a logger.(àÅò¤8ä¡İÿ0
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(Å¸Ş8å¡İÿ0
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(ñÕŞâüÿÿÿÿ8å¡İÿ0
+U	java:S106="9Replace this use of System.out or System.err by a logger.(¤Ëà™8æ¡İÿ0
+]
+java:S1612Z"@Replace this lambda with method reference 'System.out::println'.(Ş×Ÿ8ë¡İÿ0
+U	java:S106Z"9Replace this use of System.out or System.err by a logger.(Ş×Ÿ8ë¡İÿ0
+U	java:S106n"9Replace this use of System.out or System.err by a logger.(±İ‹µ8í¡İÿ0
+U	java:S106o"9Replace this use of System.out or System.err by a logger.(ãÄÂ8î¡İÿ0
+U	java:S106{"9Replace this use of System.out or System.err by a logger.(ŠÜæ8ï¡İÿ0
+[	java:S106™"9Replace this use of System.out or System.err by a logger.(ïÔ«ÿÿÿÿÿ8ó¡İÿ0
+U	java:S106š"9Replace this use of System.out or System.err by a logger.(¶ñóG8ó¡İÿ0

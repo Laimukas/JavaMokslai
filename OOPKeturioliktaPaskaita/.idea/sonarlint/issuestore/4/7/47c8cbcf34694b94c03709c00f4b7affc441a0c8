@@ -1,0 +1,13 @@
+
+r
+java:S1192"]Define a constant instead of duplicating this literal "<<------------------------>>" 3 times.(¸êØC
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ù³È!
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(¼ø–øúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÅ×şÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(¸êØC
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¸ÈİÔøÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(¸êØC
+S	java:S106"9Replace this use of System.out or System.err by a logger.(é•Ùüÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(¸êØC
+U	java:S106"9Replace this use of System.out or System.err by a logger.(İŞ¶Ë8Á¤‡€‘0
