@@ -1,0 +1,22 @@
+
+}
+java:S1319	"gThe type of "carList" should be an interface such as "List" rather than the implementation "ArrayList".(Éåºø
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(öçå
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‚¸¬
+†
+java:S1319%"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ôú§Ã
+†
+java:S1319Q"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ûƒ‰Ó
+†
+java:S1319]"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(×ä”¶
+‹
+java:S1319n"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÂËºêøÿÿÿÿ
+†
+java:S1319z"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¾ÚóÄ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(À—œ†
+V	java:S1253"<This block of commented-out lines of code should be removed.(†íá™ÿÿÿÿÿ
+h
+java:S3776z"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(¾ÚóÄ
+T	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(Ä…á÷ùÿÿÿÿ

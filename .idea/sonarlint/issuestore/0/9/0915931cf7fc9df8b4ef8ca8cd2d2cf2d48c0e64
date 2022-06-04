@@ -1,0 +1,17 @@
+
+C
+java:S1604"(Make this anonymous inner class a lambda(«ìÖÑùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µ¢Æãüÿÿÿÿ
+g
+java:S2095O"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(Ê”›ýûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ž§Œ¢
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ž§Œ¢
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(ž§Œ¢
+M	java:S106."9Replace this use of System.out or System.err by a logger.(æÏŠ=
+P
+java:S1854Q":Remove this useless assignment to local variable "filmas".(§¨ìï
+Q	java:S125G"<This block of commented-out lines of code should be removed.(ñ™‡á
+A
+java:S1481Q"+Remove this unused "filmas" local variable.(§¨ìï
+V
+java:S1128"@Remove this unused import 'javax.naming.directory.SearchResult'.(²áÓ°

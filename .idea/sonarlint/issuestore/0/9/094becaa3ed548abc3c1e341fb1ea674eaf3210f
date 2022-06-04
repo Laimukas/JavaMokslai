@@ -1,0 +1,13 @@
+
+‰
+java:S1319"nThe type of "listOfElements" should be an interface such as "List" rather than the implementation "ArrayList".(õ„«Æûÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬ĞË‹ùÿÿÿÿ
+V
+java:S1854";Remove this useless assignment to local variable "tekstas".(â˜¿•ÿÿÿÿÿ
+b
+java:S6201"GReplace this instanceof check and cast with 'instanceof String tekstas'(á„€şÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ä“ß«ÿÿÿÿÿ
+G
+java:S1481",Remove this unused "tekstas" local variable.(â˜¿•ÿÿÿÿÿ

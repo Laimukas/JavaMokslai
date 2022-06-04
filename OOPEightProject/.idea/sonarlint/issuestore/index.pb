@@ -1,0 +1,41 @@
+
+O
+src/lt/bit/Exercise20/Main.java,4\b\4b94acd6d562cded189ba86ffa06c9de8333db5b
+T
+$src/lt/bit/Exercise20/Rectangle.java,2\2\22de774ba0d1fa62d0c291affa60284c52194a51
+P
+ src/lt/bit/Exercise20/Shape.java,c\f\cfafa7202f6ae60126a860b19916aca287a46054
+S
+#src/lt/bit/Exercise20/Triangle.java,7\0\709cd557a5fd9f95e793ec3cb02db4b26f45d30a
+R
+"src/lt/bit/Exercise20/Hexagon.java,8\6\86089a004e1783d2d2c419f4f81d80714d18d38d
+O
+src/lt/bit/exercise21/Cone.java,2\7\279595573d83401554f16e830465b0d490cf19ff
+S
+#src/lt/bit/exercise21/Fillable.java,1\7\17104ca5a01a7f45b5645c7418b902256b6dc78f
+O
+src/lt/bit/exercise21/Qube.java,1\d\1dcedaa973ea5266941dcea0bddf6023d7b09a5a
+V
+&src/lt/bit/exercise21/ThreeDShape.java,5\7\57df26b09433fe94cfdb38dec5099345eed92a3c
+Q
+!src/lt/bit/Exercise16/Runner.java,e\c\ec828653f17041e11bf3a44d603199266fc4cd6e
+R
+"src/lt/bit/Exercise15/CarMain.java,b\0\b05713d221c5b791e19a02817ef6a972e78aa27a
+N
+src/lt/bit/Exercise15/Car.java,0\f\0fce032af3ac8fea9ded56830b55ee75ee06bfb3
+P
+ src/lt/bit/multithread/Main.java,0\f\0f52ba75f6adc2293ebe339ff56e3cac667d52d3
+[
++src/lt/bit/multithread/ManoAntrojiGija.java,7\5\75a573019b42baf18567d1c3f9358779668829eb
+T
+$src/lt/bit/multithread/ManoGija.java,5\b\5bee850bf949ac1e4eac8f4b7548716089426bce
+\
+,src/lt/bit/multithread/ManoKetvirtaGija.java,2\7\27177d9215672a65c3dbb0616480212468426549
+\
+,src/lt/bit/multithread/ManoPenktojiGija.java,d\c\dccbad389d0e82e72eba8b92df4f02511cba6040
+Z
+*src/lt/bit/multithread/ManoTreciaGija.java,4\7\475ba64564713f6caf187ab97aba94dc310dbb46
+[
++src/lt/bit/multithread/Pasisveikinimas.java,7\9\796fc37aabfef1d8520559b16126a9a0174bc3cb
+S
+#src/lt/bit/multithread/Printer.java,1\e\1ef1d86d2c376285e561a8f31c9ca9a9d5f4e038

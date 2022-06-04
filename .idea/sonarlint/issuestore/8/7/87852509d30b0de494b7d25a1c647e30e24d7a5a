@@ -1,0 +1,19 @@
+
+b
+java:S2095O"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(İØóƒ
+b
+java:S2095h"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÚÍúª
+^
+java:S2095P"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(’À”ª
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(Ø«Ÿ
+N	java:S1061"9Replace this use of System.out or System.err by a logger.(½ˆÉâ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(½ˆÉâ
+[
+java:S1612b"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ
+Z	java:S106b"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ8™ ›²‘0
+]
+java:S1128"@Remove this unused import 'exercises.sportininkai.Sportininkas'.(£Õ¦â8³ÿ¯²‘0
+i
+java:S1128"LRemove this unused import 'exercises.sportininkai.SportininkuKomanduKlaida'.(ÅÒ“Å8³ÿ¯²‘0
