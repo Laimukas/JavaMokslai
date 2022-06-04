@@ -1,5 +1,7 @@
 package exercises.studentai;
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) throws StudentuGrupiuKlaida{
 
@@ -21,6 +23,8 @@ public class Main {
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println("Geriausiai besimokancio studento paieska, nurodzius grupes koda.->");
         studentuGrupe.geriausiaVidurkiTurintisStudentasNurodytojeGrupeje("10a");
+        System.out.println("------------------------------------------------------------------------------------");
+        studentuGrupe.rikiavimasPagalPavardes(SortOrder.DESCENDING);
 
     }
 }

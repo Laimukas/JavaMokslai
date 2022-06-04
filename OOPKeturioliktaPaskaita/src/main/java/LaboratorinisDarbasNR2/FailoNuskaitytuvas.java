@@ -77,7 +77,7 @@ public class FailoNuskaitytuvas {
         return ilgiausiasZodis;
     }
 
-    public void pasalintiIlgiausiaZodiKiekvienojeEiluteje(){
+    public void pasalintiIlgiausiaZodiKiekvienojeEiluteje(){//kazkas cia nesuveikia,nes neistrina ilgiausio zodzio
         String[] eilutes = kontentas.split("//n");
         ArrayList<String> naujosEilutes = new ArrayList<>();
 
@@ -86,7 +86,6 @@ public class FailoNuskaitytuvas {
             int ilgiausioZodzioIndeksas = eilute.indexOf(ilgiausiasZodis);
             naujosEilutes.add(eilute.substring(0, ilgiausioZodzioIndeksas).concat(eilute.substring(ilgiausioZodzioIndeksas + 1)));
         }
-
         naujosEilutes.forEach(eilute -> System.out.println(eilute));
     }
 
@@ -120,7 +119,7 @@ public class FailoNuskaitytuvas {
         String ilgiausiasZodis = surastiIlgiausiaZodi(zodziai);
 
         kontentas = senasKontentas;
-        System.out.println("ilgigausias zodis tekste yra: " + ilgiausiasZodis);
+        System.out.println("Daugiausiai balsiu turintis zodis tekste yra: " + ilgiausiasZodis);
     }
 
     private String  surastiIlgiausiaZodi(String[] zodziai) {
@@ -150,7 +149,7 @@ public class FailoNuskaitytuvas {
 
         for(String eilute : eilutes){
             String ilgiausiasZodis = surastiIlgiausiaZodi(eilute.split(" "));
-            System.out.println("Eilutė yra: " + eilute);
+            System.out.println("Eilute yra: " + eilute);
             System.out.println("Ilgiausias zodis yra: " + ilgiausiasZodis);
         }
     }

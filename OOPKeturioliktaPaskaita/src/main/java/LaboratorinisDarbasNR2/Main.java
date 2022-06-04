@@ -12,14 +12,19 @@ public class Main {
         System.out.println("Daugiausiai balsiu turintis zodis tekste.");
         failoNuskaitytuvas.daugiausiaiBalsiuTurintiZodiTekste();
         System.out.println("<<------------------------>>");
-        System.out.println("Daugiausia balsiu turinti zodi eiluteje.");
+        System.out.println("Daugiausia BALSIU turinti zodi eiluteje.");
         failoNuskaitytuvas.daugiausiaiBalsiuTurintiZodiEiluteje();
         System.out.println("<<------------------------>>");
         System.out.println("Nuskaityti kiek eiluciu ir koks kiekvienos eilutes ilgis.");
         failoNuskaitytuvas.nustatytiKiekEiluciuIrKoksKiekvienosEilutesIlgis();
         System.out.println("<<------------------------>>");
+        System.out.println("Surasti kiek yra mazuju lotynisku raidziu.");
+        failoNuskaitytuvas.surastiKiekYraMazujuLotiniskuRaidziu();
+        System.out.println("<<------------------------>>");
         System.out.println("Pasalinti ilgiausia zodi kiekvienoje eiluteje.");
         failoNuskaitytuvas.pasalintiIlgiausiaZodiKiekvienojeEiluteje();
+
+
     }
 
 }

@@ -7,6 +7,7 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
 
+import javax.swing.*;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.Reader;
@@ -24,6 +25,20 @@ public class StudentuGrupe {
 
     public StudentuGrupe() {
         studentai = new ArrayList<>();
+    }
+
+    public ArrayList<Studentas> rikiavimasPagalPavardes(SortOrder sortOrder) {
+        System.out.println("Rikiavimas pagal pavardes "+sortOrder.name()+ " tvarka.");
+        if (SortOrder.ASCENDING.equals(sortOrder)) {
+            studentai.sort((o1, o2) -> o1.getPavarde().compareTo(o2.getPavarde()));
+            studentai.forEach(studentas -> System.out.println(studentas));
+        }
+
+        if (SortOrder.DESCENDING.equals(sortOrder)) {
+            studentai.sort((o1, o2) -> o2.getPavarde().compareTo(o1.getPavarde()));
+            studentai.forEach(studentas -> System.out.println(studentas));
+        }
+        return studentai;
     }
 
     public void geriausiaVidurkiTurintisStudentasNurodytojeGrupeje(String group) throws StudentuGrupiuKlaida {

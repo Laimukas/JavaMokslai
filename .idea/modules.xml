@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaAntraSavaite/JavaAntraSavaite.iml" filepath="$PROJECT_DIR$/JavaAntraSavaite/JavaAntraSavaite.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaAstuntaSavaite/JavaAstuntaSavaite.iml" filepath="$PROJECT_DIR$/JavaAstuntaSavaite/JavaAstuntaSavaite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaDevintaSavaite/JavaDevintaSavaite.iml" filepath="$PROJECT_DIR$/JavaDevintaSavaite/JavaDevintaSavaite.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaKetvirtaSavaite/JavaKetvirtaSavaite.iml" filepath="$PROJECT_DIR$/JavaKetvirtaSavaite/JavaKetvirtaSavaite.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaMokslai.iml" filepath="$PROJECT_DIR$/.idea/JavaMokslai.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaPenktaSavaite/JavaPenktaSavaite.iml" filepath="$PROJECT_DIR$/JavaPenktaSavaite/JavaPenktaSavaite.iml" />

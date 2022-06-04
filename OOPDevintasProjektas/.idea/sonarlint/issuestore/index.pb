@@ -1,19 +1,19 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-R
-"src/main/java/math/Calculator.java,b\5\b5036b6e0277774b0e1d930a30a4cd27efd29427
 V
 &src/test/java/math/CalculatorTest.java,9\f\9f8a2126df23f3a95a6482146d87eb9dcae90208
-Q
-!src/main/java/Exercise23/Zoo.java,5\3\53b694f4ba7e508b23481124d5bce36bc88552f2
 U
 %src/test/java/Exercise23/ZooTest.java,e\5\e59bcbfd10de31c2c022050d4f6a0a1291609a3a
+X
+(src/test/java/Exercise24/BasketTest.java,1\0\1067d6ed680984b19cf4da12db9f7f03e3bfc74e
 T
 $src/main/java/Exercise24/Basket.java,7\d\7d432ffbe2d0bbfda006782ecb80e909280b97c1
 b
 2src/main/java/Exercise24/BasketEmptyException.java,2\9\296a567778095ca658a59442ce55bd20385dee5f
 a
 1src/main/java/Exercise24/BasketFullException.java,2\f\2fd74256b05d569159ecaf2bed98071629a477c6
-X
-(src/test/java/Exercise24/BasketTest.java,1\0\1067d6ed680984b19cf4da12db9f7f03e3bfc74e
+R
+"src/main/java/math/Calculator.java,b\5\b5036b6e0277774b0e1d930a30a4cd27efd29427
+Q
+!src/main/java/Exercise23/Zoo.java,5\3\53b694f4ba7e508b23481124d5bce36bc88552f2
