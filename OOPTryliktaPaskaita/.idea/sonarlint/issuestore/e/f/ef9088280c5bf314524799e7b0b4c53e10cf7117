@@ -1,0 +1,16 @@
+
+g
+java:S2095k"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(‡³òÇşÿÿÿÿ
+^
+java:S2095R"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ
+a
+java:S2095Q"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(êÆëo
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ÖÛ×ÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ù¹ïÿÿÿÿÿ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(İÓ²É
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(ù¹ïÿÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(‚ÎÛ½ûÿÿÿÿ
+[
+java:S1612e"@Replace this lambda with method reference 'System.out::println'.(»¯Şíøÿÿÿÿ
+Z	java:S106e"9Replace this use of System.out or System.err by a logger.(»¯Şíøÿÿÿÿ8Ûîü0
