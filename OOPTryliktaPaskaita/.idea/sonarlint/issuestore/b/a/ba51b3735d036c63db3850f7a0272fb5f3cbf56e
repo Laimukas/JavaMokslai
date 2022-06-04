@@ -1,10 +1,10 @@
 
+b
+java:S2095O"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(á“â½
 ^
 java:S2095P"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ
 g
 java:S2095k"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÛÂüÿÿÿÿ
-b
-java:S2095O"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(á“â½
 W
 java:S1075"ARefactor your code to get this URI from a customizable parameter.(¬æÌÔ
 N	java:S106""9Replace this use of System.out or System.err by a logger.(› §Ê

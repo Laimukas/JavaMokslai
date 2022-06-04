@@ -1,28 +1,32 @@
 
 
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ä´¼à8ÂäÍò’0
+java:S1319&"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ä´¼à8ÂäÍò’0
+b
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÚÍúª
 ^
-java:S2095_"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ
+java:S2095g"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ
 b
-java:S2095w"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÚÍúª
-b
-java:S2095^"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(İØóƒ
+java:S2095f"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(İØóƒ
 W
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(’À”ª
-N	java:S106"9Replace this use of System.out or System.err by a logger.(›î’â
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(’À”ª
+M	java:S106!"9Replace this use of System.out or System.err by a logger.(×Öv
 b
-java:S1612""@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ8…²Òò’0
-S	java:S106""9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ
+java:S1612#"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ8…²Òò’0
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(›î’â
 b
-java:S1612'"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ8¸ÔÓò’0
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ
-N	java:S1068"9Replace this use of System.out or System.err by a logger.(Ø«Ÿ
-U	java:S106@"9Replace this use of System.out or System.err by a logger.(½ˆÉâ8 åÍò’0
-U	java:S106J"9Replace this use of System.out or System.err by a logger.(½ˆÉâ8£åÍò’0
+java:S1612*"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ8¸ÔÓò’0
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ
 b
-java:S1612q"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ8¹Ôò’0
-Z	java:S106q"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ8­åÍò’0
+java:S1612/"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ8¹Ôò’0
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ8 åÍò’0
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(Ø«Ÿ8£åÍò’0
+U	java:S106H"9Replace this use of System.out or System.err by a logger.(½ˆÉâ8­åÍò’0
+U	java:S106R"9Replace this use of System.out or System.err by a logger.(½ˆÉâ8…£õ’0
+b
+java:S1612y"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ8«ø“õ’0
+Z	java:S106y"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ8Œ£õ’0
 ]
-java:S1128"@Remove this unused import 'exercises.sportininkai.Sportininkas'.(£Õ¦â8ë¿Ôò’0
+java:S1128"@Remove this unused import 'exercises.sportininkai.Sportininkas'.(£Õ¦â8¯ø“õ’0
 i
-java:S1128"LRemove this unused import 'exercises.sportininkai.SportininkuKomanduKlaida'.(ÅÒ“Å8ë¿Ôò’0
+java:S1128"LRemove this unused import 'exercises.sportininkai.SportininkuKomanduKlaida'.(ÅÒ“Å8¯ø“õ’0

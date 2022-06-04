@@ -7,6 +7,10 @@ X
 .src/main/java/exercises/sportininkai/Main.java,c\4\c4457ceae6ffde4fed0483bdfcddae7b9a125d49
 f
 6src/main/java/exercises/sportininkai/Sportininkas.java,0\a\0a282dcdd6aea05ab708255c699410994b59bf41
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+l
+<src/main/java/exercises/sportininkai/SportininkuKomanda.java,e\f\ef9088280c5bf314524799e7b0b4c53e10cf7117
 W
 'src/main/java/exercises/kates/Kate.java,f\7\f70dfb5cd614307261560253388e2ee618237f5b
 W
@@ -19,10 +23,6 @@ a
 .src/main/java/exercises/kates/KaciuParoda.java,3\9\3985241ec9e0520d5e6139f6e561c91cbe6e786a
 i
 9src/main/java/exercises/kandidatai/KandidatuServisas.java,b\a\ba51b3735d036c63db3850f7a0272fb5f3cbf56e
-l
-<src/main/java/exercises/sportininkai/SportininkuKomanda.java,e\f\ef9088280c5bf314524799e7b0b4c53e10cf7117
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 d
 4src/main/java/exercises/studentai/StudentuGrupe.java,1\3\13b1d035ad4ddb3b02bc555610b4feeeff1676f2
 [

@@ -15,6 +15,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class StudentuGrupe {
 
@@ -25,6 +26,13 @@ public class StudentuGrupe {
 
     public StudentuGrupe() {
         studentai = new ArrayList<>();
+    }
+
+    public void rikiavimasPagalPavardeCollectionMetodu() throws StudentuGrupiuKlaida{
+        getStudentai();
+        System.out.println("Kitas rikiavimo budas naudojant Collections metoda.");
+        Collections.sort(studentai,((o1, o2) -> o1.getPavarde().compareTo(o2.getPavarde())));
+        studentai.forEach(studentas -> System.out.println(studentas));
     }
 
     public ArrayList<Studentas> rikiavimasPagalPavardes(SortOrder sortOrder) {

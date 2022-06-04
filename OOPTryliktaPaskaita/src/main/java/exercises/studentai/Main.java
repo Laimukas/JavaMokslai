@@ -25,6 +25,8 @@ public class Main {
         studentuGrupe.geriausiaVidurkiTurintisStudentasNurodytojeGrupeje("10a");
         System.out.println("------------------------------------------------------------------------------------");
         studentuGrupe.rikiavimasPagalPavardes(SortOrder.DESCENDING);
+        System.out.println("------------------------------------------------------------------------------------");
+        studentuGrupe.rikiavimasPagalPavardeCollectionMetodu();
 
     }
 }

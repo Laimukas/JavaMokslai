@@ -13,6 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class AdresuKnygute {
 
@@ -26,6 +27,11 @@ public class AdresuKnygute {
     }
 
     public void paieskaPagalPavardeIrTelefNumSaliesKoda(String surname, String CountryCode) throws AdresuKnygutesKlaida {
+        if (surname != null && surname.equals("")) {
+            throw new AdresuKnygutesKlaida("Deja, nurodyta pavarde neegzistuoja!");
+        }else if (CountryCode !=null && CountryCode.equals("")){
+            throw new AdresuKnygutesKlaida("Deja, nurodytas salies kodas neegzistuoja!");
+        }
         getAdresai();
         System.out.println("Paieska pagal Pavarde ir Telefono numerio Salies koda.");
         adresai.forEach(adresas -> {
@@ -35,9 +41,15 @@ public class AdresuKnygute {
             }
         });
     }
+    public void rikiavimasPagalPavardeCollectionMetodu() throws AdresuKnygutesKlaida{
+        getAdresai();
+        System.out.println("Kitas rikiavimo budas naudojant Collections metoda.");
+        Collections.sort(adresai,((o1, o2) -> o1.getPavarde().compareTo(o2.getPavarde())));
+        adresai.forEach(adresas -> System.out.println(adresas));
+    }
 
     public ArrayList<Adresas> rikiavimasPagalPavardes(SortOrder sortOrder) {
-        System.out.println("Rikiavimas pagal pavarde "+sortOrder.name()+ " tvarka.");
+        System.out.println("Rikiavimas pagal pavarde " + sortOrder.name() + " tvarka.");
         if (SortOrder.ASCENDING.equals(sortOrder)) {
             adresai.sort((o1, o2) -> o1.getPavarde().compareTo(o2.getPavarde()));
             adresai.forEach(adresas -> System.out.println(adresas));
@@ -51,6 +63,14 @@ public class AdresuKnygute {
     }
 
     public void paieskaPagalVardaPavardeMiesta(String vardas, String pavarde, String city) throws AdresuKnygutesKlaida {
+        if (city != null && city.equals("")) {
+            throw new AdresuKnygutesKlaida("Deja, nurodytas miestas neegzistuoja!");
+        }else if (pavarde !=null && pavarde.equals("")){
+            throw new AdresuKnygutesKlaida("Deja, nurodyta pavarde neegzistuoja!");
+        }else if (vardas !=null && vardas.equals("")){
+            throw new AdresuKnygutesKlaida("Deja, nurodytas vardas neegzistuoja!");
+        }
+
         getAdresai();
         System.out.println("Paieska pagal Varda,Pavarde,Miesta.");
         adresai.forEach(adresas -> {
@@ -63,8 +83,12 @@ public class AdresuKnygute {
     }
 
     public void nurodytoMiestoGyventojuKiekioPaieska(String city) throws AdresuKnygutesKlaida {
+        if (city != null && city.equals("")) {
+            throw new AdresuKnygutesKlaida("Deja, nurodytas miestas neegzistuoja!");
+        }
+
         getAdresai();
-        System.out.println("Nurodyto miesto gyventoju kiekio paieska.");
+        System.out.println("Nurodyto miesto ( '" + city + "' ) gyventoju kiekio paieska.");
         int counter = 0;
 
         for (Adresas adresas : adresai) {
@@ -73,10 +97,13 @@ public class AdresuKnygute {
                 counter++;
             }
         }
-        System.out.println(city+" mieste yra: " + counter + " gyventojai.");
+        System.out.println(city + " mieste yra: " + counter + " gyventojai.");
     }
 
     public void pasalintiIsSaraso(Adresas adresas) throws AdresuKnygutesKlaida {
+        if (adresas == null) {
+            throw new AdresuKnygutesKlaida("Reik nurodyti jau egzistuojanti adresata, kad ji pasalinti!");
+        }
         getAdresai();
         System.out.println("Nurodyto adresato salinimas.");
         adresai.removeIf(s -> s.getVardas().equals(adresas.getVardas()) && s.getPavarde().equals(adresas.getPavarde()));
@@ -86,6 +113,9 @@ public class AdresuKnygute {
 
     public void papildytiSarasa(Adresas adresas) throws AdresuKnygutesKlaida {
         System.out.println("Adresatu papildymas.");
+        if (adresas == null) {
+            throw new AdresuKnygutesKlaida("Reik nurodyti adresata, kad ji prideti!");
+        }
         adresai.add(adresas);
         perkrautiFaila();
         getAdresai();
@@ -107,7 +137,6 @@ public class AdresuKnygute {
         } catch (IOException e) {
             throw new AdresuKnygutesKlaida("Deja, nepavyko irasyti adreso i saraso failiuka", e);
         }
-
     }
 
     public void perziuretiAdresus() throws AdresuKnygutesKlaida {
@@ -128,7 +157,7 @@ public class AdresuKnygute {
         }
     }
 
-    private void nuskaitytiNuoFailo(CSVParser csvParser) throws AdresuKnygutesKlaida {
+    private void nuskaitytiNuoFailo(CSVParser csvParser) {
         adresai = new ArrayList<>();
 
         for (CSVRecord csvRecord : csvParser) {

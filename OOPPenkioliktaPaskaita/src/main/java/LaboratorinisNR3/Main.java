@@ -15,13 +15,15 @@ public class Main {
         adresuKnygute.pasalintiIsSaraso(adresas);
         adresuKnygute.perziuretiAdresus();
         System.out.println("-------------------------------------------------------------------------------------");
-        adresuKnygute.nurodytoMiestoGyventojuKiekioPaieska("Kaunas");
+        adresuKnygute.nurodytoMiestoGyventojuKiekioPaieska("Vilnius");
         System.out.println("-------------------------------------------------------------------------------------");
         adresuKnygute.paieskaPagalVardaPavardeMiesta("Juozas","Juozaitis","Kaunas");
         System.out.println("-------------------------------------------------------------------------------------");
-        adresuKnygute.paieskaPagalPavardeIrTelefNumSaliesKoda("Gedminas","+44");
+        adresuKnygute.paieskaPagalPavardeIrTelefNumSaliesKoda("Vytautas","+370");
         System.out.println("-------------------------------------------------------------------------------------");
         adresuKnygute.rikiavimasPagalPavardes(SortOrder.DESCENDING);
+        System.out.println("-------------------------------------------------------------------------------------");
+        adresuKnygute.rikiavimasPagalPavardeCollectionMetodu();
 
     }
 }
