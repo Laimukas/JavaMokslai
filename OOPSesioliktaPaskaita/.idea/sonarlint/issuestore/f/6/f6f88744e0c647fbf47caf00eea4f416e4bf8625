@@ -1,0 +1,36 @@
+
+‹
+java:S13193"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¼Óòºÿÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ¡ºœ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—ìó¡
+o
+java:S2095—"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¼øøÿÿÿÿ8İÉ©œ“0
+i
+java:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(‡ğ‰ğ8İÉ©œ“0
+f
+java:S2095€"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ8İÉ©œ“0
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(†ÆÛñùÿÿÿÿ
+M	java:S106$"9Replace this use of System.out or System.err by a logger.(‚„	
+N	java:S106("9Replace this use of System.out or System.err by a logger.(±ˆÉÜ
+M	java:S106."9Replace this use of System.out or System.err by a logger.(×Öv
+\
+java:S16120"@Replace this lambda with method reference 'System.out::println'.(…¢°D8éÉ©œ“0
+M	java:S1060"9Replace this use of System.out or System.err by a logger.(…¢°D
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ÂŞÿÿÿÿÿ
+\
+java:S16127"@Replace this lambda with method reference 'System.out::println'.(…¢°D8íÉ©œ“0
+M	java:S1067"9Replace this use of System.out or System.err by a logger.(…¢°D
+\
+java:S1612<"@Replace this lambda with method reference 'System.out::println'.(…¢°D8ğÉ©œ“0
+M	java:S106<"9Replace this use of System.out or System.err by a logger.(…¢°D
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(Ê¡¤äüÿÿÿÿ
+N	java:S106P"9Replace this use of System.out or System.err by a logger.(±ˆÉÜ
+S	java:S106["9Replace this use of System.out or System.err by a logger.(ˆ¶ôÅûÿÿÿÿ
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(±ˆÉÜ
+S	java:S106d"9Replace this use of System.out or System.err by a logger.(Éãåéşÿÿÿÿ
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(©èïÁùÿÿÿÿ
+S	java:S106t"9Replace this use of System.out or System.err by a logger.(ë‘¶Åüÿÿÿÿ
+]
+java:S1612‘"@Replace this lambda with method reference 'System.out::println'.(…¢°D8Ê©œ“0
+N	java:S106‘"9Replace this use of System.out or System.err by a logger.(…¢°D
