@@ -1,4 +1,4 @@
-package exercise;
+package exercise.pirmantrtrec;
 
 import java.util.Map;
 import java.util.Scanner;
@@ -218,76 +218,166 @@ public class main {
 //        } while (zmogus != 0);
 
         //--------------------------10-------------------------------------------
+//
+////        paklausia kiek zaidimu reikia zaist.
+////                kompas zaidzia pats pries save
+////        pabaigoj reikia atspausdint:
+////        kiek kartu laimejo kompas1
+////        kiek kartu laimejo kompas2
+////        kiek buvo lygiuju
+////        kiek iskrito akmuo
+////        kiek iskrito popierius
+////        kiek iskrito zirkles
+//
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Kiek kartu reikia suzaist? : ");
+//        int c1 = 0;
+//        int c2 = 0;
+//        int draw = 0;
+//        int rock = 0;
+//        int paper = 0;
+//        int scissor = 0;
+//        int kiek = sc.nextInt();
+//        for (int i = 1; i <= kiek; i++) {
+//            int kompas1 = (int) (Math.random() * 3 + 1);
+//            int kompas2 = (int) (Math.random() * 3 + 1);
+//            if (kompas1 == 1) {
+//                rock++;
+//            } else if (kompas1 == 2) {
+//                paper++;
+//            } else {
+//                scissor++;
+//            }
+//            if (kompas2 == 1) {
+//                rock++;
+//            } else if (kompas2 == 2) {
+//                paper++;
+//            } else {
+//                scissor++;
+//            }
+//            if (kompas1 == kompas2) {
+//                draw++;
+//            } else {
+//                if (kompas1 == 1) {
+//                    if (kompas2 == 2) {
+//                        c2++;
+//                    } else {
+//                        c1++;
+//                    }
+//                } else if (kompas1 == 2) {
+//                    if (kompas2 == 1) {
+//                        c1++;
+//                    } else {
+//                        c2++;
+//                    }
+//                } else {
+//                    if (kompas2 == 1) {
+//                        c2++;
+//                    } else {
+//                        c1++;
+//                    }
+//                }
+//            }
+//        }
+//        System.out.println("kompas1 laimejo " + c1);
+//        System.out.println("kompas2 laimejo " + c2);
+//        System.out.println("lygiosios " + draw);
+//        System.out.println("akmuo " + rock);
+//        System.out.println("popierius " + paper);
+//        System.out.println("zirkles " + scissor);
+        //-----------------------11---------------------------------------
+        //ivedus numeri kompas meta kokia tai sav diena
+//        System.out.println("ivesk numeri,pagal ji kompas parasys kokia tai sav diena.");
+//        System.out.print(":");
+//        Scanner sc = new Scanner(System.in);
+//        int savDiena = sc.nextInt();
+//
+//        switch (savDiena){
+//            case 1:
+//                System.out.println("pirmadienis");
+//                break;
+//            case 2:
+//                System.out.println("antradienis");
+//                break;
+//            case 3:
+//                System.out.println("treciadienis");
+//                break;
+//            case 4:
+//                System.out.println("ketvirtadienis");
+//                break;
+//            case 5:
+//                System.out.println("penktadienis");
+//                break;
+//            case 6:
+//                System.out.println("sestadienis");
+//                break;
+//            case 7:
+//                System.out.println("sekmadienis");
+//                break;
+//            default:
+//                System.out.println("tokiu dienu nebuna");
 
-//        paklausia kiek zaidimu reikia zaist.
-//                kompas zaidzia pats pries save
-//        pabaigoj reikia atspausdint:
-//        kiek kartu laimejo kompas1
-//        kiek kartu laimejo kompas2
-//        kiek buvo lygiuju
-//        kiek iskrito akmuo
-//        kiek iskrito popierius
-//        kiek iskrito zirkles
+                //kita uzduotis,kad parasytu ar darbo diena ar savaitgalis
+//                switch (savDiena){
+////                    case 1:
+////                    case 2:
+////                    case 3:
+////                    case 4:
+////                    case 5:
+//                        //arba
+//                    case 1,2,3,4,5:
+//                        System.out.println("darbo diena");
+//                        break;
+////                    case 6:
+////                    case 7:
+//                        //arba
+//                    case 6,7:
+//                        System.out.println("savaitgalis");
+//                        break;
+//                    default:
+//                        System.out.println("tokiu dienu nebuna");
+//        }
+//        System.out.println("pabaiga");
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Kiek kartu reikia suzaist? : ");
-        int c1 = 0;
-        int c2 = 0;
-        int draw = 0;
-        int rock = 0;
-        int paper = 0;
-        int scissor = 0;
-        int kiek = sc.nextInt();
-        for (int i = 1; i <= kiek; i++) {
-            int kompas1 = (int) (Math.random() * 3 + 1);
-            int kompas2 = (int) (Math.random() * 3 + 1);
-            if (kompas1 == 1) {
-                rock++;
-            } else if (kompas1 == 2) {
-                paper++;
-            } else {
-                scissor++;
-            }
-            if (kompas2 == 1) {
-                rock++;
-            } else if (kompas2 == 2) {
-                paper++;
-            } else {
-                scissor++;
-            }
-            if (kompas1 == kompas2) {
-                draw++;
-            } else {
-                if (kompas1 == 1) {
-                    if (kompas2 == 2) {
-                        c2++;
-                    } else {
-                        c1++;
-                    }
-                } else if (kompas1 == 2) {
-                    if (kompas2 == 1) {
-                        c1++;
-                    } else {
-                        c2++;
-                    }
-                } else {
-                    if (kompas2 == 1) {
-                        c2++;
-                    } else {
-                        c1++;
-                    }
-                }
-            }
-        }
-        System.out.println("kompas1 laimejo " + c1);
-        System.out.println("kompas2 laimejo " + c2);
-        System.out.println("lygiosios " + draw);
-        System.out.println("akmuo " + rock);
-        System.out.println("popierius " + paper);
-        System.out.println("zirkles " + scissor);
+//-----------------------12------------------------------
+//        System.out.println("ivesk numeri,pagal ji kompas nuspres koks tai menuo ir kiek dienu yra nuo metu pradzios " +
+//                "iki to men paskutines dienos");
+//        System.out.print(":");
+//        Scanner sc = new Scanner(System.in);
+//        int menuo = sc.nextInt();
+//        int dienos=0;
+//        switch (menuo) {
+//            case 12:
+//                dienos += 31;
+//            case 11:
+//                dienos += 30;
+//            case 10:
+//                dienos += 31;
+//            case 9:
+//                dienos += 30;
+//            case 8:
+//                dienos += 31;
+//            case 7:
+//                dienos += 31;
+//            case 6:
+//                dienos += 30;
+//            case 5:
+//                dienos += 31;
+//            case 4:
+//                dienos += 30;
+//            case 3:
+//                dienos += 31;
+//            case 2:
+//                dienos += 28;
+//            case 1:
+//                dienos += 31;
+//// jei pastebejot be break todel sudeda nestabdydamas
+//        }
+//        System.out.println(dienos);
+//        System.out.println("pabaiga");
+
 
 
     }
-
 }
 
