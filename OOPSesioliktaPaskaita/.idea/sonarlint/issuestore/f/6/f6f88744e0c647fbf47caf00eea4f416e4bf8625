@@ -5,10 +5,10 @@ f	java:S117"QRename this local variable to match the regular expression '^[a-
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—ìó¡
 o
 java:S2095—"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¼øøÿÿÿÿ8İÉ©œ“0
-i
-java:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(‡ğ‰ğ8İÉ©œ“0
 f
 java:S2095€"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ8İÉ©œ“0
+i
+java:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(‡ğ‰ğ8İÉ©œ“0
 \
 java:S1075"ARefactor your code to get this URI from a customizable parameter.(†ÆÛñùÿÿÿÿ
 M	java:S106$"9Replace this use of System.out or System.err by a logger.(‚„	
