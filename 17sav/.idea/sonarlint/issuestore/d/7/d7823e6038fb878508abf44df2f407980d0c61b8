@@ -1,0 +1,25 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
+b
+java:S1223""LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘
+S	java:S106"9Replace this use of System.out or System.err by a logger.(³³ìåøÿÿÿÿ
+>
+java:S2140")Use "java.util.Random.nextInt()" instead.(¼¥½s
+N	java:S106"9Replace this use of System.out or System.err by a logger.(£òÇß
+?
+java:S2140")Use "java.util.Random.nextInt()" instead.(’þ¦È
+h
+java:S3776""RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Çµí‘
+Q	java:S125$"<This block of commented-out lines of code should be removed.(¨áÂ 
+V	java:S125>"<This block of commented-out lines of code should be removed.(“ëá‹ùÿÿÿÿ
+Q	java:S125T"<This block of commented-out lines of code should be removed.(å­›Ø
+V	java:S125j"<This block of commented-out lines of code should be removed.(É®ƒèøÿÿÿÿ
+O	java:S106¥"9Replace this use of System.out or System.err by a logger.(“ŽÕ÷
+T	java:S106¦"9Replace this use of System.out or System.err by a logger.(Ú›ãöøÿÿÿÿ
+U	java:S106§"9Replace this use of System.out or System.err by a logger.(Ó¡Ö-8×Ìó”0
+V	java:S106¨"9Replace this use of System.out or System.err by a logger.(¦œß®8’¼›ó”0
+U	java:S106½"9Replace this use of System.out or System.err by a logger.(œ†ÉP8“¼›ó”0
+[	java:S106¾"9Replace this use of System.out or System.err by a logger.(Å¢âõúÿÿÿÿ8”¼›ó”0
+[	java:S106¿"9Replace this use of System.out or System.err by a logger.(ê‰ñœùÿÿÿÿ8•¼›ó”0
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8²âó”0
