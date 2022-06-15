@@ -1,4 +1,4 @@
-package lt.bit.exercise;
+package lt.bit.exercise.pirm;
 
 public class Rekursija {
     // rekursija kai metodas kviecia pats save
@@ -14,24 +14,36 @@ public class Rekursija {
     }
 
     public static int fabo(int sk1, int sk2, int max){
+
         if (sk2>max){
             System.out.println("-------------------------------------------------");
             System.out.println("sekantis sk2: "+sk2+" ir jis yra didesnis uz max: "+max);
             return 0;
         }
-
         System.out.println(String.format("sk1: %-6d, sk2: %-6d",sk1,sk2));
+
         int next=sk1+sk2;
         sk1=sk2;
         sk2=next;
 
         return sk2+fabo(sk1,sk2,max);
     }
+    //destytojo Aliaus varijantas
+    public static void fib(int sk1, int sk2, int max) {
+        System.out.println(sk1);
+        int next = sk1 + sk2;
+        if (next <= max) {
+            fib(sk2, next, max);
+        } else {
+            System.out.println(sk2);
+        }
+    }
 
 
     public static void main(String[] args) {
        // System.out.println(fakt(-2));
         fabo(1,1,500);
+        fib(1,1,10);
     }
 }
 /*
