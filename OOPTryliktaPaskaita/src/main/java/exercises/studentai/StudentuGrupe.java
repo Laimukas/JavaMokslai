@@ -1,7 +1,5 @@
 package exercises.studentai;
 
-import exercises.sportininkai.Sportininkas;
-import exercises.sportininkai.SportininkuKomanduKlaida;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVPrinter;

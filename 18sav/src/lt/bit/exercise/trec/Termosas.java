@@ -19,7 +19,7 @@ public class Termosas extends Puodukas {
         if (this.kiekis > this.turis) {
             this.kiekis = this.turis;
         }
-        this.temp-=3;
+        this.temp -= 3;
     }
 
     public void pasildyk(int kiek) {
@@ -38,5 +38,34 @@ public class Termosas extends Puodukas {
                 ", kiekis=" + kiekis +
                 ", temp=" + temp +
                 '}';
+    }
+
+    public boolean equals(Object obj) {
+        /*
+        obj: -> t2
+        this: -> t1
+         */
+
+        if (obj == null) {
+            return false;
+        }
+        if (!(obj instanceof Termosas)) {
+            return false;
+        }
+        Termosas t = (Termosas) obj;
+//        if (this.getSpalva() == t.getSpalva() &&
+//                this.turis == t.turis &&
+//                this.kiekis == t.kiekis &&
+//                this.temp == t.temp) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        //arba
+        return
+                this.getSpalva() == t.getSpalva() &&
+                        this.turis == t.turis &&
+                        this.kiekis == t.kiekis &&
+                        this.temp == t.temp;
     }
 }

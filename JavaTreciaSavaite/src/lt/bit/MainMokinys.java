@@ -20,10 +20,10 @@ public class MainMokinys {
         //kuriam mokiniu masyva
         Mokinys[] mokiniai = new Mokinys[]{mokinys1,mokinys2,mokinys3,mokinys4,mokinys5,mokinys6,mokinys7,mokinys8,mokinys9,mokinys10,mokinys11,mokinys12};
         //printinam masyva
-//        for(Mokinys mokinys: mokiniai){
-//           System.out.println(mokinys);
-//
-//        }
+        for(Mokinys mokinys: mokiniai){
+           System.out.println(mokinys);
+
+        }
         //geriausias mokinys
         Mokinys geriausias = Mokinys.gautiGeriausiaiBesimokanti(mokiniai);
         System.out.println(geriausias);

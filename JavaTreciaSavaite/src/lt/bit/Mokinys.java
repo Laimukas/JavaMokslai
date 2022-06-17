@@ -52,13 +52,9 @@ public class Mokinys {
     //cia dar namu darbuose uzduotis buvo,tai papildem si sarasa
     @Override
     public String toString() {
-        return "Mokinys{" +
-                "vardas='" + vardas + '\'' +
-                ", pavarde='" + pavarde + '\'' +
-                ", klase='" + klase + '\'' +
-                ", pazymiai=" + Arrays.toString(pazymiai) +
-                ", vidurkis=" + pazymiuVidurkis() + '\'' +
-                '}';
+        return String.format("%-9s,%-13s,%-5s,%-16s, Vidurkis = %.2f",vardas,pavarde,klase,Arrays.toString(pazymiai),pazymiuVidurkis());
+
+
     }
 
     // uzduoties dalis 2 - apskaiciuoti pazymiu vidurki

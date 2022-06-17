@@ -1,3 +1,19 @@
 
 9
 	18sav.iml,5\c\5c45b1381489f5d41a5d00b7b42ed2093242f3b3
+Q
+!src/lt/bit/exercise/antr/Run.java,8\8\88f70c2670b7058bc11b496786c3b4ee63904644
+V
+&src/lt/bit/exercise/trec/Puodukas.java,e\f\ef92251c0fd1aae356c36641f706806c787ae740
+]
+-src/lt/bit/exercise/antr/DidelisPuodukas.java,b\0\b0ffeb94953cf0bc254f9ffae128c4bc81338d27
+V
+&src/lt/bit/exercise/antr/Puodukas.java,4\e\4ede178dfff7c7dc3c55c649b85bf2a46366eb31
+R
+"src/lt/bit/exercise/trec/Main.java,a\d\ad208b5a2d58dedb8266d7fcecbb04138c9e4abc
+T
+$src/lt/bit/exercise/antr/Masina.java,2\f\2f7c0b26f3847458d19f00732db28f536307002d
+W
+'src/lt/bit/exercise/pirm/Rekursija.java,3\2\327b7359c0489081854eb7164b4f58a42def7fa4
+X
+(src/lt/bit/exercise/antr/MasinosRun.java,8\3\8398f0d44a34c99fe92f865c5ce453ea273fc485
