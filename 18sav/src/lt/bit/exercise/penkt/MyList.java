@@ -53,6 +53,28 @@ public class MyList {
         this.list = newList;
     }
 
+    // destytojo Aliaus budas
+//    public void remove(int index) {
+//        Object[] newList = new Object[this.list.length - 1];
+//        for (int i = 0, j = 0; i < this.list.length; i++) {
+//            if (i != index) {
+//                newList[j++] = this.list[i];
+//            }
+//        }
+//        this.list = newList;
+//    }
+//    public void insert(int index, Object o) {
+//        Object[] newList = new Object[this.list.length + 1];
+//        for (int i = 0, j = 0; i < newList.length; i++) {
+//            if (i == index) {
+//                newList[i] = o;
+//            } else {
+//                newList[i] = this.list[j++];
+//            }
+//        }
+//        this.list = newList;
+//    }
+
     public int size() {
         return this.list.length;
     }
