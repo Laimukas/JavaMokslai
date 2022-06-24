@@ -1,0 +1,14 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(ƒÉûªşÿÿÿÿ
+N	java:S106f"9Replace this use of System.out or System.err by a logger.(ëÊ»Õ
+N	java:S106h"9Replace this use of System.out or System.err by a logger.(‹Åéí
+S	java:S106j"9Replace this use of System.out or System.err by a logger.(­ä°âüÿÿÿÿ
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(•Œ÷Òùÿÿÿÿ
+N	java:S106q"9Replace this use of System.out or System.err by a logger.(ÚÂâ
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(£¹¨½úÿÿÿÿ
+Z
+java:S1128"8Remove this unused import 'lt.bit.exercise.antr.Masina'.(ÖÔı€øÿÿÿÿ8…ó™—0
+W
+java:S1128":Remove this unused import 'lt.bit.exercise.trec.Puodukas'.(¦¨İ›8†ó™—0
+\
+java:S1128":Remove this unused import 'lt.bit.exercise.trec.Termosas'.(†Ìûóşÿÿÿÿ8†ó™—0
