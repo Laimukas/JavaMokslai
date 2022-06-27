@@ -1,0 +1,27 @@
+
+J
+java:S3740&"/Provide the parametrized type for this generic.(ÊÏêñÿÿÿÿÿ
+E
+java:S37403"/Provide the parametrized type for this generic.(þÓ”Ž
+J
+java:S3740D"/Provide the parametrized type for this generic.(£…²÷ýÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(»ê™Êÿÿÿÿÿ
+H
+java:S1135	"2Complete the task associated to this TODO comment.(®Ü€–
+H
+java:S1135"2Complete the task associated to this TODO comment.(®Ü€–
+T
+java:S1854D"9Remove this useless assignment to local variable "clazz".(£…²÷ýÿÿÿÿ
+‡
+java:S1130@"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Þýÿÿÿÿ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(‡¿¯Ê
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(¾Åý‰
+E
+java:S1481D"*Remove this unused "clazz" local variable.(£…²÷ýÿÿÿÿ
+V	java:S125F"<This block of commented-out lines of code should be removed.(ùÉÉÿÿÿÿÿ
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(êŽð»ýÿÿÿÿ
+N	java:S106O"9Replace this use of System.out or System.err by a logger.(óŠ¸á
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(æ–Ý€ÿÿÿÿÿ
+V	java:S125U"<This block of commented-out lines of code should be removed.(‰‰“£úÿÿÿÿ
+O
+java:S1128 "-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8À ¡°š0
