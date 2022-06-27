@@ -1,13 +1,13 @@
-package lt.bit.vidinesKlases;
+package lt.bit.pirm.vidinesKlases;
 
 public class MyList {
-
+    
     private Object[] list;
-
+    
     public MyList() {
         this.list = new Object[0];
     }
-
+    
     public void add(Object o) {
         Object[] newList = new Object[this.list.length + 1];
         for (int i = 0; i < this.list.length; i++) {
@@ -20,11 +20,11 @@ public class MyList {
     public Object get(int index) {
         return this.list[index];
     }
-
+    
     public void set(int index, Object o) {
         this.list[index] = o;
     }
-
+    
     public void remove(int index) {
         Object[] newList = new Object[this.list.length - 1];
         for (int i = 0, j = 0; i < this.list.length; i++) {
@@ -34,7 +34,7 @@ public class MyList {
         }
         this.list = newList;
     }
-
+    
     public void insert(int index, Object o) {
         Object[] newList = new Object[this.list.length + 1];
         for (int i = 0, j = 0; i < newList.length; i++) {
@@ -46,11 +46,11 @@ public class MyList {
         }
         this.list = newList;
     }
-
+    
     public int size() {
         return this.list.length;
     }
-
+    
     public String toString() {
         String ret = "[";
         for (int i = 0; i < this.list.length; i++) {

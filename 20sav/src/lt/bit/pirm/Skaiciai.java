@@ -1,4 +1,4 @@
-package lt.bit;
+package lt.bit.pirm;
 
 public class Skaiciai {
 

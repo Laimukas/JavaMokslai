@@ -1,4 +1,4 @@
-package lt.bit.vidinesKlases;
+package lt.bit.pirm.vidinesKlases;
 
 public class Masina {
 
