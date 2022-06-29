@@ -1,6 +1,6 @@
 package lt.bit.antr;
 
-public class MyLinkedList {
+public class MyLinkedList<E> {
 
     private Node head;
 
@@ -8,7 +8,7 @@ public class MyLinkedList {
         this.head = null;
     }
 
-    public void add(Object o) {
+    public void add(E o) {
         Node node = new Node(o, null);
         if (this.head == null) {
             this.head = node;
@@ -21,7 +21,7 @@ public class MyLinkedList {
         }
     }
 
-    public Object get(int index) {
+    public E get(int index) {
         String ret = "";
         int count = -1;
         Node node = this.head;
@@ -32,54 +32,81 @@ public class MyLinkedList {
             }
             node = node.next;
         }
-        return ret;
+        return (E) ret;
+
+        // destytojo budas
+
+//        int i = 0;
+//        Node node = this.head;
+//        while (node != null) {
+//            if (i == index) {
+//                return node.value;
+//            }
+//            i++;
+//            node = node.next;
+//        }
+//        return null;
     }
 
-    public void set(int index, Object o) {
-        int count = -1;
+    public void set(int index, E o) {
+        int count = 0;
         Node node = this.head;
         while (node != null) {
-            count++;
             if (count == index) {
                 node.value = o;
             }
+            count++;
             node = node.next;
         }
+
+        //destytojo budas
+
+//        int i = 0;
+//        Node node = this.head;
+//        while (node != null) {
+//            if (i == index) {
+//                node.value = o;
+//                break;
+//            }
+//            i++;
+//            node = node.next;
+//        }
     }
 
     public void remove(int index) {
-
-        //------------nepasisekes mano remove metodas----ilsetis reikejo eit
-//        int count = -1;
-//        Node node = this.head;
-//        while (node != null) {
-//            count++;
-//            if (count == index) {
-//                node.value=null;
-//            }
-//            node = node.next;
-//        }
-        // ---------cia is MyList metodas REMOVE
-        //Object[] newList = new Object[this.list.length - 1];
-        //        for (int i = 0, j = 0; i < this.list.length; i++) {
-        //            if (i != index) {
-        //                newList[j++] = this.list[i];
-        //            }
-        //        }
-        //        this.list = newList;
+        if (index == 0) {
+            head=head==null?null:head.next;
+        } else {
+            int count = 0;
+            Node node = this.head;
+            while (node != null) {
+                if (count == index - 1) {
+                    node.next = node.next.next;
+                    break;
+                }
+                count++;
+                node = node.next;
+            }
+        }
     }
 
-    public void insert(int index, Object o) {
-//        int count = -1;
-//        Node node = this.head;
-//
-//        while (node != null) {
-//            count++;
-//            if (count == index) {
-//                node.value=o;
-//            }
-//            node = node.next;
-//        }
+    public void insert(int index, E o) {
+        if (index == 0) {
+            Node naujas = new Node(o, head);
+         head=naujas;
+        } else {
+            int count = 0;
+            Node node = this.head;
+            while (node != null) {
+                if (count == index - 1) {
+                    Node naujas = new Node(o, node.next);
+                    node.next = naujas;
+                    break;
+                }
+                count++;
+                node = node.next;
+            }
+        }
     }
 
     public int size() {
@@ -87,11 +114,18 @@ public class MyLinkedList {
         Node node = this.head;
         while (node != null) {
             count++;
-            if (node.next != null) {
-            }
             node = node.next;
         }
         return count;
+
+        //destytojo budas
+//        int i = 0;
+//        Node node = this.head;
+//        while (node != null) {
+//            i++;
+//            node = node.next;
+//        }
+//        return i;
     }
 
     public String toString() {
@@ -121,9 +155,9 @@ public class MyLinkedList {
 
     private class Node {
         Node next;
-        Object value;
+        E value;
 
-        public Node(Object value, Node next) {
+        public Node(E value, Node next) {
             this.next = next;
             this.value = value;
         }

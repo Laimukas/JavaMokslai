@@ -1,15 +1,15 @@
 package lt.bit.antr;
 
-public class MyList {
+public class MyList<E> {
     
-    private Object[] list;
+    private E[] list;
     
     public MyList() {
-        this.list = new Object[0];
+        this.list =(E[]) new Object[0];
     }
     
-    public void add(Object o) {
-        Object[] newList = new Object[this.list.length + 1];
+    public void add(E o) {
+        E[] newList =(E[]) new Object[this.list.length + 1];
         for (int i = 0; i < this.list.length; i++) {
             newList[i] = this.list[i];
         }
@@ -17,16 +17,16 @@ public class MyList {
         this.list = newList;
     }
 
-    public Object get(int index) {
+    public E get(int index) {
         return this.list[index];
     }
     
-    public void set(int index, Object o) {
+    public void set(int index, E o) {
         this.list[index] = o;
     }
     
     public void remove(int index) {
-        Object[] newList = new Object[this.list.length - 1];
+        E[] newList =(E[]) new Object[this.list.length - 1];
         for (int i = 0, j = 0; i < this.list.length; i++) {
             if (i != index) {
                 newList[j++] = this.list[i];
@@ -35,8 +35,8 @@ public class MyList {
         this.list = newList;
     }
     
-    public void insert(int index, Object o) {
-        Object[] newList = new Object[this.list.length + 1];
+    public void insert(int index, E o) {
+        E[] newList = (E[]) new Object[this.list.length + 1];
         for (int i = 0, j = 0; i < newList.length; i++) {
             if (i == index) {
                 newList[i] = o;

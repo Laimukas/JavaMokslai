@@ -1,0 +1,11 @@
+
+m
+java:S1104"RMake vardas a static final constant or non-public and provide accessors if needed.(§ ’ºùÿÿÿÿ
+n
+java:S1104 "SMake pavarde a static final constant or non-public and provide accessors if needed.(·èÄ‡üÿÿÿÿ
+j
+java:S1104!"UMake accountNo a static final constant or non-public and provide accessors if needed.(šÌÌ+
+m
+java:S1104""RMake amount a static final constant or non-public and provide accessors if needed.(¶â¤·ýÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ž½˜¿
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÃÅñ

@@ -1,0 +1,17 @@
+
+e
+java:S1104"OMake prk a static final constant or non-public and provide accessors if needed.(­üš§
+d
+java:S1104"OMake prd a static final constant or non-public and provide accessors if needed.(ı¨Å
+d
+java:S1104"NMake gk a static final constant or non-public and provide accessors if needed.(Ôú…ç
+d
+java:S1104	"NMake gd a static final constant or non-public and provide accessors if needed.(õÁÉƒ
+q
+java:S1104
+"VMake atsarginis a static final constant or non-public and provide accessors if needed.(²ùèïÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½˜¿
+]
+java:S2094"BRemove this empty class, write its code or make it an "interface".(¬²Óíûÿÿÿÿ
+I
+java:S1068".Remove this unused "parametrai" private field.(Şƒ“Ôüÿÿÿÿ
