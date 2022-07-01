@@ -1,0 +1,10 @@
+
+r	java:S127 "XRefactor the code in order to not assign to this loop counter from within the loop body.(ô’ıÒùÿÿÿÿ
+r	java:S127,"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÂÔƒØøÿÿÿÿ
+1
+java:S16439"Use a StringBuilder instead.(­Òöi
+2
+java:S1643;"Use a StringBuilder instead.(ÜÏØ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½˜¿
+o
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(˜ïâÿ

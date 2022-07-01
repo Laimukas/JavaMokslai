@@ -17,3 +17,13 @@ Y
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 V
 &src/lt/bit/pirm/vidinesKlases/Run.java,2\0\20c8dada61ee253ff43acb92ee23c20ab0279b49
+K
+src/lt/bit/antr/MyList.java,c\d\cdb49dc2729a54a78264d6a830ef67de37151f2d
+Q
+!src/lt/bit/antr/MyLinkedList.java,1\1\11caf58b4152ad73b584fe32499345a7ad753b22
+H
+src/lt/bit/pirm/Run.java,b\f\bf6e6949d6950057d242a5f1234e7ddf2e7050a2
+T
+$src/lt/bit/antr/interfeisai/Run.java,e\6\e676f5e63e6675f7b50ea41c12c62d072e5fa89d
+Y
+)src/lt/bit/pirm/vidinesKlases/MyList.java,1\d\1d6b6dbd83c2730624db0e88c5f21ca54ba27b9f
