@@ -30,6 +30,16 @@ public class Run {
         return Math.random();
     }
 
+    public  static double tustiVartai(int sk)
+            throws IOException,InterruptedException,ManoKlaida{
+        System.out.println("pradeda tustiVartai");
+        double ret = klaiduGeneratorius(sk);
+        System.out.println("baigia tustiVartai");
+        return ret;
+    }
+
+
+
     public static void main(String[] args) {
 
         try {
@@ -41,7 +51,7 @@ public class Run {
 
         System.out.println("pradzia");
         try {
-            double sk = klaiduGeneratorius(85);
+            double sk = tustiVartai(55);
             System.out.println("gavau rezultata: " + sk);
             System.out.println("dirbam toliau");
 //        } catch (IllegalArgumentException ex) {
@@ -57,7 +67,7 @@ public class Run {
         } catch (Exception ex) {
 //            System.out.println("Pats storiausias vartininkas: " + ex.getMessage());
 //            System.out.println(ex);
-//            ex.printStackTrace();
+            ex.printStackTrace();
 
         } finally {
 //            System.out.println("Sitas VISADA suveiks !!!");

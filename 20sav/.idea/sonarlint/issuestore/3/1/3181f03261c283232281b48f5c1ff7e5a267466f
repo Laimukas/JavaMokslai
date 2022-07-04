@@ -1,0 +1,8 @@
+
+W
+java:S1854"5Remove this useless assignment to local variable "k".(ýÇè–ýÿÿÿÿ8™Á¤„›0
+H
+java:S1481"&Remove this unused "k" local variable.(ýÇè–ýÿÿÿÿ8›Á¤„›0
+X	java:S125	"<This block of commented-out lines of code should be removed.(ž×8Á¤„›0
+X	java:S125"<This block of commented-out lines of code should be removed.(÷…¥Ù8²¨ƒ›0
+V	java:S125"<This block of commented-out lines of code should be removed.(‘ó¾©ÿÿÿÿÿ

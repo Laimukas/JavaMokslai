@@ -1,0 +1,16 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ºäŞ¡úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Öùè
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(µ‹¥êøÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(¶á­Óşÿÿÿÿ
+y
+java:S2142/"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(¯Ò‰
+€
+java:S2142C"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(±Ÿ—±ÿÿÿÿÿ8º¾ñÎœ0
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(ãŒˆ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(—€Óúøÿÿÿÿ
+Q	java:S1259"<This block of commented-out lines of code should be removed.(«“ÆÂ
+Q	java:S125D"<This block of commented-out lines of code should be removed.(âÄ—ğ
+Q	java:S125I"<This block of commented-out lines of code should be removed.(¹é€
+N	java:S106L"9Replace this use of System.out or System.err by a logger.(¤’£Ğ

@@ -1,0 +1,20 @@
+
+D
+java:S3740&"/Provide the parametrized type for this generic.(ÃåÛm
+D
+java:S3740+"/Provide the parametrized type for this generic.(àÖžf
+E
+java:S3740?"/Provide the parametrized type for this generic.(œˆõÊ
+o
+java:S22938"YReplace the type specification in this constructor call with the diamond operator ("<>").(à›àŸ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(…Ÿ²äþÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ð³æÂûÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(Èœþ—ûÿÿÿÿ
+N	java:S1061"9Replace this use of System.out or System.err by a logger.(à‚©¨
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(ç‘ë®üÿÿÿÿ
+V	java:S1255"<This block of commented-out lines of code should be removed.(‹ªü§ÿÿÿÿÿ
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(ñÜ›äøÿÿÿÿ8â†þÛ›0
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(í©Úßúÿÿÿÿ8â†þÛ›0
+U	java:S106G"9Replace this use of System.out or System.err by a logger.(‰âíÝ8â†þÛ›0
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(÷•ˆ½ÿÿÿÿÿ8ã†þÛ›0
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(ÇÞá”ýÿÿÿÿ8ã†þÛ›0
