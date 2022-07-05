@@ -1,0 +1,28 @@
+
+†
+java:S1319$"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ä´¼à
+b
+java:S2095}"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÚÍúª
+b
+java:S2095d"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(İØóƒ
+^
+java:S2095e"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(’À”ª
+M	java:S106"9Replace this use of System.out or System.err by a logger.(×Öv
+[
+java:S1612!"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(›î’â
+[
+java:S1612("@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ
+[
+java:S1612-"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(Ø«Ÿ
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(½ˆÉâ
+N	java:S106P"9Replace this use of System.out or System.err by a logger.(½ˆÉâ
+[
+java:S1612w"@Replace this lambda with method reference 'System.out::println'.(š¾â´ùÿÿÿÿ
+S	java:S106w"9Replace this use of System.out or System.err by a logger.(š¾â´ùÿÿÿÿ
