@@ -7,7 +7,7 @@ public class Run {
 
     public static void main(String[] args) {
         try (
-                FileInputStream fis = new FileInputStream("a.txt");
+                FileInputStream fis = new FileInputStream("D:\\Dokumentai\\Coding\\Pamokos\\JavaMokslai\\21sav\\src\\lt\\bit\\io\\a.txt");
                 Reader r = new InputStreamReader(fis, "UTF-8");
         ) {
             int b;
@@ -31,7 +31,7 @@ public class Run {
         FileInputStream fis = null;
         Reader r = null;
         try {
-            fis = new FileInputStream("a.txt");
+            fis = new FileInputStream("D:\\Dokumentai\\Coding\\Pamokos\\JavaMokslai\\21sav\\src\\lt\\bit\\io\\a.txt");
             r = new InputStreamReader(fis, "UTF-8");
             int b;
             while ((b = r.read()) != -1) {
