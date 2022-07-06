@@ -1,0 +1,29 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š‰ŸÇ
+g
+java:S2095a"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(Éşï½ûÿÿÿÿ
+^
+java:S2095L"HUse try-with-resources or close this "CSVPrinter" in a "finally" clause.(Ñóõñ
+g
+java:S2095K"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(æî…ùÿÿÿÿ
+_
+java:S2583A"DChange this condition so that it does not always evaluate to "false"(ºÇ©úÿÿÿÿ
+_
+java:S2583."DChange this condition so that it does not always evaluate to "false"(ºÇ©úÿÿÿÿ
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(‰ÅÜøÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(Üèâ“úÿÿÿÿ
+V
+java:S1612#"@Replace this lambda with method reference 'System.out::println'.(Ñı™
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(Ñı™
+S	java:S106("9Replace this use of System.out or System.err by a logger.(·óõÁüÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(ÁÈ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(é»µÌ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(½ã÷Ì
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(µ£šú
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(ÁÈ
+N	java:S106="9Replace this use of System.out or System.err by a logger.(é»µÌ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(€òÊñşÿÿÿÿ
+V
+java:S1612\"@Replace this lambda with method reference 'System.out::println'.(Ñı™
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(Ñı™
