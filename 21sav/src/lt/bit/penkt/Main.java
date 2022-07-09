@@ -10,6 +10,8 @@ public class Main {
 
     public static final String WEB_DIR = "src/lt/bit/penkt";
 
+    public static String TEMP_DIR = "";
+
     public static void main(String[] args) {
         try (
                 ServerSocket sc = new ServerSocket(8888);
@@ -48,43 +50,65 @@ public class Main {
                                 bw.write("\r\n");
 
                             } else {
-                                File f = new File(WEB_DIR + resourceName);
-//                                System.out.println("resourceName: "+resourceName);
-//                                System.out.println(parts);
-//                                System.out.println("toPath: "+f.toPath());
-//                                System.out.println("Path: "+f.getPath());
-//                                System.out.println("AbsolutePath: "+f.getAbsolutePath());
-//                                System.out.println("getAbsoluteFile"+f.getAbsoluteFile());
+                                File f = new File(WEB_DIR +TEMP_DIR+ resourceName);
+                                System.out.println("resourceName: "+resourceName);
                                 if (f.isDirectory()) {
-                                    bw.write("HTTP/1.1 200 OK\r\n");
-                                    bw.write("Content-Type: text/html\r\n");
-                                    bw.write("\r\n");
-                                    bw.write("<html>\r\n");
-                                    bw.write("<head>\n" +
-                                            "    <style>\n" +
-                                            "h1 {text-align: center;}\n" +
-                                            "h3 {text-align: center;}\n" +
-                                            "p {text-align: center;}\n" +
-                                            "</style>\n" +
-                                            "</head>");
-                                    bw.write("<body>\r\n");
-                                    for (File fileInDir : f.listFiles()) {
-                                        // tiesiog isgaunam failu pavadinimus direktorijoj
-//                                        bw.write(fileInDir.getName()+"\n");
-                                        // linkus kuriam is failu esanciu direktorijoj
-                                        bw.write("<p><a href=\"" + fileInDir.getName() + "\">" + fileInDir.getName() + "</p></a>\r\n");
-//                                        bw.write("<h6>Path</h6>\r\n");
-//                                        bw.write(fileInDir.getPath());
-//                                        bw.write("<h6>Absolute Path</h6>\r\n");
-//                                        bw.write(fileInDir.getAbsolutePath());
-//                                        bw.write("<p>Web_Dir: "+WEB_DIR+"<h1>*</h1>" +" resourceName: "+resourceName+"<h1>*</h1>" +",cia dar resourceLine: "+requestLine+"<h1>*</h1>" +"</p>\r\n");
+                                    //cia metodas jog esant iprastai dir atidarinetu jos failus
+                                    if (resourceName.equals("/")){
+                                        TEMP_DIR="";
+                                        bw.write("HTTP/1.1 200 OK\r\n");
+                                        bw.write("Content-Type: text/html\r\n");
+                                        bw.write("\r\n");
+                                        bw.write("<html>\r\n");
+                                        bw.write("<head>\n" +
+                                                "    <style>\n" +
+                                                "h1 {text-align: center;}\n" +
+                                                "h3 {text-align: center;}\n" +
+                                                "p {text-align: center;}\n" +
+                                                "</style>\n" +
+                                                "</head>");
+                                        bw.write("<body>\r\n");
+                                        bw.write("<p><button type=\"submit\" form=\"form1\" value=\"Submit\">Sort desc</button>" +
+                                                "<button type=\"submit\" form=\"form1\" value=\"Submit\">Sort asc</button></p>\r\n");
                                         bw.write("<p>------------------------</p>\r\n");
+                                        for (File fileInDir : f.listFiles()) {
 
-                                    }
-                                    bw.write("</body>\r\n");
-                                    bw.write("</html>\r\n");
-                                    bw.write("\r\n");
-                                    String TEMP_PATH = WEB_DIR + resourceName;
+                                            bw.write("<p><a href=\"" + fileInDir.getName() + "\">" +TEMP_DIR+ fileInDir.getName() + "</a>\n</p>");
+                                            bw.write("<p>------------------------</p>\r\n");
+
+                                        }
+                                        bw.write("</body>\r\n");
+                                        bw.write("</html>\r\n");
+                                        bw.write("\r\n");
+                                        String TEMP_PATH = WEB_DIR + resourceName;
+                                    }else{
+                                        //cia gaunasi jog kopina dir nauja ir ja prideda prie atidaromo failo
+                                        TEMP_DIR=resourceName+"/";
+                                        System.out.println(TEMP_DIR);
+                                        bw.write("HTTP/1.1 200 OK\r\n");
+                                        bw.write("Content-Type: text/html\r\n");
+                                        bw.write("\r\n");
+                                        bw.write("<html>\r\n");
+                                        bw.write("<head>\n" +
+                                                "    <style>\n" +
+                                                "h1 {text-align: center;}\n" +
+                                                "h3 {text-align: center;}\n" +
+                                                "p {text-align: center;}\n" +
+                                                "</style>\n" +
+                                                "</head>");
+                                        bw.write("<body>\r\n");
+                                        bw.write("<p><button type=\"submit\" form=\"form1\" value=\"Submit\">Sort desc</button>" +
+                                                "<button type=\"submit\" form=\"form1\" value=\"Submit\">Sort asc</button></p>\r\n");
+                                        bw.write("<p>------------------------</p>\r\n");
+                                        for (File fileInDir : f.listFiles()) {
+                                            bw.write("<p><a href=\"" + fileInDir.getName() + "\">" + TEMP_DIR+fileInDir.getName() + "</a>\n</p>");
+                                            bw.write("<p>------------------------</p>\r\n");
+
+                                        }
+                                        bw.write("</body>\r\n");
+                                        bw.write("</html>\r\n");
+                                        bw.write("\r\n");
+                                        }
                                 } else {
                                     try (
                                             InputStream fis = new FileInputStream(f);

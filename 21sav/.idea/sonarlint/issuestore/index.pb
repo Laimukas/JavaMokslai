@@ -14,3 +14,17 @@ I
 src/lt/bit/trec/Main.java,5\f\5fe598b8eaca56cd5fed6e5cf4d902e46d2a6ab9
 H
 src/lt/bit/antr/read.txt,0\d\0d2d82efce2b79cf8180f564710f35e3a88c7e89
+F
+src/lt/bit/io/Run.java,9\3\93551157ddc4ffacd61545700bd7f89447a053ef
+H
+src/lt/bit/antr/Run.java,3\1\3181f03261c283232281b48f5c1ff7e5a267466f
+C
+src/lt/bit/io/a.txt,9\e\9ea70ec7ed23b93f9ef1d512c1c78956228aae47
+q
+Asrc/lt/bit/antr/uzduotis2/DestytojoAliaus/BadRecordException.java,6\b\6b263ae3439c7816073f23f41875158709973e14
+T
+$src/lt/bit/antr/uzduotis2/Main2.java,a\0\a0db364648dafbff8fb4ebdf38efa0189060008c
+S
+#src/lt/bit/antr/uzduotis2/Main.java,7\d\7d21a2bdc159eb294d2771408b9e3e4c97433d6f
+b
+2src/lt/bit/antr/uzduotis2/DestytojoAliaus/Run.java,b\6\b60808476c86943678c1e08a55ab7f1f8e0af8b4

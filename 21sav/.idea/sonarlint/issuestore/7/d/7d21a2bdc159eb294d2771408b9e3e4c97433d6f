@@ -1,0 +1,49 @@
+
+g	java:S112^"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8”•üœ0
+g	java:S112`"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ž”•üœ0
+g	java:S112j"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ž”•üœ0
+g	java:S112l"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ž”•üœ0
+g	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ž”•üœ0
+g	java:S112w"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ž”•üœ0
+g	java:S112y"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ÿ”•üœ0
+Œ
+java:S13199"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®„m8 ”•üœ0
+‚
+java:S13199"fThe type of "zmones" should be an interface such as "List" rather than the implementation "ArrayList".(®„m8¡”•üœ0
+ˆ
+java:S1319M"fThe type of "zmones" should be an interface such as "List" rather than the implementation "ArrayList".(èÑ“ùÿÿÿÿ8¢”•üœ0
+
+java:S1319V"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(õ¢£€8£”•üœ0
+ˆ
+java:S1319r"fThe type of "zmones" should be an interface such as "List" rather than the implementation "ArrayList".(åüûñúÿÿÿÿ8£”•üœ0
+{
+java:S1488J"^Immediately return this expression instead of assigning it to the temporary variable "zmogus".(Ú‚ýÕ8¦”•üœ0
+`
+java:S2583!"CChange this condition so that it does not always evaluate to "true"(ž·è€8™••üœ0
+>	java:S131'""Add a default case to this switch.(Á«Åá8¨••üœ0
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(¸ÓÅ§8®••üœ0
+U	java:S106:"9Replace this use of System.out or System.err by a logger.(ÁŽžÈ8¯••üœ0
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(é»µÌ8°••üœ0
+U	java:S106F"9Replace this use of System.out or System.err by a logger.(ÁŽžÈ8²••üœ0
+U	java:S106H"9Replace this use of System.out or System.err by a logger.(é»µÌ8²••üœ0
+U	java:S106N"9Replace this use of System.out or System.err by a logger.(„šÁÀ8³••üœ0
+t
+java:S6204R"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(èÜé¥úÿÿÿÿ8©õ¤üœ0
+]
+java:S1612S"@Replace this lambda with method reference 'System.out::println'.(È¥ôÊ8ªõ¤üœ0
+U	java:S106S"9Replace this use of System.out or System.err by a logger.(È¥ôÊ8¸••üœ0
+U	java:S106T"9Replace this use of System.out or System.err by a logger.(óÌ…¬8¸••üœ0
+a
+java:S2147_"DCombine this catch with the one at line 93, which has the same body.(ï­£Ä8Â••üœ0
+b
+java:S2147k"ECombine this catch with the one at line 105, which has the same body.(ï­£Ä8Ç••üœ0
+b
+java:S2147m"ECombine this catch with the one at line 105, which has the same body.(ýàÑÎ8È••üœ0
+b
+java:S2147x"ECombine this catch with the one at line 118, which has the same body.(ï­£Ä8Í••üœ0
+Z	java:S106}"9Replace this use of System.out or System.err by a logger.(¨ëôûÿÿÿÿ8Ï••üœ0
+Z	java:S106~"9Replace this use of System.out or System.err by a logger.(½ö¬ìúÿÿÿÿ8Ï••üœ0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Á–ÿ8Ï••üœ0
+V	java:S106€"9Replace this use of System.out or System.err by a logger.(Íÿ«É8Ð••üœ0
+[	java:S106"9Replace this use of System.out or System.err by a logger.(÷¶•Øûÿÿÿÿ8Ð••üœ0
+[	java:S106‚"9Replace this use of System.out or System.err by a logger.(ê¢Þßüÿÿÿÿ8Ð••üœ0
