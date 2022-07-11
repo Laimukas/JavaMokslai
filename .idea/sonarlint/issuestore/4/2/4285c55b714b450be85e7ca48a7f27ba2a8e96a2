@@ -1,0 +1,8 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹ÀÜÝ
+Y
+java:S2259Q"DA "NullPointerException" could be thrown; "vardas" is nullable here.(æ“°9
+_
+java:S2583T"DChange this condition so that it does not always evaluate to "false"(ÞçÙýÿÿÿÿ
+>
+java:S3010"#Remove this assignment of "nextId".(´¦¯Ðüÿÿÿÿ

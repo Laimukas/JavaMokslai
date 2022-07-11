@@ -1,0 +1,15 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ËãÒî
+Q
+java:S1854"6Remove this useless assignment to local variable "z4".(„øÏÒıÿÿÿÿ
+B
+java:S1481"'Remove this unused "z4" local variable.(„øÏÒıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(†ßïıÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ºªñùÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(°»íŠ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(†ßïıÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(úÇ ÷ÿÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(¼¶Óúÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(ƒËÌ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(ïÔÃ‰

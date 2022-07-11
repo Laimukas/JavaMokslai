@@ -28,3 +28,31 @@ S
 #src/lt/bit/antr/uzduotis2/Main.java,7\d\7d21a2bdc159eb294d2771408b9e3e4c97433d6f
 b
 2src/lt/bit/antr/uzduotis2/DestytojoAliaus/Run.java,b\6\b60808476c86943678c1e08a55ab7f1f8e0af8b4
+H
+src/lt/bit/ketv/Run.java,f\1\f1945da73f62cf10b8e9e32e98a416bb033e55c2
+I
+src/lt/bit/io/utf16le.txt,3\6\364a1d9cce41128ad866c40f75569d33011c0031
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+R
+"src/lt/bit/penkt/dir2/stupido.html,f\4\f4412f51ef5ff3054ebcbe7a52e6a7041c558736
+O
+src/lt/bit/penkt/dir2/gogo.html,6\4\645c0e0475d8321a3fd3a020de44a938af690122
+Q
+!src/lt/bit/penkt/dir1/krabas.html,2\9\29b00a4e4f0b5155131b04ad8d134447393ee0b8
+Q
+!src/lt/bit/penkt/dir1/coding.html,6\a\6aae9c7011f6d5d3f0a856fd65a3ccf60b91793c
+P
+ src/lt/bit/penkt/dir1/labas.html,a\1\a15c1294c967e3e078abdaa817201011e00795f0
+I
+src/lt/bit/penkt/ate.html,7\f\7f739198c35aa11a9d1f3c93cee536b2fedf6d5a
+K
+src/lt/bit/penkt/labas.html,0\0\00cec003472f2976cd4ac97bcc816b8b8da0345b
+e
+5src/lt/bit/antr/uzduotis2/DestytojoAliaus/Zmogus.java,1\8\18053927d94d8fcc181f7a9c7ef6fd237dbb93a5
+I
+src/lt/bit/antr/write.txt,e\f\ef8bad2827e25042032bb7ec3dc2cccd62bb4413
+J
+src/lt/bit/penkt/Main.java,4\3\4387118303967fd169ee2f7205c337f203ab04c9
+K
+src/lt/bit/penkt/Main2.java,0\6\06e8d0c98b2fe6c67b6c6e1d87d84b0bfac0e77d

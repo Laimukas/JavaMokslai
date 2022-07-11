@@ -1,0 +1,31 @@
+
+L
+java:S37406"/Provide the parametrized type for this generic.(³Í¹‚8ÙÎçñ0
+u
+java:S1192Q"SDefine a constant instead of duplicating this literal "HTTP/1.1 200 OK\r
+" 3 times.(‡€‚¨øÿÿÿÿ8ÚÎçñ0
+c
+java:S1192&"FDefine a constant instead of duplicating this literal "UTF-8" 3 times.(û˜Ÿ8ÚÎçñ0
+x
+java:S1192R"[Define a constant instead of duplicating this literal "Content-Type: text/html\r
+" 3 times.(Ü¯‹8ÛÎçñ0
+W
+java:S1141$"5Extract this nested try block into a separate method.(ê«ûÕşÿÿÿÿ8İÎçñ0
+X
+java:S1141‹"5Extract this nested try block into a separate method.(ê«ûÕşÿÿÿÿ8ŞÎçñ0
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 76 to the 15 allowed.(Çµí‘8ØÑçñ0
+V
+java:S4719&"9Replace charset name argument with StandardCharsets.UTF_8(û˜Ÿ8İÑçñ0
+[
+java:S4719)"9Replace charset name argument with StandardCharsets.UTF_8(”Éì—ûÿÿÿÿ8êÑçñ0
+]	java:S125,"<This block of commented-out lines of code should be removed.(¿„ÅÖÿÿÿÿÿ8ìÑçñ0
+U	java:S1062"9Replace this use of System.out or System.err by a logger.(³¦œ8îÑçñ0
+u
+java:S1602t"SRemove useless curly braces around statement and then remove useless return keyword(É„¥çûÿÿÿÿ8şÑçñ0
+u
+java:S1602x"SRemove useless curly braces around statement and then remove useless return keyword(É„¥çûÿÿÿÿ8ŠÒçñ0
+W
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(ÑÛ¼á8Òçñ0
+[	java:S106£"9Replace this use of System.out or System.err by a logger.(çİÙöøÿÿÿÿ8šÒçñ0
+V	java:S106¨"9Replace this use of System.out or System.err by a logger.(şçúÚ8›Òçñ0

@@ -1,0 +1,27 @@
+
+D
+java:S3740C"/Provide the parametrized type for this generic.(ÿ°ø	
+P
+java:S1141R"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹ÀÜİ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(½ö¬ìúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Á–ÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Íÿ«É
+S	java:S106"9Replace this use of System.out or System.err by a logger.(÷¶•Øûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¼ÕÁ‹ùÿÿÿÿ
+7	java:S131""Add a default case to this switch.(—¶²
+N	java:S106""9Replace this use of System.out or System.err by a logger.(ã§…“
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(€âü
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(¨ùà²ıÿÿÿÿ
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(§û²Ë
+N
+java:S4719F"9Replace charset name argument with StandardCharsets.UTF_8(Ûä‡r
+S	java:S106\"9Replace this use of System.out or System.err by a logger.(„Ó±âûÿÿÿÿ
+N	java:S106e"9Replace this use of System.out or System.err by a logger.(Ğæ€°
+S	java:S106h"9Replace this use of System.out or System.err by a logger.(„Ó±âûÿÿÿÿ
+O
+java:S4719v"9Replace charset name argument with StandardCharsets.UTF_8(¾«òí
+S	java:S106|"9Replace this use of System.out or System.err by a logger.(„Ó±âûÿÿÿÿ
+P
+java:S4719ˆ"9Replace charset name argument with StandardCharsets.UTF_8(¾«òí
+T	java:S106"9Replace this use of System.out or System.err by a logger.(„Ó±âûÿÿÿÿ
