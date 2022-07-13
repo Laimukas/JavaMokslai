@@ -24,8 +24,6 @@ b
 2src/lt/bit/antr/uzduotis2/DestytojoAliaus/Run.java,b\6\b60808476c86943678c1e08a55ab7f1f8e0af8b4
 I
 src/lt/bit/io/utf16le.txt,3\6\364a1d9cce41128ad866c40f75569d33011c0031
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 R
 "src/lt/bit/penkt/dir2/stupido.html,f\4\f4412f51ef5ff3054ebcbe7a52e6a7041c558736
 J
@@ -36,23 +34,3 @@ Q
 !src/lt/bit/penkt/dir1/krabas.html,2\9\29b00a4e4f0b5155131b04ad8d134447393ee0b8
 Q
 !src/lt/bit/penkt/dir1/coding.html,6\a\6aae9c7011f6d5d3f0a856fd65a3ccf60b91793c
-P
- src/lt/bit/penkt/dir1/labas.html,a\1\a15c1294c967e3e078abdaa817201011e00795f0
-I
-src/lt/bit/penkt/ate.html,7\f\7f739198c35aa11a9d1f3c93cee536b2fedf6d5a
-K
-src/lt/bit/penkt/labas.html,0\0\00cec003472f2976cd4ac97bcc816b8b8da0345b
-e
-5src/lt/bit/antr/uzduotis2/DestytojoAliaus/Zmogus.java,1\8\18053927d94d8fcc181f7a9c7ef6fd237dbb93a5
-I
-src/lt/bit/antr/write.txt,e\f\ef8bad2827e25042032bb7ec3dc2cccd62bb4413
-K
-src/lt/bit/penkt/Main2.java,0\6\06e8d0c98b2fe6c67b6c6e1d87d84b0bfac0e77d
-I
-src/lt/bit/trec/Main.java,5\f\5fe598b8eaca56cd5fed6e5cf4d902e46d2a6ab9
-H
-src/lt/bit/antr/Run.java,3\1\3181f03261c283232281b48f5c1ff7e5a267466f
-H
-src/lt/bit/ketv/Run.java,f\1\f1945da73f62cf10b8e9e32e98a416bb033e55c2
-F
-src/lt/bit/io/Run.java,9\3\93551157ddc4ffacd61545700bd7f89447a053ef
