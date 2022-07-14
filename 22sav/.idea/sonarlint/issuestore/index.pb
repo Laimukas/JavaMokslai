@@ -1,28 +1,8 @@
 
 9
 	22sav.iml,5\3\5357d3fe97740ffabe9834f2ce2d68b80d7edc4f
-I
-src/lt/bit/pirm/Main.java,7\3\73c60d9f571259b1881ada81b9c8117be52f9133
-J
-src/lt/bit/pirm/Main3.java,8\0\80bf3be6b3c655411cc9f9f8655faf40e5289625
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
-I
-src/lt/bit/antr/Main.java,3\c\3cb2e0a35a39384c3b434dd33a20904ef0276383
 J
 src/lt/bit/antr/Main2.java,3\3\33e9bb1484c39f4c0625971ebfdcbe65983e0a04
-J
-src/lt/bit/pirm/Main2.java,5\0\508ea883ca3668ff4c7fead2fc16e59af537f55e
-J
-src/lt/bit/pirm/Main4.java,4\8\484f20845e2ff4ded3eb77ad616bbde19abad765
-M
-src/lt/bit/trec/Menesiai.java,7\4\7488c6a02863d31d3cc97889b17845c4a5b6ab7a
-O
-src/lt/bit/trec/MetuLaikai.java,3\e\3e117604628e1e5c1e04820e869b9dc157c5507c
-H
-src/lt/bit/trec/Run.java,e\0\e0a3fcde24f722de993b631879d4e7dfe6010e87
-I
-src/lt/bit/trec/Run2.java,5\b\5bf76ddfd26415adea8aae0e0b3c3095d5d36768
 K
 src/lt/bit/antr/Sraige.java,d\3\d3a523ae7ab88e9369c81b8684b9aece890dc509
 K
@@ -33,5 +13,3 @@ O
 src/lt/bit/pirm/Sumuotojas.java,2\9\298452299b0bbe07841c569fdd0e3a518b27ad39
 O
 src/lt/bit/trec/Sumuotojas.java,e\9\e9135296dd86e72f00b4762f8debae7fa8f8b0c2
-J
-src/lt/bit/trec/RunND.java,b\d\bdc4c0cadef4f0ad4bd950cfa3c09f76722c3b7b

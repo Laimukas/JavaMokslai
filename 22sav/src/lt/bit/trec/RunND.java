@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class RunND {
+    //mano sprendimo budas
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList norimiMenesiai = new ArrayList();
@@ -45,14 +46,11 @@ public class RunND {
                     laikaiDienos.put(metuLaikai,dienuKiekis);
                     System.out.println("atnaujintas hashmap "+laikaiDienos);
                 }
-
                 System.out.println("Menuo " + Menesiai.menesis(i) + " ikrautas i Lista.");
-
             }
         }
         System.out.println("*-----------------------*");
         System.out.println("Rezultatai sukurti is menesiu: " + norimiMenesiai);
         System.out.println("Sezonai ir gautos dienos is menesiu: "+laikaiDienos);
     }
-
 }

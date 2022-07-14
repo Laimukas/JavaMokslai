@@ -177,8 +177,6 @@ OOOPTryliktaPaskaita/src/main/java/exercises/studentai/StudentuGrupiuKlaida.java
 VOOPTryliktaPaskaita/src/main/java/exercises/sportininkai/SportininkuKomanduKlaida.java,9\0\90817fabbf70fb811c5d031e7fc24c1ab971e25f
 O
 OOPKeturioliktaPaskaita/pom.xml,7\7\777a1c5663e6c485e289145c3b5e0e9bdb03ed75
-c
-3OOPKeturioliktaPaskaita/OOPketurioliktaPaskaita.iml,0\9\09a94262ac720ab6105df4cf4e349a8b85fb687c
 Y
 )OOPSeventhProject/src/exercise12/Car.java,5\a\5ab48a86e2a46f232359fdc8baf1ed97a181a8d0
 `
@@ -189,10 +187,6 @@ N
 OOPSeventhProject/src/Box.java,0\9\094becaa3ed548abc3c1e341fb1ea674eaf3210f
 R
 "OOPSeventhProject/src/Element.java,6\3\63a82e0e94b2898c9df9a21f0939671e91a49416
-t
-DOOPTryliktaPaskaita/src/main/java/exercises/studentai/Studentas.java,c\f\cfd81746d7e56038e6c40052d77c035270829408
-o
-?OOPTryliktaPaskaita/src/main/java/exercises/studentai/Main.java,e\0\e096c60b3bfc77de6b9b720edd90a0cab3127692
 x
 HOOPTryliktaPaskaita/src/main/java/exercises/studentai/StudentuGrupe.java,8\7\87852509d30b0de494b7d25a1c647e30e24d7a5a
 \
@@ -245,8 +239,6 @@ e
 5OOPPenkioliktaPaskaita/src/main/resources/adresai.csv,b\f\bf61f1c36a0c64508ae3ba33dff21c03fd4e8ad1
 v
 FOOPTryliktaPaskaita/src/main/java/exercises/kandidatai/Kandidatas.java,3\5\356d9bbeb431ebf54cda54bc5ed3223a92381351
-
-OOOPPenkioliktaPaskaita/src/main/java/LaboratorinisNR3/AdresuKnygutesKlaida.java,6\8\6832449e9ee5b3382e7fcba1e4eeef81559c1929
 x
 HOOPPenkioliktaPaskaita/src/main/java/LaboratorinisNR3/AdresuKnygute.java,a\9\a960b1406d36af5cd172372552ad588a913ba6d9
 v
@@ -257,16 +249,12 @@ j
 :OOPVienuoliktaPaskaita/src/main/java/exercises/Person.java,3\9\399409b0e3162721696d0ee845e5a6ceeceed77e
 s
 COOPVienuoliktaPaskaita/src/main/java/exercises/EmployeeWrapper.java,0\5\05d9a5493dc5dcdbfd3a2b6eefb179716a5abbf6
-q
-AOOPVienuoliktaPaskaita/src/main/java/exercises/StudentsGroup.java,6\5\6503f4787c20a967356ffcdcbda8adfed07bec83
 t
 DOOPVienuoliktaPaskaita/src/main/java/exercises/exercises36/Main.java,d\4\d4fe0bfbe9eea64c641a6300e3c1cdcd5cf98e50
 ˆ
 XOOPVienuoliktaPaskaita/src/main/java/exercises/exercises36/ThreadPlaygroundRunnable.java,d\8\d8dadaa6da109765cdbbd2306f6697b3b50d6948
 f
 6OOPKeturioliktaPaskaita/src/main/resources/tekstas.txt,d\4\d48ac8386ffa5e88b4c2145151bccb2f2e7011fd
-„
-TOOPKeturioliktaPaskaita/src/main/java/LaboratorinisDarbasNR2/FailoNuskaitytuvas.java,6\1\6188cbacbbac7302830c953c98299ef1d149ff87
 z
 JOOPTryliktaPaskaita/src/main/java/exercises/sportininkai/Sportininkas.java,0\8\0826aa930bda5e1a906d28f6342106dcaa03bde2
 €
@@ -285,9 +273,23 @@ N
 20sav/src/lt/bit/ketv/Run.java,5\0\50bff2660cd1112e07da3bc6f3ef65218126ac9d
 O
 20sav/src/lt/bit/ketv/Run2.java,8\f\8fc7143aef3d8aeeb97e00a9a028019b829b0c9f
-s
-COOPVienuoliktaPaskaita/src/main/java/exercises/exercise35/Main.java,f\7\f7f00f9fcf471364f845d141234c04060e9df97f
 k
 ;21sav/src/lt/bit/antr/uzduotis2/DestytojoAliaus/Zmogus.java,4\2\4285c55b714b450be85e7ca48a7f27ba2a8e96a2
+s
+COOPVienuoliktaPaskaita/src/main/java/exercises/exercise35/Main.java,f\7\f7f00f9fcf471364f845d141234c04060e9df97f
 h
 821sav/src/lt/bit/antr/uzduotis2/DestytojoAliaus/Run.java,7\1\71621fe40f004ccef2bde5b78cc58439eb8b3222
+„
+TOOPKeturioliktaPaskaita/src/main/java/LaboratorinisDarbasNR2/FailoNuskaitytuvas.java,6\1\6188cbacbbac7302830c953c98299ef1d149ff87
+o
+?OOPTryliktaPaskaita/src/main/java/exercises/studentai/Main.java,e\0\e096c60b3bfc77de6b9b720edd90a0cab3127692
+t
+DOOPTryliktaPaskaita/src/main/java/exercises/studentai/Studentas.java,c\f\cfd81746d7e56038e6c40052d77c035270829408
+c
+3OOPKeturioliktaPaskaita/OOPketurioliktaPaskaita.iml,0\9\09a94262ac720ab6105df4cf4e349a8b85fb687c
+d
+4OOPSesioliktaPaskaita/src/main/resources/adresai.csv,7\1\716ddaf53330d16502c186d22945b6eafda33ec1
+q
+AOOPVienuoliktaPaskaita/src/main/java/exercises/StudentsGroup.java,6\5\6503f4787c20a967356ffcdcbda8adfed07bec83
+
+OOOPPenkioliktaPaskaita/src/main/java/LaboratorinisNR3/AdresuKnygutesKlaida.java,6\8\6832449e9ee5b3382e7fcba1e4eeef81559c1929

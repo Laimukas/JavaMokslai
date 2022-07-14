@@ -1,0 +1,34 @@
+
+‚
+java:S4165"eRemove this useless assignment; "startas" already holds the assigned value along all execution paths.(¨÷–ß8Ğ×¶ÁŸ0
+‚
+java:S4165"eRemove this useless assignment; "startas" already holds the assigned value along all execution paths.(¨÷–ß8ö†±ÁŸ0
+‚
+java:S4165"eRemove this useless assignment; "finisas" already holds the assigned value along all execution paths.(û—‹8È˜·ÁŸ0
+‚
+java:S4165"eRemove this useless assignment; "finisas" already holds the assigned value along all execution paths.(û—‹8º§²ÁŸ0
+„
+java:S4165"bRemove this useless assignment; "name" already holds the assigned value along all execution paths.(É´“ıÿÿÿÿ8Ø’µÁŸ0
+L
+java:S1172"*Remove this unused method parameter "nuo".(ë˜‹¹úÿÿÿÿ8åÀ¬ÁŸ0
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(¾ÖÇ¬ıÿÿÿÿ8½•¨ÁŸ0
+L
+java:S1172"*Remove this unused method parameter "nuo".(à…Äıÿÿÿÿ8ßÖ·ÁŸ0
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(¾ÖÇ¬ıÿÿÿÿ8İ’µÁŸ0
+]	java:S125:"<This block of commented-out lines of code should be removed.(¹Ùšüÿÿÿÿ8ğåÖ¡Ÿ0
+N	java:S106A"9Replace this use of System.out or System.err by a logger.(Ó–ğÀ
+]	java:S125?"<This block of commented-out lines of code should be removed.(‰«üıøÿÿÿÿ8ÆÖ¡Ÿ0
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(ŞÎ¥ò8ÒŞÕ¡Ÿ0
+Q	java:S125G"<This block of commented-out lines of code should be removed.(ñŠò
+L
+java:S1656"/Remove or correct this useless self-assignment.(û—‹8„‡±ÁŸ0
+Q
+java:S1656"/Remove or correct this useless self-assignment.(É´“ıÿÿÿÿ8È§²ÁŸ0
+L
+java:S1656"/Remove or correct this useless self-assignment.(û—‹8ã’µÁŸ0
+L
+java:S1656"/Remove or correct this useless self-assignment.(¨÷–ß8Ş×¶ÁŸ0
+L
+java:S1656"/Remove or correct this useless self-assignment.(¨÷–ß8Ù˜·ÁŸ0

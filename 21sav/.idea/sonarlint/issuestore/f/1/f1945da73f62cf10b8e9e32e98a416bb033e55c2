@@ -1,0 +1,11 @@
+
+W
+java:S1141"5Extract this nested try block into a separate method.(ê«ûÕşÿÿÿÿ8‚¹çÍ0
+V
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(û˜Ÿ8’»çÍ0
+[
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(”Éì—ûÿÿÿÿ8“»çÍ0
+]	java:S125""<This block of commented-out lines of code should be removed.(¿„ÅÖÿÿÿÿÿ8•»çÍ0
+U	java:S106("9Replace this use of System.out or System.err by a logger.(³¦œ8•»çÍ0
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(çİÙöøÿÿÿÿ8œ»çÍ0
+U	java:S106N"9Replace this use of System.out or System.err by a logger.(şçúÚ8»çÍ0

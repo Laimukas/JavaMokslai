@@ -1,0 +1,10 @@
+
+e
+java:S1192"HDefine a constant instead of duplicating this literal "Sraige " 3 times.(¬šÏö8”’ÓÂŸ0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¬šÏö8«’ÓÂŸ0
+€
+java:S2142&"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿ8¬’ÓÂŸ0
+T	java:S106*"9Replace this use of System.out or System.err by a logger.(¹š—_8¯’ÓÂŸ0
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(æëã’ùÿÿÿÿ8°’ÓÂŸ0
+K
+java:S21403")Use "java.util.Random.nextInt()" instead.(ÑÚÿüÿÿÿÿ8±’ÓÂŸ0
