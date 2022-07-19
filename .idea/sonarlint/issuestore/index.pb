@@ -281,15 +281,19 @@ h
 821sav/src/lt/bit/antr/uzduotis2/DestytojoAliaus/Run.java,7\1\71621fe40f004ccef2bde5b78cc58439eb8b3222
 „
 TOOPKeturioliktaPaskaita/src/main/java/LaboratorinisDarbasNR2/FailoNuskaitytuvas.java,6\1\6188cbacbbac7302830c953c98299ef1d149ff87
-o
-?OOPTryliktaPaskaita/src/main/java/exercises/studentai/Main.java,e\0\e096c60b3bfc77de6b9b720edd90a0cab3127692
-t
-DOOPTryliktaPaskaita/src/main/java/exercises/studentai/Studentas.java,c\f\cfd81746d7e56038e6c40052d77c035270829408
 c
 3OOPKeturioliktaPaskaita/OOPketurioliktaPaskaita.iml,0\9\09a94262ac720ab6105df4cf4e349a8b85fb687c
 d
 4OOPSesioliktaPaskaita/src/main/resources/adresai.csv,7\1\716ddaf53330d16502c186d22945b6eafda33ec1
+o
+?OOPTryliktaPaskaita/src/main/java/exercises/studentai/Main.java,e\0\e096c60b3bfc77de6b9b720edd90a0cab3127692
+t
+DOOPTryliktaPaskaita/src/main/java/exercises/studentai/Studentas.java,c\f\cfd81746d7e56038e6c40052d77c035270829408
 q
 AOOPVienuoliktaPaskaita/src/main/java/exercises/StudentsGroup.java,6\5\6503f4787c20a967356ffcdcbda8adfed07bec83
 
 OOOPPenkioliktaPaskaita/src/main/java/LaboratorinisNR3/AdresuKnygutesKlaida.java,6\8\6832449e9ee5b3382e7fcba1e4eeef81559c1929
+Q
+!21sav/src/lt/bit/penkt/labas.html,f\0\f04099b8ebfbef931c4c09a494f50cdfbc5a10b0
+O
+21sav/src/lt/bit/penkt/ate.html,d\c\dc672cb28e6e3eba16c8dc9d312b230a21029e60

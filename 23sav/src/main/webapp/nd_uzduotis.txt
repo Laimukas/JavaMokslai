@@ -1,0 +1,52 @@
+Sukurti jsp faila, kuris spausdintu daugybos lentele nuo 3 iki 15
+
+<table>
+<tbody>
+    <tr>
+        <td>9</td>
+        <td>12</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>16</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>20</td>
+        <td>25</td>
+    </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+    <tr>
+        <td></td>
+        <td><b>3</b></td>
+        <td><b>4</b></td>
+        <td><b>5</b></td>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><b>3</b></td>
+        <td>9</td>
+        <td>12</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td><b>4</b></td>
+        <td>12</td>
+        <td>16</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td><b>5</b></td>
+        <td>15</td>
+        <td>20</td>
+        <td>25</td>
+    </tr>
+</tbody>
+</table>
