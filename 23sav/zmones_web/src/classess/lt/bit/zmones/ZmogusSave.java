@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "ZmogusAdd", urlPatterns = {"/addZmogus"})
-public class ZmogusAdd extends HttpServlet {
+@WebServlet(name = "ZmogusSave", urlPatterns = {"/saveZmogus"})
+public class ZmogusSave extends HttpServlet {
 
     private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
@@ -25,22 +25,24 @@ public class ZmogusAdd extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Zmogus z = Db.getById(id);
         String vardas = request.getParameter("vardas");
+        z.setVardas(vardas);
         String pavarde = request.getParameter("pavarde");
-        Zmogus zmogus = new Zmogus(vardas, pavarde);
+        z.setPavarde(pavarde);
         String alga = request.getParameter("alga");
         try {
-            zmogus.setAlga(new BigDecimal(alga));
+            z.setAlga(new BigDecimal(alga));
         } catch (Exception ex) {
-            zmogus.setAlga(null);
+            // ignore
         }
         String gimimoData = request.getParameter("gimimoData");
         try {
-            zmogus.setGimimoData(sdf.parse(gimimoData));
+            z.setGimimoData(sdf.parse(gimimoData));
         } catch (Exception ex) {
-            zmogus.setGimimoData(null);
+            // ignore
         }
-        Db.add(zmogus);
         response.sendRedirect("index.jsp");
     }
 

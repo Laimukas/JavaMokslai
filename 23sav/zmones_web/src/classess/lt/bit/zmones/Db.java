@@ -28,7 +28,15 @@ public class Db {
     }
 
     public static void add(Zmogus z) {
-        list.add(z);
+        if (
+                z != null &&
+                        z.getVardas() != null &&
+                        !"".equals(z.getVardas()) &&
+                        z.getPavarde() != null &&
+                        !"".equals(z.getPavarde())
+        ) {
+            list.add(z);
+        }
     }
 
     public static void delete(Zmogus z) {

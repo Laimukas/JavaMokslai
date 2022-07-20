@@ -13,6 +13,14 @@ public class Zmogus {
     private Date gimimoData;
     private BigDecimal alga;
 
+    public Zmogus(String vardas, String pavarde, Date gimimoData, BigDecimal alga) {
+        this.id = nextId++;
+        this.vardas = vardas;
+        this.pavarde = pavarde;
+        this.gimimoData = gimimoData;
+        this.alga = alga;
+    }
+
     public Zmogus(String vardas, String pavarde) {
         this.id = nextId++;
         this.vardas = vardas;

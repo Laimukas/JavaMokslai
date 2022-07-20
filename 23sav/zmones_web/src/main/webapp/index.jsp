@@ -9,9 +9,13 @@
         <title>Zmoniu sarasas</title>
     </head>
     <body>
+    <h1> Pagr Langas </h1>
+     <hr>
         <form action="addZmogus" method="POST">
             Vardas: <input name="vardas"><br>
             Pavarde: <input name="pavarde"><br>
+            Gim Data: <input name="gimimoData"><br>
+            Alga: <input name="alga"><br>
             <input type="submit" value="Save">
         </form>
         <hr>
@@ -20,7 +24,8 @@
             for (Zmogus zmogus : l) {
 
         %>
-        <%=zmogus%> <a href="deleteZmogus?id=<%=zmogus.getId()%>">delete</a><br>
+        <%=zmogus%> <a href="deleteZmogus?id=<%=zmogus.getId()%>">delete</a>
+        <a href="edit.jsp?id=<%=zmogus.getId()%>">edit</a><br>
         <%
             }
         %>
