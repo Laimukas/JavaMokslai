@@ -1,18 +1,15 @@
 package lt.bit.zmones;
 
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.text.SimpleDateFormat;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "ZmogusAdd", urlPatterns = {"/addZmogus"})
-public class ZmogusAdd extends HttpServlet {
-
-    private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+@WebServlet(name = "KontaktasDelete", urlPatterns = {"/deleteKontaktas"})
+public class KontaktasDelete extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -25,23 +22,24 @@ public class ZmogusAdd extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String vardas = request.getParameter("vardas");
-        String pavarde = request.getParameter("pavarde");
-        Zmogus zmogus = new Zmogus(vardas, pavarde);
-        String alga = request.getParameter("alga");
+        Zmogus z = null;
+        String ids = request.getParameter("id");
         try {
-            zmogus.setAlga(new BigDecimal(alga));
+            int id = Integer.parseInt(ids);
+            Kontaktas k = Db.getKontaktasById(id);
+            if (k != null) {
+                z = Db.getZmogusByKontaktas(k);
+                Db.deleteKontaktas(k);
+            }
         } catch (Exception ex) {
-            zmogus.setAlga(null);
+            // ignore
+        } finally {
+            if (z != null) {
+                response.sendRedirect("kontaktaiList.jsp?zmogusId=" + z.getId());
+            } else {
+                response.sendRedirect("index.jsp");
+            }
         }
-        String gimimoData = request.getParameter("gimimoData");
-        try {
-            zmogus.setGimimoData(sdf.parse(gimimoData));
-        } catch (Exception ex) {
-            zmogus.setGimimoData(null);
-        }
-        Db.add(zmogus);
-        response.sendRedirect("index.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

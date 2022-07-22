@@ -1,7 +1,9 @@
 package lt.bit.zmones;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Zmogus {
 
@@ -12,19 +14,17 @@ public class Zmogus {
     private String pavarde;
     private Date gimimoData;
     private BigDecimal alga;
+    private List<Kontaktas> kontaktai;
 
-    public Zmogus(String vardas, String pavarde, Date gimimoData, BigDecimal alga) {
-        this.id = nextId++;
-        this.vardas = vardas;
-        this.pavarde = pavarde;
-        this.gimimoData = gimimoData;
-        this.alga = alga;
+    public Zmogus() {
+        this(null, null);
     }
 
     public Zmogus(String vardas, String pavarde) {
         this.id = nextId++;
         this.vardas = vardas;
         this.pavarde = pavarde;
+        this.kontaktai = new ArrayList();
     }
 
     public int getId() {
@@ -67,6 +67,14 @@ public class Zmogus {
         this.alga = alga;
     }
 
+    public List<Kontaktas> getKontaktai() {
+        return kontaktai;
+    }
+
+    public void setKontaktai(List<Kontaktas> kontaktai) {
+        this.kontaktai = kontaktai;
+    }
+
     @Override
     public int hashCode() {
         int hash = 5;
@@ -93,4 +101,5 @@ public class Zmogus {
     public String toString() {
         return "Zmogus{" + "id=" + id + ", vardas=" + vardas + ", pavarde=" + pavarde + ", gimimoData=" + gimimoData + ", alga=" + alga + '}';
     }
+
 }

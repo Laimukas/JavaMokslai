@@ -77,3 +77,9 @@ Z
 *zmones_web/src/main/webapp/WEB-INF/web.xml,c\c\cc0f1d8b12a103b2f1ae6e4f36be0241e937923b
 u
 Epirmasweb/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml,1\1\119eb7127582ff0f662703428e6be4d894dd94ac
+B
+zmones_web/pom.xml,2\c\2c325fbe57f67557e35b07b025f3118405fecee9
+w
+G.idea/sonarlint/issuestore/3/c/3cec41fae84574cb8eea3e10ac7821d65036040f,6\0\60a7a21bafd55056641430b363b20db72a66fd18
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

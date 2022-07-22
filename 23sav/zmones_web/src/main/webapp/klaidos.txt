@@ -1,5 +1,0 @@
-galimos klaidos:
-1) jei nera datos o norim redaguot,neleidzia - sutvarkyta
-2) jei alga minusine, reiktu keisti i null arba bent taisyt i pliusa
-3) jei alga suveda po kablelio daug skaiciu, palikt tik du sk po kablelio
-4) vardai,pavardes be skaiciu

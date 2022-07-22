@@ -1,15 +1,14 @@
 package lt.bit.zmones;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "ZmogusDelete", urlPatterns = {"/deleteZmogus"})
-public class ZmogusDelete extends HttpServlet {
+@WebServlet(name = "KontaktasSave", urlPatterns = {"/saveKontaktas"})
+public class KontaktasSave extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -22,18 +21,49 @@ public class ZmogusDelete extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String ids = request.getParameter("id");
-        try {
-            int id = Integer.parseInt(ids);
-            Zmogus z = Db.getById(id);
-            if (z != null) {
-                Db.delete(z);
+        Zmogus z = null;
+        String zmogusIds = request.getParameter("zmogusId");
+        if (zmogusIds != null) {
+            try {
+                z = Db.getById(Integer.parseInt(zmogusIds));
+            } catch (NumberFormatException ex) {
+                // ignore
             }
-        } catch (Exception ex) {
-            // ignore
-        } finally {
-            response.sendRedirect("index.jsp");
         }
+        String ids = request.getParameter("id");
+        Kontaktas k = null;
+        if (ids != null) {
+            try {
+                k = Db.getKontaktasById(Integer.parseInt(ids));
+                if (k == null) {
+                    if (z == null) {
+                        response.sendRedirect("index.jsp");
+                    } else {
+                        response.sendRedirect("kontaktaiList.jsp?zmogusId=" + z.getId());
+                    }
+                    return;
+                }
+                z = Db.getZmogusByKontaktas(k);
+            } catch (NumberFormatException ex) {
+                if (z == null) {
+                    response.sendRedirect("index.jsp");
+                } else {
+                    response.sendRedirect("kontaktaiList.jsp?zmogusId=" + z.getId());
+                }
+                return;
+            }
+        } else {
+            if (z != null) {
+                k = new Kontaktas();
+                z.getKontaktai().add(k);
+            } else {
+                response.sendRedirect("index.jsp");
+                return;
+            }
+        }
+        k.setTipas(request.getParameter("tipas"));
+        k.setReiksme(request.getParameter("reiksme"));
+        response.sendRedirect("kontaktaiList.jsp?zmogusId=" + z.getId());
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

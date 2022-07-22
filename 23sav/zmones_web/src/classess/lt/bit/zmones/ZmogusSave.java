@@ -25,23 +25,31 @@ public class ZmogusSave extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
-        Zmogus z = Db.getById(id);
-        String vardas = request.getParameter("vardas");
-        z.setVardas(vardas);
-        String pavarde = request.getParameter("pavarde");
-        z.setPavarde(pavarde);
-        String alga = request.getParameter("alga");
-        try {
-            z.setAlga(new BigDecimal(alga));
-        } catch (Exception ex) {
-            // ignore
-        }
-        String gimimoData = request.getParameter("gimimoData");
-        try {
-            z.setGimimoData(sdf.parse(gimimoData));
-        } catch (Exception ex) {
-            // ignore
+        int id;
+        System.out.println("id: "+request.getParameter("id"));
+        try{
+            id = Integer.parseInt(request.getParameter("id"));
+            Zmogus z = Db.getById(id);
+            if (z!= null){
+                String vardas = request.getParameter("vardas");
+                z.setVardas(vardas);
+                String pavarde = request.getParameter("pavarde");
+                z.setPavarde(pavarde);
+                String alga = request.getParameter("alga");
+                try {
+                    z.setAlga(new BigDecimal(alga));
+                } catch (Exception ex) {
+                    // ignore
+                }
+                String gimimoData = request.getParameter("gimimoData");
+                try {
+                    z.setGimimoData(sdf.parse(gimimoData));
+                } catch (Exception ex) {
+                    // ignore
+                }
+            }
+        }catch(NumberFormatException ex){
+          //ignore
         }
         response.sendRedirect("index.jsp");
     }
