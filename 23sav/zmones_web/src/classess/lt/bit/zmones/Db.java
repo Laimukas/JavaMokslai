@@ -14,6 +14,8 @@ public class Db {
         z.getKontaktai().add(new Kontaktas("email", "jonas@gmail.com"));
         list.add(z);
         list.add(new Zmogus("Petras", "Petraitis"));
+        z.getAdresai().add(new Adresas("Volunges 15","Alytus","45830","Lietuva"));
+        z.getAdresai().add(new Adresas("Kalnieciu 167","Kaunas","3000","LT"));
         list.add(new Zmogus("Antanas", "Antanaitis"));
     }
 
@@ -84,7 +86,8 @@ public class Db {
         }
         return null;
     }
-    public static void addKontaktas(Zmogus z,Kontaktas k) {
+
+    public static void addKontaktas(Zmogus z, Kontaktas k) {
         if (
                 k != null &&
                         k.getTipas() != null &&
@@ -93,6 +96,60 @@ public class Db {
                         !"".equals(k.getReiksme())
         ) {
             z.getKontaktai().add(new Kontaktas(k.getTipas(), k.getReiksme()));
+        }
+    }
+
+    public static void deleteAdresas(Adresas k) {
+        if (k == null) {
+            return;
+        }
+        for (Zmogus zmogus : list) {
+            for (Adresas adresas : zmogus.getAdresai()) {
+                if (adresas != null && adresas.getId() == k.getId()) {
+                    zmogus.getAdresai().remove(adresas);
+                    return;
+                }
+            }
+        }
+    }
+
+    public static Zmogus getZmogusByAdresas(Adresas k) {
+        if (k == null) {
+            return null;
+        }
+        for (Zmogus zmogus : list) {
+            for (Adresas adresas : zmogus.getAdresai()) {
+                if (adresas != null && adresas.getId() == k.getId()) {
+                    return zmogus;
+                }
+            }
+        }
+        return null;
+    }
+    public static Adresas getAdresasById(int id) {
+        for (Zmogus zmogus : list) {
+            for (Adresas adresas : zmogus.getAdresai()) {
+                if (adresas != null && adresas.getId() == id) {
+                    return adresas;
+                }
+            }
+        }
+        return null;
+    }
+
+    public static void addAdresas(Zmogus z, Adresas k) {
+        if (
+                k != null &&
+                        k.getAdresas() != null &&
+                        !"".equals(k.getAdresas()) &&
+                        k.getMiestas() != null &&
+                        !"".equals(k.getMiestas()) &&
+                        k.getPastoKodas() != null &&
+                        !"".equals(k.getPastoKodas()) &&
+                        k.getValstybe() != null &&
+                        !"".equals(k.getValstybe())
+        ) {
+            z.getAdresai().add(new Adresas(k.getAdresas(), k.getMiestas(), k.getPastoKodas(), k.getValstybe()));
         }
     }
 }

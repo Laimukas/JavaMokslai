@@ -1,0 +1,9 @@
+ Prideti prie zmogaus
+            Adresas su savybem:
+            id
+            adresas
+            miestas
+            pastoKodas
+            valstybe
+
+            zmogus gali tureti daug adresu

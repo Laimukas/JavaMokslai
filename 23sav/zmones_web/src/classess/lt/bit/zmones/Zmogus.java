@@ -15,6 +15,7 @@ public class Zmogus {
     private Date gimimoData;
     private BigDecimal alga;
     private List<Kontaktas> kontaktai;
+    private List<Adresas> adresai;
 
     public Zmogus() {
         this(null, null);
@@ -25,6 +26,7 @@ public class Zmogus {
         this.vardas = vardas;
         this.pavarde = pavarde;
         this.kontaktai = new ArrayList();
+        this.adresai = new ArrayList();
     }
 
     public int getId() {
@@ -74,6 +76,10 @@ public class Zmogus {
     public void setKontaktai(List<Kontaktas> kontaktai) {
         this.kontaktai = kontaktai;
     }
+
+    public List<Adresas> getAdresai() { return adresai; }
+
+    public void setAdresai(List<Adresas> adresai) { this.adresai = adresai; }
 
     @Override
     public int hashCode() {

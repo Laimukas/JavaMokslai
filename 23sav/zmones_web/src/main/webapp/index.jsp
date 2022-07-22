@@ -21,6 +21,7 @@
         <a href="deleteZmogus?id=<%=zmogus.getId()%>">delete</a>
         <a href="zmogusEdit.jsp?id=<%=zmogus.getId()%>">edit</a>
         <a href="kontaktaiList.jsp?zmogusId=<%=zmogus.getId()%>">Kontaktai</a>
+        <a href="adresaiList.jsp?zmogusId=<%=zmogus.getId()%>">Adresai</a>
         <br>
         <%
             }
