@@ -1,0 +1,12 @@
+
+h
+java:S1104"RMake vardas a static final constant or non-public and provide accessors if needed.(ÑôÀà
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(µ£Á¢
+S	java:S106"9Replace this use of System.out or System.err by a logger.(œÿ›Âùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ß‹ˆÆþÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(©¯þÝøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(œÿ›Âùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ß‹ˆÆþÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(·©±–
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¿ÁŸïüÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÿÏ­œþÿÿÿÿ

@@ -109,16 +109,16 @@ public class Run {
 //                System.out.println("Failed to update record: " + ex.getMessage());
 //            }
 
-            System.out.println("Ivesk cekio id: ");
-            int id = sc.nextInt();
-            sc.nextLine();
-            try (
-                    Statement st = conn.createStatement();
-            ) {
-                st.execute("delete from cekiai where id = " + id + ";");
-            } catch (SQLException ex) {
-                System.out.println("Failed to delete record: " + ex.getMessage());
-            }
+//            System.out.println("Ivesk cekio id: ");
+//            int id = sc.nextInt();
+//            sc.nextLine();
+//            try (
+//                    Statement st = conn.createStatement();
+//            ) {
+//                st.execute("delete from cekiai where id = " + id + ";");
+//            } catch (SQLException ex) {
+//                System.out.println("Failed to delete record: " + ex.getMessage());
+//            }
         }
         catch (SQLException ex) {
             System.out.println("Failed to connect to DB: " + ex.getMessage());
