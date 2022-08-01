@@ -14,16 +14,18 @@ public class Main {
 
         // surast figura turincia didziausia perimetra
         Figura didziausiasPerimetras = rastiDidziausiaPerimetra(figuros);
-        System.out.println(didziausiasPerimetras);
+        System.out.println("Didziausias perimetras: "+didziausiasPerimetras);
         // surast figura kuri turi didziausia plota
         Figura didziausiasPlotas = rastiDidziausiaPlota(figuros);
-        System.out.println(didziausiasPlotas);
+        System.out.println("Didziausias plotas: "+didziausiasPlotas);
         // atspausdint kuriu figuru yra sarase daugiausia
-        System.out.println("Daugiausia figuru "+daugiausiaFiguru(figuros));
+        System.out.println("Daugiausia figuru yra: "+daugiausiaFiguru(figuros));
         //apsirasem ne itin teisingai,bet kaip pradinokams puse velnio
 
         Figura kvad = new Kvadratas(4);
-        System.out.println(((Kvadratas)kvad).getX());// cia budas kaip priskirti metodui kokia tai reiksme
+        System.out.println("cia budas kaip priskirti metodui kokia tai reiksme: "+((Kvadratas)kvad).getClass()+" "+((Kvadratas)kvad).getX());// cia budas kaip priskirti metodui kokia tai reiksme
+        Figura stac = new Staciakampis(5,6);
+        System.out.println("cia budas kaip priskirti metodui kokia tai reiksme: "+((Staciakampis)stac).getClass()+" "+((Staciakampis)stac).getX()+" "+((Staciakampis)stac).getY());// cia budas kaip priskirti metodui kokia tai reiksme
     }
 
     public static List<Figura> skaityti(String failoKelias) {

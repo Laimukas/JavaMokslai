@@ -2,8 +2,8 @@ package lt.bit.Exercise16;
 
 public enum Runner {
     BEGGINER(41, Integer.MAX_VALUE),
-    INTERMEDIATE(11, 40),
-    ADVANCED(1, 10),
+    INTERMEDIATE(20, 40),
+    ADVANCED(1, 19),
     UNDEFINED(0,0);
 
 

@@ -1,9 +1,9 @@
 
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»İ³Á
-g
-java:S2095K"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(Ê”›ıûÿÿÿÿ
 a
 java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ù¥­p
+g
+java:S2095K"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(Ê”›ıûÿÿÿÿ
 N	java:S106"9Replace this use of System.out or System.err by a logger.(õÖô”
 U	java:S106A"9Replace this use of System.out or System.err by a logger.(õòãç8’°âº0
 Z	java:S106D"9Replace this use of System.out or System.err by a logger.(‹¶çÊúÿÿÿÿ8Ú½ôº0

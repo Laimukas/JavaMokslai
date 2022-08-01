@@ -1,0 +1,9 @@
+
+l
+java:S1192$"JDefine a constant instead of duplicating this literal "index.jsp" 3 times.(Šûßıÿÿÿÿ8™šÒı¢0
+…
+java:S1989O"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ8°šÒı¢0
+…
+java:S1989]"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ8±šÒı¢0
+n
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(±¿¸‡
