@@ -46,6 +46,9 @@ public class Run {
                 System.out.println("4-Kontaktu sarasas");
                 System.out.println("5-Naujas kontaktas");
                 System.out.println("6-Istrinti kontakta");
+                System.out.println("7-Adresu sarasas");
+                System.out.println("8-Naujas adresas");
+                System.out.println("9-Istrinti adresa");
                 System.out.println("0-Baigti darba");
                 System.out.println("-----------------------");
                 System.out.println("Ka renkiesi?");
@@ -59,6 +62,9 @@ public class Run {
                     case 4 -> zmogausKontaktuSarasas();
                     case 5 -> kuriamNaujaKontakta();
                     case 6 -> trinamKontakta();
+                    case 7 -> zmogausAdresuSarasas();
+                    case 8 -> kuriamNaujaAdresa();
+                    case 9 -> trinamAdresa();
                     default -> System.out.println("Tokios funkcijos nera.Pasirink ka nors geresnio.");
                 }
 
@@ -260,6 +266,114 @@ public class Run {
                     Statement stt = conn.createStatement();
             ) {
                 stt.execute("delete from kontaktai where id = " + idk + ";");
+            } catch (SQLException ex) {
+                System.out.println("Failed to delete record: " + ex.getMessage());
+            }
+        } catch (SQLException ex) {
+            System.out.println("Failed to connect to DB: " + ex.getMessage());
+        }
+    }
+
+public static void zmogausAdresuSarasas() {
+    //******------paklausti id ir parodyti zmogaus kontaktu sarasa
+    Scanner sc = new Scanner(System.in);
+    try (
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adresu_knyga", "prog", "programa1programa1");
+//                Connection connpg = DriverManager.getConnection("jdbc:postgresql://192.168.1.2:5432/devdb");
+    ) {
+        Statement st = conn.createStatement();
+        System.out.println("Ivesk zmogaus id, kurio adresus nori pamatyti: ");
+        int idz = sc.nextInt();
+        sc.nextLine();
+        ResultSet rss = st.executeQuery("select * from adresai where zmogus_id=" + idz + ";");
+
+        while (rss.next()) {
+            System.out.println("Adreso id: " + rss.getInt("id"));
+            System.out.println("Adresas: " + rss.getString("adresas"));
+            System.out.println("Miestas: " + rss.getString("miestas"));
+            System.out.println("Pasto kodas: " + rss.getString("pasto_kodas"));
+            System.out.println("Salis: " + rss.getString("salis"));
+            System.out.println("-----------");
+        }
+
+    } catch (SQLException ex) {
+        System.out.println("Failed to connect to DB: " + ex.getMessage());
+    }
+
+}
+
+    public static void kuriamNaujaAdresa() {
+        //**********-------- kuriam nauja kontakta,reik zmogaus_id,tipo,reiksmes
+        Scanner sc = new Scanner(System.in);
+        try (
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adresu_knyga", "prog", "programa1programa1");
+//                Connection connpg = DriverManager.getConnection("jdbc:postgresql://192.168.1.2:5432/devdb");
+        ) {
+            System.out.println("Ivesk zmogaus id kuriam pridesi nauja adresa:");
+            Integer zmogaus_id = Integer.valueOf(sc.nextLine());
+            System.out.println("Ivesk adresa:");
+            String adresas = sc.nextLine();
+            System.out.println("Ivesk miesta:");
+            String miestas = sc.nextLine();
+            System.out.println("Ivesk pasto koda:");
+            String pasto_kodas = sc.nextLine();
+            System.out.println("Ivesk sali:");
+            String salis = sc.nextLine();
+
+
+//            insert into cekiai (data, parduotuve, aprasymas) values ('2022-07-01', 'Rimi', 'daug isleidau');
+            String sqll = "insert into adresai (zmogus_id, adresas, miestas, pasto_kodas, salis) values (?, ?, ?, ?, ?);";
+//            System.out.println(sql);
+            try (PreparedStatement pst = conn.prepareStatement(sqll, Statement.RETURN_GENERATED_KEYS);) {
+                pst.setInt(1, zmogaus_id);
+                pst.setString(2, adresas);
+                if ("".equals(miestas)) {
+                    pst.setNull(3, Types.VARCHAR);
+                } else {
+                    pst.setString(3, miestas);
+                }
+                if ("".equals(pasto_kodas)) {
+                    pst.setNull(4, Types.VARCHAR);
+                } else {
+                    pst.setString(4, pasto_kodas);
+                }
+                if ("".equals(salis)) {
+                    pst.setNull(5, Types.VARCHAR);
+                } else {
+                    pst.setString(5, salis);
+                }
+                pst.execute();
+                try (ResultSet rst = pst.getGeneratedKeys();) {
+                    int ai = -1;
+                    if (rst.next()) {
+                        ai = rst.getInt(1);
+                    }
+                    System.out.println("Naujo iraso id=" + ai);
+                } catch (SQLException ex) {
+                    System.out.println("Failed to retrieve generated id: " + ex.getMessage());
+                }
+            } catch (SQLException ex) {
+                System.out.println("Failed to execute statement: " + ex.getMessage());
+            }
+        } catch (SQLException ex) {
+            System.out.println("Failed to connect to DB: " + ex.getMessage());
+        }
+    }
+
+    public static void trinamAdresa() {
+        //************-------------istrinti kontakta
+        Scanner sc = new Scanner(System.in);
+        try (
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adresu_knyga", "prog", "programa1programa1");
+//                Connection connpg = DriverManager.getConnection("jdbc:postgresql://192.168.1.2:5432/devdb");
+        ) {
+            System.out.println("Ivesk adreso id, kuri nori istrinti: ");
+            int idk = sc.nextInt();
+            sc.nextLine();
+            try (
+                    Statement stt = conn.createStatement();
+            ) {
+                stt.execute("delete from adresai where id = " + idk + ";");
             } catch (SQLException ex) {
                 System.out.println("Failed to delete record: " + ex.getMessage());
             }
