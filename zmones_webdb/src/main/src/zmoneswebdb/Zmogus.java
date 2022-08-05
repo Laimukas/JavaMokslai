@@ -7,13 +7,12 @@ import java.util.List;
 import java.util.Objects;
 
 public class Zmogus {
-    
+
     private Integer id;
     private String vardas;
     private String pavarde;
     private Date gimimoData;
     private BigDecimal alga;
-    private List<Kontaktas> kontaktai;
 
     public Zmogus() {
     }
@@ -24,7 +23,6 @@ public class Zmogus {
         this.pavarde = pavarde;
         this.gimimoData = gimimoData;
         this.alga = alga;
-        this.kontaktai = new ArrayList();
     }
 
     public Integer getId() {
@@ -67,14 +65,6 @@ public class Zmogus {
         this.alga = alga;
     }
 
-    public List<Kontaktas> getKontaktai() {
-        return kontaktai;
-    }
-
-    public void setKontaktai(List<Kontaktas> kontaktai) {
-        this.kontaktai = kontaktai;
-    }
-
     @Override
     public int hashCode() {
         int hash = 7;
@@ -101,5 +91,5 @@ public class Zmogus {
     public String toString() {
         return "Zmogus{" + "id=" + id + ", vardas=" + vardas + ", pavarde=" + pavarde + ", gimimoData=" + gimimoData + ", alga=" + alga + '}';
     }
-    
+
 }

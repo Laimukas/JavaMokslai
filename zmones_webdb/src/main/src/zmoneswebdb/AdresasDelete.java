@@ -8,9 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
 
-
-@WebServlet(name = "ZmogusDelete", urlPatterns = {"/deleteZmogus"})
-public class ZmogusDelete extends HttpServlet {
+@WebServlet(name = "AdresasDelete", urlPatterns = {"/deleteAdresas"})
+public class AdresasDelete extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -23,15 +22,21 @@ public class ZmogusDelete extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        Integer zmogusId = null;
         String ids = request.getParameter("id");
         try {
             int id = Integer.parseInt(ids);
             Connection conn = (Connection) request.getAttribute("conn");
-            Db.deleteZmogusById(conn, id);
+            Adresas a = Db.deleteAdresasById(conn, id);
+            zmogusId = a.getZmogusId();
         } catch (Exception ex) {
             System.out.println("Failed to delete: " + ex.getMessage());
         } finally {
-            response.sendRedirect("index.jsp");
+            if (zmogusId == null) {
+                response.sendRedirect("index.jsp");
+            } else {
+                response.sendRedirect("adresaiList.jsp?zmogusId=" + zmogusId);
+            }
         }
     }
 

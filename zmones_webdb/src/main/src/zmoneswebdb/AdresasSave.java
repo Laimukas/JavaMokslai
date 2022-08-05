@@ -9,8 +9,8 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@WebServlet(name = "KontaktasSave", urlPatterns = {"/saveKontaktas"})
-public class KontaktasSave extends HttpServlet {
+@WebServlet(name = "AdresasSave", urlPatterns = {"/saveAdresas"})
+public class AdresasSave extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -39,53 +39,53 @@ public class KontaktasSave extends HttpServlet {
             }
         }
         String ids = request.getParameter("id");
-        Kontaktas k = null;
+        Adresas a = null;
         if (ids != null) {
             try {
-                k = Db.getKontaktasById(conn, Integer.parseInt(ids));
-                if (k == null) {
+                a = Db.getAdresasById(conn, Integer.parseInt(ids));
+                if (a == null) {
                     if (z == null) {
                         response.sendRedirect("index.jsp");
                     } else {
-                        response.sendRedirect("kontaktaiList.jsp?zmogusId=" + z.getId());
+                        response.sendRedirect("adresaiList.jsp?zmogusId=" + z.getId());
                     }
                     return;
                 }
-                z = Db.getZmogusByKontaktas(conn, k);
-
+                z = Db.getZmogusByAdresas(conn, a);
             } catch (NumberFormatException ex) {
                 if (z == null) {
                     response.sendRedirect("index.jsp");
                 } else {
-                    response.sendRedirect("kontaktaiList.jsp?zmogusId=" + z.getId());
+                    response.sendRedirect("adresaiList.jsp?zmogusId=" + z.getId());
                 }
                 return;
             } catch (SQLException ex) {
-                System.err.println("Failed to find 'kontaktas': " + ex.getMessage());
+                System.err.println("Failed to find 'adresas': " + ex.getMessage());
                 response.sendRedirect("index.jsp");
                 return;
             }
         } else {
             if (z != null) {
-                k = new Kontaktas();
-                k.setZmogusId(z.getId());
+                a = new Adresas();
+                a.setZmogusId(z.getId());
             } else {
                 response.sendRedirect("index.jsp");
                 return;
             }
         }
-        k.setTipas(request.getParameter("tipas"));
-        k.setReiksme(request.getParameter("reiksme"));
+        a.setAdresas(request.getParameter("adresas"));
+        a.setMiestas(request.getParameter("miestas"));
+        a.setPastoKodas(request.getParameter("pastoKodas"));
         try {
             if (ids == null) {
-                Db.addKontaktas(conn, k);
+                Db.addAdresas(conn, a);
             } else {
-                Db.updateKontaktas(conn, k);
+                Db.updateAdresas(conn, a);
             }
         } catch (SQLException ex) {
-            System.err.println("Failed to save 'kontaktas': " + ex.getMessage());
+            System.err.println("Failed to save 'adresas': " + ex.getMessage());
         }
-        response.sendRedirect("kontaktaiList.jsp?zmogusId=" + z.getId());
+        response.sendRedirect("adresaiList.jsp?zmogusId=" + z.getId());
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

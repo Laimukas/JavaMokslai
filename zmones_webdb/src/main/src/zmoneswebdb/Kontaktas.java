@@ -2,30 +2,35 @@ package zmoneswebdb;
 
 public class Kontaktas {
 
-    private int id;
+    private Integer id;
+    private Integer zmogusId;
     private String tipas;
     private String reiksme;
 
     public Kontaktas() {
     }
-    public Kontaktas(String tipas, String reiksme) {
+
+    public Kontaktas(Integer id, Integer zmogusId, String tipas, String reiksme) {
         this.id = id;
+        this.zmogusId = zmogusId;
         this.tipas = tipas;
         this.reiksme = reiksme;
     }
 
-    public Kontaktas(int id,String tipas, String reiksme) {
-        this.id = id;
-        this.tipas = tipas;
-        this.reiksme = reiksme;
-    }
-
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getZmogusId() {
+        return zmogusId;
+    }
+
+    public void setZmogusId(Integer zmogusId) {
+        this.zmogusId = zmogusId;
     }
 
     public String getTipas() {
@@ -68,7 +73,7 @@ public class Kontaktas {
 
     @Override
     public String toString() {
-        return "Kontaktas{" + "id=" + id + ", tipas=" + tipas + ", reiksme=" + reiksme + '}';
+        return "Kontaktas{" + "id=" + id + ", zmogusId=" + zmogusId + ", tipas=" + tipas + ", reiksme=" + reiksme + '}';
     }
 
 }

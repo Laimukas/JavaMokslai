@@ -20,26 +20,30 @@ public class ZmogusSave extends HttpServlet {
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
-     * @param request  servlet request
+     * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException      if an I/O error occurs
+     * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException, SQLException {
+            throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        Connection conn = (Connection) request.getAttribute("conn");
         String ids = request.getParameter("id");
-        Zmogus z = null;
-
+        Zmogus z;
         if (ids != null) {
             try {
-                int id = Integer.parseInt(ids);
-                Connection conn = (Connection) request.getAttribute("conn");
-                z = ZmogusDb.getById(conn, id);
+                int id = Integer.parseInt(request.getParameter("id"));
+                z = Db.getZmogusById(conn, id);
                 if (z == null) {
                     response.sendRedirect("index.jsp");
                     return;
                 }
-            } catch (NumberFormatException | SQLException ex) {
+            } catch (NumberFormatException ex) {
+                response.sendRedirect("index.jsp");
+                return;
+            } catch (SQLException ex) {
+                System.err.println("Failed to find 'zmogus': " + ex.getMessage());
                 response.sendRedirect("index.jsp");
                 return;
             }
@@ -61,17 +65,17 @@ public class ZmogusSave extends HttpServlet {
         } catch (Exception ex) {
             // ignore
         }
-
-        if (ids == null) {
-            Connection conn = (Connection) request.getAttribute("conn");
-            ZmogusDb.add(conn, z.getVardas(), z.getPavarde(), z.getGimimoData(), z.getAlga());
-        }else{
-            Connection conn = (Connection) request.getAttribute("conn");
-            ZmogusDb.update(conn,z);
+        try {
+            if (ids == null) {
+                Db.addZmogus(conn, z);
+            } else {
+                Db.updateZmogus(conn, z);
+            }
+        } catch (SQLException ex) {
+            System.err.println("Failed to save 'zmogus': " + ex.getMessage());
         }
         response.sendRedirect("index.jsp");
     }
-
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -85,11 +89,7 @@ public class ZmogusSave extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
-            processRequest(request, response);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        processRequest(request, response);
     }
 
     /**
@@ -103,11 +103,7 @@ public class ZmogusSave extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
-            processRequest(request, response);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        processRequest(request, response);
     }
 
     /**

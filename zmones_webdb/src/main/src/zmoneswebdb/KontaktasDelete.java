@@ -22,23 +22,20 @@ public class KontaktasDelete extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        Zmogus z = null;
+        Integer zmogusId = null;
         String ids = request.getParameter("id");
-        Connection conn = (Connection) request.getAttribute("conn");
         try {
             int id = Integer.parseInt(ids);
-            Kontaktas k = ZmogusDb.getKontaktasById(conn,id);
-            if (k != null) {
-                z = ZmogusDb.getZmogusByKontaktas(conn,k);
-                ZmogusDb.deleteKontaktasById(conn,k.getId());
-            }
+            Connection conn = (Connection) request.getAttribute("conn");
+            Kontaktas k = Db.deleteKontaktasById(conn, id);
+            zmogusId = k.getZmogusId();
         } catch (Exception ex) {
-            // ignore
+            System.out.println("Failed to delete: " + ex.getMessage());
         } finally {
-            if (z != null) {
-                response.sendRedirect("kontaktaiList.jsp?zmogusId=" + z.getId());
-            } else {
+            if (zmogusId == null) {
                 response.sendRedirect("index.jsp");
+            } else {
+                response.sendRedirect("kontaktaiList.jsp?zmogusId=" + zmogusId);
             }
         }
     }
