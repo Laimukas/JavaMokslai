@@ -1,0 +1,11 @@
+
+l
+java:S1192("JDefine a constant instead of duplicating this literal "index.jsp" 4 times.(Šûßıÿÿÿÿ8ºÂ¬œ§0
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(ƒ…ÇÆ8àÂ¬œ§0
+U	java:S106H"9Replace this use of System.out or System.err by a logger.(––ú8åÂ¬œ§0
+…
+java:S1989Y"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ8ïÂ¬œ§0
+…
+java:S1989g"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ8ğÂ¬œ§0
+u
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(±¿¸‡8òÂ¬œ§0

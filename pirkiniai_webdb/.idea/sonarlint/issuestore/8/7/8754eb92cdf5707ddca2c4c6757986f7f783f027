@@ -1,0 +1,19 @@
+
+J
+java:S37401"/Provide the parametrized type for this generic.(šé‰üÿÿÿÿ
+K
+java:S3740Í"/Provide the parametrized type for this generic.(É×ëÙúÿÿÿÿ
+K
+java:S3740„"/Provide the parametrized type for this generic.(¸±¼Ëûÿÿÿÿ
+g	java:S117Ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªàòÅ
+l	java:S117Ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¢°æøÿÿÿÿ
+C
+java:S1199*"-Extract this nested code block into a method.(Ùäç™
+]
+java:S2095("GUse try-with-resources or close this "Statement" in a "finally" clause.(˜ğ×
+U
+java:S1118	":Add a private constructor to hide the implicit public one.(û¬³Ÿüÿÿÿÿ
+P	java:S125"<This block of commented-out lines of code should be removed.(š·¢
+l
+java:S2159,"VRemove this call to "equals"; comparisons between unrelated types always return false.(èÇ¡Ï
+W	java:S125Ú"<This block of commented-out lines of code should be removed.(éíùÉùÿÿÿÿ

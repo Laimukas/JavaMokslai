@@ -119,6 +119,7 @@ public class Db {
             return z;
         }
     }
+    //------------------------------------------------------------------------
 
     public static List<Kontaktas> getKontaktasListByZmogusId(Connection conn, Integer zmogusId) throws SQLException {
         try (

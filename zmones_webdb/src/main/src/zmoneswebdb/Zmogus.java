@@ -89,7 +89,11 @@ public class Zmogus {
 
     @Override
     public String toString() {
-        return "Zmogus{" + "id=" + id + ", vardas=" + vardas + ", pavarde=" + pavarde + ", gimimoData=" + gimimoData + ", alga=" + alga + '}';
+        return    "Zmogus id=" + id + ", vardas=" + vardas + ", pavarde=" + pavarde + ", gimimoData=" + gimimoData + ", alga=" + alga ;
+
+//                String.format("Zmogus: id: %d ,vardas: %s ,pavarde: %s ,gimimo data: %s ,alga: %a",id,vardas,pavarde,gimimoData,alga);
+
+
     }
 
 }

@@ -5,9 +5,9 @@ java:S1163&"=Refactor this code to not throw exceptions in finally blocks.(Ò‚Òé
 O
 java:S1143&"4Remove this throw statement from this finally block.(Ò‚Òéüÿÿÿÿ
 \
-java:S2259$"AA "NullPointerException" could be thrown; "fos" is nullable here.(æŒÕ®ùÿÿÿÿ
-\
 java:S2259#"AA "NullPointerException" could be thrown; "fis" is nullable here.(ß¶­†ÿÿÿÿÿ
+\
+java:S2259$"AA "NullPointerException" could be thrown; "fos" is nullable here.(æŒÕ®ùÿÿÿÿ
 S	java:S106"9Replace this use of System.out or System.err by a logger.(Üáõæúÿÿÿÿ
 S	java:S106"9Replace this use of System.out or System.err by a logger.(ô‚ø…ÿÿÿÿÿ
 S	java:S106"9Replace this use of System.out or System.err by a logger.(¸¡¬æþÿÿÿÿ
