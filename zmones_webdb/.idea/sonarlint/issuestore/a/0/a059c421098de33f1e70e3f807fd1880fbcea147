@@ -1,0 +1,14 @@
+
+e
+java:S1192%"JDefine a constant instead of duplicating this literal "index.jsp" 5 times.(Šûßıÿÿÿÿ
+w
+java:S11922"\Define a constant instead of duplicating this literal "kontaktaiList.jsp?zmogusId=" 3 times.(ƒ˜éÏûÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(ùêÜåûÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(àÿóÄşÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(ø¸ûÆ
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(ó“¢Ë
+~
+java:S1989g"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ
+~
+java:S1989u"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ
