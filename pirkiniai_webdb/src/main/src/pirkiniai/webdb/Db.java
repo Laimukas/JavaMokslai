@@ -12,7 +12,12 @@ public class Db {
         try (
                 Statement st = conn.createStatement();
                 ResultSet rs = st.executeQuery("select id, data, parduotuve, aprasymas from cekiai order by data, parduotuve");) {
-            return Db.cekisFromResultSet(rs);
+
+                 List<Cekis> list =   Db.cekisFromResultSet(rs);
+                 for (  Cekis cekis :list){
+                     cekis.setPrekes(Db.getPrekeListByCekisId(conn,cekis.getId()));
+                 }
+                 return list;
         }
     }
 //    public static List<Cekis> getListOfCekisAndPrices(Connection conn) throws SQLException {
@@ -143,7 +148,7 @@ public class Db {
     public static Preke getPrekeById(Connection conn, Integer id) throws SQLException {
         try (
                 Statement st = conn.createStatement();
-                ResultSet rs = st.executeQuery("select id, cekis_id, preke, kiekis, kaina, tipas_id from prekes where cekis_id = " + id);) {
+                ResultSet rs = st.executeQuery("select id, cekis_id, preke, kiekis, kaina, tipas_id from prekes where id = " + id);) {
             List<Preke> list = Db.prekeFromResultSet(rs);
             return list.isEmpty() ? null : list.get(0);
         }

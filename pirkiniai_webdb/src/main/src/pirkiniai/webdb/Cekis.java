@@ -1,6 +1,9 @@
 package pirkiniai.webdb;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 public class Cekis {
@@ -9,8 +12,10 @@ public class Cekis {
     private Date data;
     private String parduotuve;
     private String aprasymas;
+    private List<Preke> prekes;
 
     public Cekis() {
+        this.prekes=new ArrayList<>();
     }
 
     public Cekis(Integer id, Date data, String parduotuve, String aprasymas) {
@@ -18,12 +23,22 @@ public class Cekis {
         this.data = data;
         this.parduotuve = parduotuve;
         this.aprasymas = aprasymas;
+        this.prekes=new ArrayList<>();
     }
     public Cekis(Integer id, Date data, String parduotuve) {
         this.id = id;
         this.data = data;
         this.parduotuve = parduotuve;
         this.aprasymas = aprasymas;
+        this.prekes=new ArrayList<>();
+    }
+
+    public List<Preke> getPrekes() {
+        return prekes;
+    }
+
+    public void setPrekes(List<Preke> prekes) {
+        this.prekes = prekes;
     }
 
     public Integer getId() {
@@ -58,6 +73,14 @@ public class Cekis {
         this.aprasymas = aprasymas;
     }
 
+    public BigDecimal getSuma (){
+        BigDecimal suma= new BigDecimal(0);
+        for (Preke preke : prekes){
+          suma = suma.add(preke.getKaina().multiply(preke.getKiekis()));
+        }
+        return suma;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -77,7 +100,9 @@ public class Cekis {
                 "id=" + id +
                 ", data=" + data +
                 ", parduotuve='" + parduotuve + '\''+
-                ", aprasymas='" + aprasymas + "';"
+                ", aprasymas='" + aprasymas +
+                ", suma=" + getSuma() +
+                ";"
                 ;
     }
 }

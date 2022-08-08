@@ -44,15 +44,15 @@
           </ul>
           <h3>Bendra Suma:</h3>
 
+
           <ul>
               <%
-        /*          for (Cekis cekis2 : list2) {
-              %>
-              <li>
-                  <%=cekis2%>
-              </li>
-              <%
-                  }  */
+           /*   BigDecimal suma= new BigDecimal(0);
+                  for (Cekis cekis2 : list2) {
+             %>
+             <%suma+=cekis2.getSuma%>
+             <%
+                  } */
               %>
           </ul>
 
