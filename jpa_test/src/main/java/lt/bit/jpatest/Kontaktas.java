@@ -1,20 +1,50 @@
 package lt.bit.jpatest;
 
-public class Kontaktas {
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "kontaktai")
+public class Kontaktas {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer zmogusId;
+//    @Column(name = "zmogus_id")
+//    private Integer zmogusId;
     private String tipas;
     private String reiksme;
+    @ManyToOne
+    @JoinColumn(name = "zmogus_id")
+    private Zmogus zmogus;
 
     public Kontaktas() {
     }
-
-    public Kontaktas(Integer id, Integer zmogusId, String tipas, String reiksme) {
+    public Kontaktas(Integer id, String tipas, String reiksme) {
         this.id = id;
-        this.zmogusId = zmogusId;
         this.tipas = tipas;
         this.reiksme = reiksme;
+
+    }
+
+
+    public Kontaktas(Integer id, String tipas, String reiksme, Zmogus zmogus) {
+        this.id = id;
+        this.tipas = tipas;
+        this.reiksme = reiksme;
+        this.zmogus = zmogus;
+    }
+    //    public Kontaktas(Integer id, Integer zmogusId, String tipas, String reiksme) {
+//        this.id = id;
+//        this.zmogusId = zmogusId;
+//        this.tipas = tipas;
+//        this.reiksme = reiksme;
+//    }
+
+    public Zmogus getZmogus() {
+        return zmogus;
+    }
+
+    public void setZmogus(Zmogus zmogus) {
+        this.zmogus = zmogus;
     }
 
     public Integer getId() {
@@ -25,13 +55,13 @@ public class Kontaktas {
         this.id = id;
     }
 
-    public Integer getZmogusId() {
-        return zmogusId;
-    }
-
-    public void setZmogusId(Integer zmogusId) {
-        this.zmogusId = zmogusId;
-    }
+//    public Integer getZmogusId() {
+//        return zmogusId;
+//    }
+//
+//    public void setZmogusId(Integer zmogusId) {
+//        this.zmogusId = zmogusId;
+//    }
 
     public String getTipas() {
         return tipas;
@@ -73,7 +103,16 @@ public class Kontaktas {
 
     @Override
     public String toString() {
-        return "Kontaktas{" + "id=" + id + ", zmogusId=" + zmogusId + ", tipas=" + tipas + ", reiksme=" + reiksme + '}';
+        return "Kontaktas{" +
+                "id=" + id +
+                ", tipas='" + tipas + '\'' +
+                ", reiksme='" + reiksme + '\'' +
+                ", zmogus=" + zmogus +
+                '}';
     }
+    //    @Override
+//    public String toString() {
+//        return "Kontaktas{" + "id=" + id + ", zmogusId=" + zmogusId + ", tipas=" + tipas + ", reiksme=" + reiksme + '}';
+//    }
 
 }

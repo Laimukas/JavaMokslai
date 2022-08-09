@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -19,6 +20,9 @@ public class Zmogus {
     @Temporal(TemporalType.DATE)
     private Date gimimoData;
     private BigDecimal alga;
+//    @OneToMany
+//    @JoinColumn(name = "zmogus_id")
+//    private List<Kontaktas> kontaktai;
 
     public Zmogus() {
     }
@@ -30,6 +34,14 @@ public class Zmogus {
         this.gimimoData = gimimoData;
         this.alga = alga;
     }
+
+//    public List<Kontaktas> getKontaktai() {
+//        return kontaktai;
+//    }
+//
+//    public void setKontaktai(List<Kontaktas> kontaktai) {
+//        this.kontaktai = kontaktai;
+//    }
 
     public Integer getId() {
         return id;
