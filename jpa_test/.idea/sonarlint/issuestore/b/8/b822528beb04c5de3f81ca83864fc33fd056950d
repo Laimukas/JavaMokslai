@@ -1,0 +1,18 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(¥úùÕúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÀŸ¯»
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ8îõÄ¨0
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(ĞÛâï8ºåÆ¨0
+Q	java:S125"<This block of commented-out lines of code should be removed.(À±Ø®
+Q	java:S1259"<This block of commented-out lines of code should be removed.(úş¿Â
+P	java:S125<"<This block of commented-out lines of code should be removed.(ÅøçQ
+Q	java:S125?"<This block of commented-out lines of code should be removed.(†© …
+Q	java:S125G"<This block of commented-out lines of code should be removed.(Õâ—ñ
+Q	java:S125L"<This block of commented-out lines of code should be removed.(Õâ—ñ
+V	java:S125T"<This block of commented-out lines of code should be removed.(ªÀÈ½ÿÿÿÿÿ
+N
+java:S1128"1Remove this unused import 'java.math.BigDecimal'.(êêŠ8ŒƒŸ¨0
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8ƒŸ¨0

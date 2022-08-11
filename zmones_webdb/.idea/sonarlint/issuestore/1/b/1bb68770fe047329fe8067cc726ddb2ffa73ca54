@@ -1,0 +1,6 @@
+
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(¼šñ•8‡ô–ø¦0
+…
+java:S19892"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ8ˆô–ø¦0
+…
+java:S1989@"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ8‰ô–ø¦0

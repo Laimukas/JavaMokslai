@@ -21,14 +21,6 @@ Y
 )src/main/src/zmoneswebdb/AdresasSave.java,5\4\5476f15714006f45b49401f07e7e6ebbd0c59152
 T
 $src/main/src/zmoneswebdb/Zmogus.java,7\b\7ba00c0219edfe9f9b79c9e0e7d681291f393f01
-Q
-!src/main/webapp/kontaktasEdit.jsp,8\3\834c3487e453bfaf288deee88875bfbe77fddc74
-[
-+src/main/src/zmoneswebdb/KontaktasSave.java,a\0\a059c421098de33f1e70e3f807fd1880fbcea147
-I
-src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
-Q
-!src/main/webapp/kontaktaiList.jsp,2\a\2a9cad54086707d369dc371346470fecd908b398
 P
  src/main/src/zmoneswebdb/Db.java,3\b\3bacb280eb91adfbf748aa7c74c4ac17b6edde1f
 W
@@ -41,3 +33,11 @@ X
 -src/main/src/zmoneswebdb/KontaktasDelete.java,1\9\1930795a69d90ee381a2702bf7acfa62d7806991
 ^
 .src/main/src/zmoneswebdb/ConnectionFilter.java,2\b\2bccbe06de4d6bc78ae69b089ea1a8c858a1e850
+Q
+!src/main/webapp/kontaktaiList.jsp,2\a\2a9cad54086707d369dc371346470fecd908b398
+I
+src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
+Q
+!src/main/webapp/kontaktasEdit.jsp,8\3\834c3487e453bfaf288deee88875bfbe77fddc74
+[
++src/main/src/zmoneswebdb/KontaktasSave.java,a\0\a059c421098de33f1e70e3f807fd1880fbcea147

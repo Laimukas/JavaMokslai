@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<zmones>
+    <zmogus id = "1">
+        <vardas>Jonas</vardas>
+        <pavarde>Jonaitis</pavarde>
+        <gimimoData>2000-01-01</gimimoData>
+        <alga>46551.4</alga>
+        <kontaktai>
+            <kontaktas id="1">
+                <tipas>mob</tipas>
+                <reiksme>+37069820001</reiksme>
+            </kontaktas>
+            <kontaktas id="2">
+                <tipas>skype</tipas>
+                <reiksme>jonas_skype</reiksme>
+            </kontaktas>
+        </kontaktai>
+        <adresai>
+            <adresas id="1">
+                <adresas>Laisves 1</adresas>
+                <miestas>Vilnius</miestas>
+                <valstybe>LT</valstybe>
+                <pastoKodas>01234</pastoKodas>
+            </adresas>
+            <adresas id="2">
+                <adresas>Gedimino 9</adresas>
+                <miestas>Vilnius</miestas>
+                <valstybe>LT</valstybe>
+                <pastoKodas>01111</pastoKodas>
+            </adresas>
+        </adresai>
+    </zmogus>
+    <zmogus id = "2">
+        <vardas>Petras</vardas>
+        <pavarde>Petraitis</pavarde>
+        <gimimoData>1970-01-01</gimimoData>
+        <alga>8666</alga>
+    </zmogus>
+    <zmogus id = "3">
+        <vardas>Antanas</vardas>
+        <pavarde>Antanaitis</pavarde>
+        <gimimoData>1975-05-11</gimimoData>
+        <alga>86551.4</alga>
+    </zmogus>
+</zmones>
