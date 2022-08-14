@@ -1,4 +1,4 @@
-package lt.bit.zmones_webjpa;
+package lt.bit.pirkiniai_webjpa;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

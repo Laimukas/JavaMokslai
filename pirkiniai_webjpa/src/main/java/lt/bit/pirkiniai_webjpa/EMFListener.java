@@ -1,4 +1,4 @@
-package lt.bit.zmones_webjpa;
+package lt.bit.pirkiniai_webjpa;
 
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
@@ -12,7 +12,7 @@ public class EMFListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("zmones");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cekiai");
         ServletContext sc = sce.getServletContext();
         sc.setAttribute("emf", emf);
     }

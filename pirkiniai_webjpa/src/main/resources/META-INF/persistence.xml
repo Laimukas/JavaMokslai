@@ -2,11 +2,11 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
     <persistence-unit name="zmones" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>lt.bit.zmones_webjpa.data.Zmogus</class>
-        <class>lt.bit.zmones_webjpa.data.Kontaktas</class>
-        <class>lt.bit.zmones_webjpa.data.Adresas</class>
+        <class>lt.bit.pirkiniai_webjpa.data.Cekis</class>
+        <class>lt.bit.pirkiniai_webjpa.data.Preke</class>
+        <class>lt.bit.pirkiniai_webjpa.data.Tipas</class>
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/adresu_knyga?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/pirkiniai?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
             <property name="javax.persistence.jdbc.user" value="prog"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.password" value="programa1programa1"/>
