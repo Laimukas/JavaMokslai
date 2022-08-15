@@ -6,6 +6,7 @@
 <%
     Connection conn = (Connection) request.getAttribute("conn");
       List<Cekis> list = Db.getCekisList(conn);
+
      /* List<Cekis> list2 = Db.getListOfCekisAndPrices(conn); */
   %>
   <!DOCTYPE html>

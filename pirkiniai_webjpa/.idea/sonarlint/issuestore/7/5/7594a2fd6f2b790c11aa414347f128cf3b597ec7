@@ -1,0 +1,15 @@
+
+l
+java:S1192,"JDefine a constant instead of duplicating this literal "index.jsp" 4 times.(ϋίύÿÿÿÿ8Ζδφρ©0
+u
+java:S1192="XDefine a constant instead of duplicating this literal "prekesList.jsp?cekisId=" 3 times.(‚β²8Ζδφρ©0
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(ωκάεϋÿÿÿÿ
+†
+java:S1989‚"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘Ρ8—εφρ©0
+†
+java:S1989"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘Ρ8™εφρ©0
+M
+java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ΛτΦ8χρ©0
+O
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(ΫοΖ8χρ©0

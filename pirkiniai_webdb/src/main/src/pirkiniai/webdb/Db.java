@@ -1,6 +1,7 @@
 package pirkiniai.webdb;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -43,9 +44,8 @@ public class Db {
 
     public static BigDecimal bendraSuma (Connection conn)throws SQLException{
         Statement st = conn.createStatement();
-        ResultSet rs = st.executeQuery("select sum(kiekis*kaina) as VISO" +
-                "from prekes");{
-            BigDecimal suma = (BigDecimal) Db.prekeFromResultSet(rs);
+        ResultSet rs = st.executeQuery("select sum(kiekis*kaina) from prekes");{
+            BigDecimal suma = new BigDecimal((BigInteger) Db.prekeFromResultSet(rs)) ;
             return suma.equals(0) ? null : suma;
         }
     }

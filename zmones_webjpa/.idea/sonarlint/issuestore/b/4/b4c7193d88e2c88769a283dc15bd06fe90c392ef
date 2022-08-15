@@ -1,0 +1,19 @@
+
+e
+java:S11925"JDefine a constant instead of duplicating this literal "index.jsp" 3 times.(Šûßıÿÿÿÿ
+u
+java:S11927"ZDefine a constant instead of duplicating this literal "adresaiList.jsp?zmogusId=" 3 times.(ì¡ÿııÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ùêÜåûÿÿÿÿ
+7
+java:S11162"Remove this empty statement.(éƒ’îúÿÿÿÿ
+~
+java:S1989i"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ
+~
+java:S1989w"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(‘ŸÑ
+[
+java:S1128"@Remove this unused import 'lt.bit.zmones_webjpa.data.Kontaktas'.(¯Æ·¤şÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ
+H
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ
