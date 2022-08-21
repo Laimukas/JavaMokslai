@@ -4,6 +4,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Query;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Context;
 
@@ -17,6 +18,9 @@ public class ZmogusWS {
     @Context
     private HttpServletRequest request;
 
+    @Context
+    private HttpServletResponse response;
+
     @GET
     @Produces("application/json")
     public List<Zmogus> list() {
@@ -24,7 +28,6 @@ public class ZmogusWS {
         Query q = em.createQuery("select z from Zmogus z order by z.vardas, z.pavarde");
         List<Zmogus> list = q.getResultList();
         return list;
-
     }
 
     @GET
@@ -42,21 +45,72 @@ public class ZmogusWS {
     @POST
     @Consumes("application/json")
     @Produces("application/json")
-    public Zmogus add (Zmogus z){
-        System.out.println("Gavom nauja zmogu: "+ z);
-        if(z == null){
+    public Zmogus add(Zmogus z) {
+        if (z == null) {
             throw new NullPointerException("Nera ka issaugoti");
         }
         z.setId(null);
         EntityManager em = (EntityManager) request.getAttribute("em");
         EntityTransaction tx = em.getTransaction();
-        try{
+        try {
             tx.begin();
             em.persist(z);
             tx.commit();
             return z;
         } finally {
-            if (tx.isActive()){
+            if (tx.isActive()) {
+                tx.rollback();
+            }
+        }
+    }
+
+    @PUT
+    @Path("{id}")
+    @Consumes("application/json")
+    @Produces("application/json")
+    public Zmogus update(@PathParam("id") Integer id, Zmogus z) {
+        if (z == null) {
+            throw new NullPointerException("Nera ka issaugoti");
+        }
+        EntityManager em = (EntityManager) request.getAttribute("em");
+        EntityTransaction tx = em.getTransaction();
+        try {
+            tx.begin();
+            Zmogus zOrig = em.find(Zmogus.class, id);
+            if (zOrig != null) {
+                zOrig.setVardas(z.getVardas());
+                zOrig.setPavarde(z.getPavarde());
+                zOrig.setGimimoData(z.getGimimoData());
+                zOrig.setAlga(z.getAlga());
+            }
+            tx.commit();
+            return zOrig;
+        } finally {
+            if (tx.isActive()) {
+                tx.rollback();
+            }
+        }
+    }
+
+    @DELETE
+    @Path("{id}")
+    public void delete(@PathParam("id") Integer id) {
+        response.setStatus(204);
+        if (id == null) {
+            return;
+        }
+        EntityManager em = (EntityManager) request.getAttribute("em");
+        EntityTransaction tx = em.getTransaction();
+        try {
+            tx.begin();
+            Zmogus z = em.find(Zmogus.class, id);
+            if (z == null) {
+                return;
+            }
+            em.remove(z);
+            tx.commit();
+        } finally {
+            if (tx.isActive()) {
                 tx.rollback();
             }
         }

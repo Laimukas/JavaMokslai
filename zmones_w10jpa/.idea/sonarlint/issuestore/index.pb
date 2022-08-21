@@ -1,0 +1,35 @@
+
+I
+src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
+N
+src/main/webapp/zmogusEdit.jsp,0\3\03ff2d8d2289326ced806f6c13cf7d6810463eee
+Q
+!src/main/webapp/kontaktaiList.jsp,2\a\2a9cad54086707d369dc371346470fecd908b398
+Q
+!src/main/webapp/kontaktasEdit.jsp,8\3\834c3487e453bfaf288deee88875bfbe77fddc74
+O
+src/main/webapp/adresasEdit.jsp,d\9\d9bdbd6ec482c42d2eb794a54b39c3dfed8611ab
+m
+=src/main/java/lt/bit/zmones_webjpa/servlet/AdresasDelete.java,1\f\1f0e2f2f987636b8e922d7ac75b440ff7bb49412
+k
+;src/main/java/lt/bit/zmones_webjpa/servlet/AdresasSave.java,b\4\b4c7193d88e2c88769a283dc15bd06fe90c392ef
+T
+$src/main/webapp/META-INF/context.xml,c\b\cbfb0d2e9b2b9fbf9d54374577c894a38643c6d0
+l
+<src/main/java/lt/bit/zmones_webjpa/servlet/JsonSaveTest.java,f\0\f04c548dc54c46d6ecf7bc30e3f92ae9af5f86f4
+o
+?src/main/java/lt/bit/zmones_webjpa/servlet/KontaktasDelete.java,5\a\5a3b6e62aff82d9f91996f10369d5064541ed879
+m
+=src/main/java/lt/bit/zmones_webjpa/servlet/KontaktasSave.java,d\c\dc18562a6e914eafde71d494f7fb072d10315d40
+D
+nb-configuration.xml,3\7\37f39013c8e074c1c1924d690948a7bdf73c6e1d
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+l
+<src/main/java/lt/bit/zmones_webjpa/servlet/ZmogusDelete.java,2\7\27b212d4ff85dd530b742c4d818cb06f13d113cb
+h
+8src/main/java/lt/bit/zmones_webjpa/servlet/JsonTest.java,e\b\eb79585b937f037951b40e1881a9523bd5a7ed90
+O
+src/main/webapp/adresaiList.jsp,8\8\881e4660f4792b7676c1815bc39c5b28e4a4d604

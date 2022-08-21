@@ -7,7 +7,6 @@
         <script>
             let counter = 1;
             function parodyk() {
-
                 fetch("/zmones_w10jpa/ws/zmogus", {
                     method: "GET",
                     headers: {
@@ -16,7 +15,6 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
                     const app = document.getElementById("app");
                     cleanElement(app);
                     app.appendChild(document.createTextNode(counter++));
@@ -26,38 +24,46 @@
                     table.appendChild(tbody);
                     for (const z of data) {
                         const tr = document.createElement("tr");
+                        tr.onclick = redaguoti;
                         tbody.appendChild(tr);
                         for (const prop in z) {
                             const td = document.createElement("td");
+                            td.setAttribute("zmogusId", z.id);
                             tr.appendChild(td);
                             const text = document.createTextNode(z[prop]);
                             td.appendChild(text);
                         }
+                        const td = document.createElement("td");
+                        tr.appendChild(td);
+                        let action;
+                        action = document.createElement("button");
+                        action.setAttribute("zmogusId", z.id);
+                        action.appendChild(document.createTextNode("Delete"));
+                        action.onclick = deleteZmogus;
+                        td.appendChild(action);
+                         action = document.createElement("button");
+                        action.setAttribute("zmogusId", z.id);
+                        action.appendChild(document.createTextNode("Kontaktai"));
+                        action.onclick = kontaktuSarasas;
+                        td.appendChild(action);
+                         action = document.createElement("button");
+                        action.setAttribute("zmogusId", z.id);
+                        action.appendChild(document.createTextNode("Adresai"));
+                        action.onclick = adresuSarasas;
+                        td.appendChild(action);
+
                     }
                 });
-                
-//                let str;
-//                str = `
-//[
-//        {
-//                "id": 1,
-//                "vardas": "Jonas",
-//                "pavarde": "Jonaitis",
-//                "gimimoData": "1992-02-03",
-//                "alga": 651.158
-//        },
-//        {
-//                "id": 2,
-//                "vardas": "Petras",
-//                "pavarde": "Petraitis",
-//                "gimimoData": "1993-04-05",
-//                "alga": 4151
-//        }
-//]`;
-//                str = document.getElementById("tekstas").value;
-//                console.log("Tekstas: ", str);
-//                let duomenys = JSON.parse(str);
-//                console.log("Duomenys: ", duomenys);
+            }
+
+            function getOne(id) {
+                return fetch("/zmones_w10jpa/ws/zmogus/" + id, {
+                    method: "GET",
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                })
+                .then(response => response.json());
             }
 
             function cleanElement(el) {
@@ -81,10 +87,310 @@
                     headers: {
                         "Content-Type": "application/json"
                     },
-                    body: JSON.stringify(z, null, 16)
+                    body: JSON.stringify(z, null, 2)
                 });
+            }
 
+            function redaguoti(event) {
+                const zmogusId = event.target.getAttribute("zmogusId");
+                if (!zmogusId) {
+                    return;
+                }
+                getOne(zmogusId)
+                .then(z => {
+                    const app = document.getElementById("app");
+                    cleanElement(app);
+                    let field;
+                    field = document.createElement("input");
+                    field.setAttribute("id", "zmogusId");
+                    field.value = z.id;
+                    app.appendChild(field);
+                    field = document.createElement("input");
+                    field.setAttribute("id", "vardas");
+                    field.value = z.vardas;
+                    app.appendChild(field);
+                    field = document.createElement("input");
+                    field.setAttribute("id", "pavarde");
+                    field.value = z.pavarde;
+                    app.appendChild(field);
+                    field = document.createElement("input");
+                    field.setAttribute("id", "gimData");
+                    field.setAttribute("type", "date");
+                    console.log(z.gimimoData);
+                    field.value = z.gimimoData;
+                    app.appendChild(field);
+                    field = document.createElement("input");
+                    field.setAttribute("id", "alga");
+                    field.setAttribute("type", "number");
+                    field.value = z.alga;
+                    app.appendChild(field);
+                    let action;
+                    action = document.createElement("button");
+                    action.appendChild(document.createTextNode("Save"));
+                    action.onclick = saveZmogus;
+                    app.appendChild(action);
+                    action = document.createElement("button");
+                    action.appendChild(document.createTextNode("Cancel"));
+                    action.onclick = parodyk;
+                    app.appendChild(action);
+                });
+            }
 
+            function saveZmogus() {
+                const z = {
+                    vardas: document.getElementById("vardas").value,
+                    pavarde: document.getElementById("pavarde").value,
+                    gimimoData: document.getElementById("gimData").value,
+                    alga: parseFloat(document.getElementById("alga").value)
+                };
+                fetch("/zmones_w10jpa/ws/zmogus/" + document.getElementById("zmogusId").value, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(z, null, 2)
+                })
+                .then(response => response.json())
+                .then(z => {
+                    console.log("Issaugotas zmogus", z);
+                    parodyk();
+                });
+            }
+
+            function deleteZmogus(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                const zmogusId = event.target.getAttribute("zmogusId");
+                console.log(zmogusId);
+                if (!zmogusId) {
+                    return;
+                }
+                fetch("/zmones_w10jpa/ws/zmogus/" + zmogusId, {
+                    method: "DELETE"
+                })
+                .then(() => {
+                    console.log("tipo istrynem");
+                    parodyk();
+                });
+            }
+           / ---------------------------------------------/
+            function kontaktuSarasas(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                const zmogusId = event.target.getAttribute("zmogusId");
+                console.log(zmogusId);
+<!--                 let action;-->
+<!--                        action = document.createElement("button");-->
+<!--                        action.setAttribute("id", k.id);-->
+<!--                        action.appendChild(document.createTextNode("New Kontaktas"));-->
+<!--                        action.onclick = pridekKontakta;-->
+<!--                        td.appendChild(action);-->
+                 if (!zmogusId) {
+                    return;
+                }
+                fetch("/zmones_w10jpa/ws/zmogus/" + zmogusId + "/kontaktas", {
+                    method: "GET",
+                     headers: {
+                        "Accept": "application/json"
+                        }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const app = document.getElementById("app");
+                    cleanElement(app);
+                    app.appendChild(document.createTextNode(counter++));
+                    const table = document.createElement("table");
+                    app.appendChild(table);
+                    const tbody = document.createElement("tbody");
+                    table.appendChild(tbody);
+
+                    for (const z of data) {
+                        const tr = document.createElement("tr");
+                        tr.onclick = redaguotiKontakta;
+                        tbody.appendChild(tr);
+                        for (const prop in z) {
+                            const td = document.createElement("td");
+                            td.setAttribute("zmogusId", z.id);
+                            tr.appendChild(td);
+                            const text = document.createTextNode(z[prop]);
+                            td.appendChild(text);
+                        }
+                        const td = document.createElement("td");
+                        tr.appendChild(td);
+<!--                        let action;-->
+<!--                        action = document.createElement("button");-->
+<!--                        action.setAttribute("id", k.id);-->
+<!--                        action.appendChild(document.createTextNode("Delete"));-->
+<!--                        action.onclick = deleteKontaktas;-->
+<!--                        td.appendChild(action);-->
+                    }
+                });
+            }
+
+             function getOneKontaktas(id) {
+                return fetch("/zmones_w10jpa/ws/zmogus/" + zmogusId + "/kontaktas/" + id, {
+                    method: "GET",
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                })
+                .then(response => response.json());
+            }
+
+            function cleanElement(el) {
+                if (el) {
+                    while (el.firstChild) {
+                        el.removeChild(el.firstChild);
+                    }
+                }
+            }
+
+            function pridekKontakta(event) {
+            const zmogusId = event.target.getAttribute("zmogusId");
+                if (!zmogusId) {
+                    return;
+                }
+                counter++;
+
+                const k = {
+                    tipas: "tipasIsJS" + counter,
+                    reiksme: "reiksmeIsJS" + counter,
+
+                };
+                 if (!zmogusId) {
+                    return;
+                }
+                fetch("/zmones_w10jpa/ws/zmogus/" + zmogusId + "/kontaktas", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(k, null, 2)
+                });
+            }
+
+            function redaguotiKontakta(event) {
+                const id = event.target.getAttribute("id");
+                if (!id) {
+                    return;
+                }
+                getOneKontaktas(id)
+                .then(k => {
+                    const app = document.getElementById("app");
+                    cleanElement(app);
+                    let field;
+                    field = document.createElement("input");
+                    field.setAttribute("id", "id");
+                    field.value = k.id;
+                    app.appendChild(field);
+                    field = document.createElement("input");
+                    field.setAttribute("id", "tipas");
+                    field.value = k.tipas;
+                    app.appendChild(field);
+                    field = document.createElement("input");
+                    field.setAttribute("id", "reiksme");
+                    field.value = k.reiksme;
+                    app.appendChild(field);
+<!--                    field = document.createElement("input");-->
+<!--                    field.setAttribute("id", "gimData");-->
+<!--                    field.setAttribute("type", "date");-->
+<!--                    console.log(z.gimimoData);-->
+<!--                    field.value = z.gimimoData;-->
+<!--                    app.appendChild(field);-->
+<!--                    field = document.createElement("input");-->
+<!--                    field.setAttribute("id", "alga");-->
+<!--                    field.setAttribute("type", "number");-->
+<!--                    field.value = z.alga;-->
+<!--                    app.appendChild(field);-->
+                    let action;
+                    action = document.createElement("button");
+                    action.appendChild(document.createTextNode("Save"));
+                    action.onclick = saveKontaktas;
+                    app.appendChild(action);
+                    action = document.createElement("button");
+                    action.appendChild(document.createTextNode("Cancel"));
+                    action.onclick = kontaktuSarasas;
+                    app.appendChild(action);
+                });
+            }
+
+             function saveKontaktas() {
+                const k = {
+                    tipas: document.getElementById("tipas").value,
+                    reiksme: document.getElementById("reiksme").value,
+
+                };
+                fetch("/zmones_w10jpa/ws/zmogus/" + document.getElementById("zmogusId").value + "/kontaktas/" + document.getElementById("id").value, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(k, null, 2)
+                })
+                .then(response => response.json())
+                .then(k => {
+                    console.log("Issaugotas kontaktas", k);
+                    kontaktuSarasas();
+                });
+            }
+
+            function deleteKontaktas(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                  const zmogusId = event.target.getAttribute("zmogusId");
+                console.log(zmogusId);
+                const id = event.target.getAttribute("id");
+                console.log(id);
+                if (!id && !zmogusId) {
+                    return;
+                }
+                fetch("/zmones_w10jpa/ws/zmogus/" + zmogusId + "/kontaktas/"+id, {
+                    method: "DELETE"
+                })
+                .then(() => {
+                    console.log("tipo istrynem");
+                    kontaktuSarasas();
+                });
+            }
+/--------------------------------------------------------------------/
+            function adresuSarasas(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                const zmogusId = event.target.getAttribute("zmogusId");
+                console.log(zmogusId);
+                 if (!zmogusId) {
+                    return;
+                }
+                fetch("/zmones_w10jpa/ws/zmogus/" + zmogusId + "/adresas", {
+                    method: "GET",
+                     headers: {
+                        "Accept": "application/json"
+                        }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const app = document.getElementById("app");
+                    cleanElement(app);
+                    app.appendChild(document.createTextNode(counter++));
+                    const table = document.createElement("table");
+                    app.appendChild(table);
+                    const tbody = document.createElement("tbody");
+                    table.appendChild(tbody);
+                    for (const z of data) {
+                        const tr = document.createElement("tr");
+<!--                        tr.onclick = redaguoti;-->
+                        tbody.appendChild(tr);
+                        for (const prop in z) {
+                            const td = document.createElement("td");
+                            td.setAttribute("zmogusId", z.id);
+                            tr.appendChild(td);
+                            const text = document.createTextNode(z[prop]);
+                            td.appendChild(text);
+                        }
+                        const td = document.createElement("td");
+                        tr.appendChild(td);
+                    }
+                });
             }
         </script>
     </head>
