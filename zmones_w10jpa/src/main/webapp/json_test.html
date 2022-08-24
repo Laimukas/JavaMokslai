@@ -5,6 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script>
+            function test(){
+            console.log(this);
+            console.log(globalThis);
+            console.log(globalThis === this);
+            }
+
             let counter = 1;
             function parodyk() {
                 fetch("/zmones_w10jpa/ws/zmogus", {
@@ -395,6 +401,7 @@
         </script>
     </head>
     <body>
+        <button onclick="test();">Testas</button>
         <input type="text" id="tekstas">
         <button onclick="parodyk();">Parodyk</button>
         <button onclick="pridek();">Pridek</button>
