@@ -1,5 +1,6 @@
 package lt.bit.zmones_webjpa.data;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +19,7 @@ public class Kontaktas {
     private String tipas;
     private String reiksme;
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "zmogus_id")
     private Zmogus zmogus;
 
