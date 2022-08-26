@@ -53,7 +53,7 @@ public class AdresasWS {
     @POST
     @Consumes("application/json")
     @Produces("application/json")
-    public Adresas add(Adresas a) {
+    public Adresas add(Adresas a, @PathParam("zmogusId") Integer zmogusId ) {
         if (a == null) {
             throw new NullPointerException("Nera ka issaugoti");
         }
@@ -62,6 +62,9 @@ public class AdresasWS {
         EntityTransaction tx = em.getTransaction();
         try {
             tx.begin();
+            Zmogus zmogus= em.find(Zmogus.class, zmogusId);
+            a.setZmogus(zmogus);
+            System.out.println(a);
             em.persist(a);
             tx.commit();
             return a;

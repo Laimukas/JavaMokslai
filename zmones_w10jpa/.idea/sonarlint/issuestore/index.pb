@@ -17,8 +17,6 @@ l
 <src/main/java/lt/bit/zmones_webjpa/servlet/ZmogusDelete.java,2\7\27b212d4ff85dd530b742c4d818cb06f13d113cb
 O
 src/main/webapp/adresaiList.jsp,8\8\881e4660f4792b7676c1815bc39c5b28e4a4d604
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 Q
 !src/main/webapp/kontaktasEdit.jsp,8\3\834c3487e453bfaf288deee88875bfbe77fddc74
 j
@@ -29,5 +27,3 @@ o
 ?src/main/java/lt/bit/zmones_webjpa/servlet/KontaktasDelete.java,5\a\5a3b6e62aff82d9f91996f10369d5064541ed879
 c
 3src/main/java/lt/bit/zmones_webjpa/data/Zmogus.java,7\d\7d70a97bbae0469383a02325c99b7373ab1809f8
-d
-4src/main/java/lt/bit/zmones_webjpa/ws/AdresasWS.java,c\6\c64d769cb804b4184f8db50f0c02dbca62f346e1

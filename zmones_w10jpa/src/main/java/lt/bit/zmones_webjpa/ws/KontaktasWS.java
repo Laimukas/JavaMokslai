@@ -63,8 +63,6 @@ public class KontaktasWS {
         try {
             tx.begin();
             Zmogus zmogus= em.find(Zmogus.class, zmogusId);
-
-
             k.setZmogus(zmogus);
             System.out.println(k);
             em.persist(k);
