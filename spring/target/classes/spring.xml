@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+"
+>
+
+    <bean id="pradzia" class="lt.bit.spring.Taskas">
+        <property name="x" value="0"></property>
+        <property name="y" value="0"></property>
+    </bean>
+
+<!--    <bean id="vienetas" class="lt.bit.spring.Taskas">-->
+<!--        <constructor-arg name="y" value="22"></constructor-arg>-->
+<!--        <constructor-arg name="x" value="11"></constructor-arg>-->
+<!--        &lt;!&ndash;        <property name="x" value="1"></property>-->
+<!--                <property name="y" value="1"></property>&ndash;&gt;-->
+<!--    </bean>-->
+
+    <bean id="antras" class="lt.bit.spring.Taskas">
+        <property name="x" value="0"></property>
+        <property name="y" value="2"></property>
+    </bean>
+
+    <bean id="trecias" class="lt.bit.spring.Taskas">
+        <property name="x" value="2"></property>
+        <property name="y" value="0"></property>
+    </bean>
+
+    <bean id="ketvirtas" class="lt.bit.spring.Taskas">
+        <property name="x" value="2"></property>
+        <property name="y" value="2"></property>
+    </bean>
+
+    <bean id="linija" class="lt.bit.spring.Atkarpa" scope="singleton">
+        <constructor-arg value="1" />
+        <constructor-arg name="nuoX" value="2" />
+        <constructor-arg value="3" />
+        <constructor-arg index="2" value="4" />
+    </bean>
+
+    <bean id="linija1" class="lt.bit.spring.Atkarpa" scope="prototype">
+        <constructor-arg>
+            <bean class="lt.bit.spring.Taskas">
+                <property name="x" value="15"></property>
+                <property name="y" value="30">
+                </property>
+            </bean>
+        </constructor-arg>
+        <constructor-arg ref="pradzia" />
+    </bean>
+
+    <bean id="keturk1" class="lt.bit.spring.Keturkampis" scope="prototype">
+
+    </bean>
+
+    <bean id="keturk2" class="lt.bit.spring.Keturkampis">
+        <constructor-arg ref="pradzia" />
+        <constructor-arg ref="antras" />
+        <constructor-arg ref="trecias" />
+        <constructor-arg ref="ketvirtas" />
+    </bean>
+
+    <bean id="keturk3" class="lt.bit.spring.Keturkampis">
+        <property name="ak">
+            <bean class="lt.bit.spring.Taskas">
+                <property name="x" value="2"></property>
+                <property name="y" value="2">
+                </property>
+            </bean>
+        </property>
+        <property name="vk" >
+            <bean class="lt.bit.spring.Taskas">
+                <property name="x" value="2"></property>
+                <property name="y" value="4">
+                </property>
+            </bean>
+        </property>
+        <property name="ad" >
+            <bean class="lt.bit.spring.Taskas">
+                <property name="x" value="4"></property>
+                <property name="y" value="2">
+                </property>
+            </bean>
+        </property>
+        <property name="vd">
+            <bean class="lt.bit.spring.Taskas">
+                <property name="x" value="4"></property>
+                <property name="y" value="4">
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+
+
+</beans>
