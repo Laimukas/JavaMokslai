@@ -10,10 +10,19 @@ public class Keturkampis {
     private Taskas vd;
 
     public Keturkampis() {
-        this.ak = new Taskas(0, 0);
-        this.vk = new Taskas(0, 1);
-        this.ad = new Taskas(1, 0);
-        this.vd = new Taskas(1, 1);
+        //tinka ir sitas varijantas,jis iskviecia tevines klases default konstruktoriu,priskiria reiksmes
+//        this.ak = new Taskas(0, 0);
+//        this.vk = new Taskas(0, 1);
+//        this.ad = new Taskas(1, 0);
+//        this.vd = new Taskas(1, 1);
+
+        //ir destytojo varijantas,sitas tiesiog kreipiasi i sekanti konstruktoriu ir priskiria reiksmes
+        this(
+                new Taskas(0, 0),
+                new Taskas(0, 1),
+                new Taskas(1, 0),
+                new Taskas(1, 1)
+        );
     }
 
     public Keturkampis(Taskas ak, Taskas vk, Taskas ad, Taskas vd) {

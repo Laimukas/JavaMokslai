@@ -27,8 +27,6 @@ D
 nb-configuration.xml,3\7\37f39013c8e074c1c1924d690948a7bdf73c6e1d
 N
 src/main/webapp/zmogusEdit.jsp,0\3\03ff2d8d2289326ced806f6c13cf7d6810463eee
-[
-+src/main/resources/META-INF/persistence.xml,3\b\3be4f79b5828b3982f3f6a62bf8fc67b3adedf58
 j
 :src/main/java/lt/bit/zmones_webjpa/servlet/ZmogusSave.java,6\e\6e2039847cb4b1af1c4315ae15f4c2e312b79e91
 Q
@@ -41,5 +39,7 @@ l
 <src/main/java/lt/bit/zmones_webjpa/servlet/ZmogusDelete.java,2\7\27b212d4ff85dd530b742c4d818cb06f13d113cb
 o
 ?src/main/java/lt/bit/zmones_webjpa/servlet/KontaktasDelete.java,5\a\5a3b6e62aff82d9f91996f10369d5064541ed879
+[
++src/main/resources/META-INF/persistence.xml,3\b\3be4f79b5828b3982f3f6a62bf8fc67b3adedf58
 I
 src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
