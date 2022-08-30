@@ -1,3 +1,9 @@
+<%-- 
+    Document   : labas
+    Created on : Aug 29, 2022, 10:17:34 PM
+    Author     : alius
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
