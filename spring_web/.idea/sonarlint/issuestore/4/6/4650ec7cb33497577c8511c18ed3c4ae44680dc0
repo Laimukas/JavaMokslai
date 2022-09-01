@@ -1,0 +1,11 @@
+
+a
+java:S1192"FDefine a constant instead of duplicating this literal "preke" 3 times.(ÚÍðµýÿÿÿÿ
+v
+java:S1488$"[Immediately return this expression instead of assigning it to the temporary variable "mav".(ÚÍðµýÿÿÿÿ
+^
+java:S4488>"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÃžçÒ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(Žß«—úÿÿÿÿ
+c
+java:S4488J"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ûš¸ìþÿÿÿÿ
+S	java:S106M"9Replace this use of System.out or System.err by a logger.(±©ø“ùÿÿÿÿ

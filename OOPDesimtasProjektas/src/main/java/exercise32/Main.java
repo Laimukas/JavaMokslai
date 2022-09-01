@@ -26,7 +26,6 @@ public class Main {
 
     private static void writeToFileFromArrayList(ArrayList<Car> carList, File outputFile) throws IOException {
         String formattedString = "";
-
         for (Car car : carList) {
             formattedString += String.format("%s,%.2f,%.2f,%d \n", car.getModel(), car.getHeight(), car.getWeight(), car.getYears());
         }

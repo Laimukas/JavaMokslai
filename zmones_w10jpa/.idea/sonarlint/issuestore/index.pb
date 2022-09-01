@@ -3,8 +3,6 @@ I
 src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
 N
 src/main/webapp/zmogusEdit.jsp,0\3\03ff2d8d2289326ced806f6c13cf7d6810463eee
-Q
-!src/main/webapp/kontaktaiList.jsp,2\a\2a9cad54086707d369dc371346470fecd908b398
 O
 src/main/webapp/adresasEdit.jsp,d\9\d9bdbd6ec482c42d2eb794a54b39c3dfed8611ab
 m
@@ -17,8 +15,6 @@ l
 <src/main/java/lt/bit/zmones_webjpa/servlet/ZmogusDelete.java,2\7\27b212d4ff85dd530b742c4d818cb06f13d113cb
 O
 src/main/webapp/adresaiList.jsp,8\8\881e4660f4792b7676c1815bc39c5b28e4a4d604
-Q
-!src/main/webapp/kontaktasEdit.jsp,8\3\834c3487e453bfaf288deee88875bfbe77fddc74
 j
 :src/main/java/lt/bit/zmones_webjpa/servlet/ZmogusSave.java,6\e\6e2039847cb4b1af1c4315ae15f4c2e312b79e91
 m
@@ -53,3 +49,7 @@ c
 0src/main/java/lt/bit/zmones_webjpa/EMFilter.java,e\b\eb5299243987622e2e17c347f40a5c6241064f1b
 d
 4src/main/java/lt/bit/zmones_webjpa/ws/AdresasWS.java,c\6\c64d769cb804b4184f8db50f0c02dbca62f346e1
+Q
+!src/main/webapp/kontaktaiList.jsp,2\a\2a9cad54086707d369dc371346470fecd908b398
+Q
+!src/main/webapp/kontaktasEdit.jsp,8\3\834c3487e453bfaf288deee88875bfbe77fddc74

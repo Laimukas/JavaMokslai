@@ -7,3 +7,21 @@ D
 nb-configuration.xml,3\7\37f39013c8e074c1c1924d690948a7bdf73c6e1d
 ^
 .src/main/webapp/WEB-INF/dispatcher-servlet.xml,5\6\5610820762bc3ec47cc9dbd7324c057405172b6d
+U
+%src/main/webapp/WEB-INF/jsp/labas.jsp,b\a\bacf27aafdcc5dda2901bf629604ca04bb462b5e
+U
+%src/main/webapp/WEB-INF/jsp/hello.jsp,d\6\d68b3a75012ca1cc336905603f2d3e8ff144bf4d
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+_
+/src/main/java/lt/bit/spring_web/data/Preke.java,d\5\d5e14bf3f08e7d4efa7140557d4471887172de36
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+V
+&src/main/webapp/WEB-INF/jsp/prekes.jsp,2\4\248eba068b1ca99bb4efe9281f8c6cefb6e276a3
+c
+3src/main/java/lt/bit/spring_web/MainController.java,4\6\4650ec7cb33497577c8511c18ed3c4ae44680dc0
+\
+,src/main/java/lt/bit/spring_web/data/Db.java,6\b\6b25cc255523b38cbe4a0e935bac66c80c56b802
+U
+%src/main/webapp/WEB-INF/jsp/preke.jsp,c\1\c1f0de53b9dfcbcab8c26bb5d8f4a388148e2e4f
