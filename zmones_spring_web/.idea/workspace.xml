@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/3/3/33842cf3f736633104328cbb6f15a991602ae87a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/6/1/6188cbacbbac7302830c953c98299ef1d149ff87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/7/f/7f6da8d76ae1de2aeb91e7d506b3c209c51341b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/8/f/8f09035c2adc99f480806aeba94c834ca0725df0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/9/9/99aa84ddd9cc4b28997550dd1b97febdf644d10f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/a/9/a960b1406d36af5cd172372552ad588a913ba6d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/a/c/ace37e4791b84204b7d1fb4fe045af84ea917bf3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/b/6/b68b3d209afee077e211876241084aa4c89c812c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/b/f/bf61f1c36a0c64508ae3ba33dff21c03fd4e8ad1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/d/4/d48ac8386ffa5e88b4c2145151bccb2f2e7011fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/d/8/d8847a44870e131e7311a8ccadc62e43f2104b83" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OOPDesimtasProjektas/src/main/java/exercise32/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OOPDesimtasProjektas/src/main/java/exercise32/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OOPVienuoliktaPaskaita/.idea/sonarlint/issuestore/6/8/685843f8ed08973babbaf6f85377f47e0520b5cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OOPVienuoliktaPaskaita/.idea/sonarlint/issuestore/6/9/6903e08cd37d401b03166ede979050c4c47b2056" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OOPVienuoliktaPaskaita/.idea/sonarlint/issuestore/b/0/b0520d3724f109d605221e078d8f473dae81bdfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPDesimtasProjektas/.idea/sonarlint/issuestore/f/6/f67c5b92723dd86703c27e7365c38646048ec1e4" beforeDir="false" afterPath="$PROJECT_DIR$/../OOPDesimtasProjektas/.idea/sonarlint/issuestore/f/6/f67c5b92723dd86703c27e7365c38646048ec1e4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOPDesimtasProjektas/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../OOPDesimtasProjektas/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OOPVienuoliktaPaskaita/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../OOPVienuoliktaPaskaita/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_web/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_web/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_w10jpa/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_w10jpa/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOPVienuoliktaPaskaita" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOPDesimtasProjektas" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
