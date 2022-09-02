@@ -7,25 +7,42 @@
         <title>Čekių sąrašas</title>
     </head>
     <body>
+        <div align="center">
         <h1>Visų čekių sąrašas</h1>
+        </div>
         <a href="<%=application.getContextPath()%>/cekis/edit">Naujas cekis</a>
-        <ul>
+        <hr>
+
+        <div align="center">
+        <table border="1" cellpadding="5">
+
+        <tr>
+            <th>Objektai</th>
+            <th>Funkcijos</th>
+        </tr>     
+        
         <c:forEach var="cekis" items="${list}">
-            <li>
-                ${cekis.parduotuve}
+            <tr>
+                <td><h3>${cekis.parduotuve}</h3></td>
+                <td>
                 <a href="<%=application.getContextPath()%>/cekis/edit?id=${cekis.id}">Edit</a>
                 <a href="<%=application.getContextPath()%>/cekis/delete?id=${cekis.id}">Delete</a>
-                <br>
+                <a href="<%=application.getContextPath()%>/preke?cekisId=${cekis.id}">Čekio prekės</a>   
+                </td>
+            </tr>
+            <tr>
                 <ul>
                     <c:forEach var="preke" items="${cekis.prekes}">
-                        <li>
-                            ${preke.preke}
-                        </li>
+                        <tr>
+                         <td>${preke.preke}</td>  
+                        </tr>
                     </c:forEach>
                 </ul>
-            </li>
+            </tr>
         </c:forEach>
-        </ul>
+         </table>
+        </div>
+        <hr>
         <a href="<%=application.getContextPath()%>/">Pagrindinis puslapis</a>
     </body>
 </html>

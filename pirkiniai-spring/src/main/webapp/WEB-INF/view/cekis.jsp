@@ -8,14 +8,35 @@
     </head>
     <body>
         <form method="POST" action="<%=application.getContextPath()%>/cekis/save">
-            <c:if test="value">
+            <c:if test="${value != null}">
                 <input type="hidden" name="id" value="${value.id}">
             </c:if>
-            Data: <input type="date" name="data" value="${value.data}"><br>
-            Parduotuve: <input type="text" name="parduotuve" value="${value.parduotuve}"><br>
-            Aprašymas: <input type="text" name="aprasymas" value="${value.aprasymas}"><br>
-            <input type="submit" value="Save"><br>
-            <a href="<%=application.getContextPath()%>/cekis">Cancel</a>
+
+            <div align="center">
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>Tipas</th>
+                        <th>Reikšmės</th>
+                    </tr>
+                    <tr>
+                        <th>Data:</th>
+                        <th><input type="date" name="data" value="${value.data}"></th>
+                    </tr>
+                    <tr>
+                        <th>Parduotuve:</th>
+                        <th><input type="text" name="parduotuve" value="${value.parduotuve}"></th>
+                    </tr>
+                    <tr>
+                        <th>Aprašymas:</th>
+                        <th><input type="text" name="aprasymas" value="${value.aprasymas}"></th>
+                    </tr>
+                    <tr>
+                    <th> <input type="submit" value="Save"></th>
+                    <th> <a href="<%=application.getContextPath()%>/cekis">Cancel</a></th>
+                    </tr>
+    
+                </table>
+                </div>
         </form>
     </body>
 </html>
