@@ -14,7 +14,7 @@
         <a href="<%=application.getContextPath()%>/tipas">Tipų sąrašas</a>
         <hr>
         <br>
-        <a href="<%=application.getContextPath()%>/cekis">Išlaidos pagal tipą</a><br>
+        <a href="<%=application.getContextPath()%>/preke/pagalTipa">Išlaidos pagal tipą</a><br>
         <br>
         <hr>
         <a href="<%=application.getContextPath()%>/cekis/pagalLaika">Išlaidos už nurodytą laiko tarpą</a>

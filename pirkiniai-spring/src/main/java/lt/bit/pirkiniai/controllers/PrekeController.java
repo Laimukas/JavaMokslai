@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.math.BigDecimal;
+import java.text.ParseException;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -115,6 +117,30 @@ public class PrekeController {
             ) {
         prekeDAO.deleteById(id);
         return sarasas(cekisId);
+    }
+
+    @GetMapping("pagalTipa")
+    public String pagalTipa(){
+        return "pagalTipa";
+    }
+
+    @PostMapping("tipas")
+    public ModelAndView tipas(
+            @RequestParam("tipas_id") Integer tipasId
+    ) {
+
+        ModelAndView mav = new ModelAndView("prekes");
+        List<Preke> visosPrekes = prekeDAO.pagalTipa(tipasId);
+        mav.addObject("list", visosPrekes);
+
+        BigDecimal islaidos = new BigDecimal(0);
+
+        for (Preke preke:visosPrekes){
+            islaidos= islaidos.add(preke.getKaina().multiply(preke.getKiekis()));
+        }
+
+        mav.addObject("suma",islaidos);
+        return mav;
     }
 }
 

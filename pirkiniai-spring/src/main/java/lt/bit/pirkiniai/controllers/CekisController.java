@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Optional;
 import lt.bit.pirkiniai.dao.CekisDAO;
+import lt.bit.pirkiniai.dao.PrekeDAO;
 import lt.bit.pirkiniai.data.Cekis;
 import lt.bit.pirkiniai.data.Preke;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,9 @@ public class CekisController {
     
     @Autowired
     private CekisDAO cekisDAO;
+
+    @Autowired
+    private PrekeDAO prekeDAO;
     
     @GetMapping
     public ModelAndView sarasas() {
@@ -118,4 +122,6 @@ public class CekisController {
         mav.addObject("suma",islaidos);
         return mav;
     }
+
+
 }

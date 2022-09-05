@@ -23,7 +23,7 @@
         
         <c:forEach var="cekis" items="${list}">
             <tr>
-                <td><h3>${cekis.parduotuve}</h3>${cekis.data}</td>
+                <td><h3>${cekis.parduotuve} </h3> ${cekis.data}  </td>
                 <td>
                 <a href="<%=application.getContextPath()%>/cekis/edit?id=${cekis.id}">Edit</a>
                 <a href="<%=application.getContextPath()%>/cekis/delete?id=${cekis.id}">Delete</a>
@@ -34,9 +34,7 @@
                 <ul>
                     <c:forEach var="preke" items="${cekis.prekes}">
                         <tr>
-                         <td>${preke.preke}</td>
-                          <td>${preke.kiekis}</td>
-                           <td>${preke.kaina}</td>
+                         <td>${preke.preke}, kiekis: ${preke.kiekis}, kaina: ${preke.kaina}, tipas: ${preke.tipas.pavadinimas}</td>
                         </tr>
                     </c:forEach>
                 </ul>
@@ -44,9 +42,11 @@
         </c:forEach>
          </table>
         </div>
+        <div align="center">
         <c:if test = "${suma!=null}">
-        Bendra suma: ${suma}
+                Bendra suma: ${suma}
         </c:if>
+        </div>
         <hr>
         <a href="<%=application.getContextPath()%>/">Pagrindinis puslapis</a>
     </body>

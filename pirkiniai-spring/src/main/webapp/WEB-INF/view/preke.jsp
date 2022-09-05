@@ -20,23 +20,23 @@
                 </tr>
                 <tr>
                     <th>Cekis id:</th>
-                    <th><input type="text" name="cekis_id" value="${value.cekis.id}"></th>
+                    <td><input type="text" name="cekis_id" value="${value.cekis.id}"></td>
                 </tr>
                 <tr>
                     <th>Preke:</th>
-                    <th><input type="text" name="preke" value="${value.preke}"></th>
+                    <td><input type="text" name="preke" value="${value.preke}"></td>
                 </tr>
                 <tr>
                     <th>Kiekis:</th>
-                    <th><input type="text" name="kiekis" value="${value.kiekis}"></th>
+                    <td><input type="text" name="kiekis" value="${value.kiekis}"></td>
                 </tr>
                 <tr>
                     <th>Kaina:</th>
-                    <th><input type="text" name="kaina" value="${value.kaina}"></th>
+                    <td><input type="text" name="kaina" value="${value.kaina}"></td>
                 </tr>
                 <tr>
                     <th>Tipas id:</th>
-                    <th>
+                    <td>
                     <select name="tipas_id">
                         <c:forEach var="tipas" items="${tipai}">
                         <option value="${tipas.id}" <c:if test="${tipas.id==value.tipas.id}">selected</c:if>>
@@ -44,11 +44,11 @@
                         </option>
                         </c:forEach>
                     </select>
-                    </th>
+                    </td>
                 </tr> 
                 <tr>
-                <th> <input type="submit" value="Save"></th>
-                <th> <a href="<%=application.getContextPath()%>/cekis">Cancel</a></th>
+                <td> <input type="submit" value="Save"></td>
+                <td> <a href="<%=application.getContextPath()%>/cekis">Cancel</a></td>
                 </tr>
 
             </table>

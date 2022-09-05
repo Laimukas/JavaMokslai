@@ -9,6 +9,7 @@
     <body>
         <form method="POST" action="<%=application.getContextPath()%>/cekis/laikas">
              <div align="center">
+             <h2> Tikrinam išlaidas pagal laiko rėžius </h2>
                 <table border="1" cellpadding="5">
                     <tr>
                         <th>Tipas</th>
@@ -24,7 +25,7 @@
                     </tr>
                     <tr>
                     <th> <input type="submit" value="Tikrinam"></th>
-                    <th> <a href="<%=application.getContextPath()%>/cekis/laikas">Tikrinam</a></th>
+                    <th> <a href="<%=application.getContextPath()%>/">Cancel</a></th>
                     </tr>
 
                 </table>
