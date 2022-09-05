@@ -3,5 +3,21 @@ T
 $src/main/webapp/META-INF/context.xml,c\b\cbfb0d2e9b2b9fbf9d54374577c894a38643c6d0
 n
 >src/main/java/lt/bit/pirkiniai/controllers/MainController.java,1\5\15a471a00c8f883f4dcd9b25864bf3008c4a5e17
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+`
+0src/main/java/lt/bit/pirkiniai/dao/PrekeDAO.java,0\f\0fc3e9c4473f7a867b20c53f3bdcfc838cc463e3
+D
+nb-configuration.xml,3\7\37f39013c8e074c1c1924d690948a7bdf73c6e1d
+`
+0src/main/java/lt/bit/pirkiniai/dao/TipasDAO.java,7\4\7452da1b2c49e8271dcff33a2591c5db61532ea1
+^
+.src/main/java/lt/bit/pirkiniai/data/Tipas.java,8\b\8b0eec9126beee1aa3cd77e9b320322061d4a744
+^
+.src/main/webapp/WEB-INF/dispatcher-servlet.xml,5\6\5610820762bc3ec47cc9dbd7324c057405172b6d
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+V
+&src/main/webapp/WEB-INF/view/tipai.jsp,5\a\5a48d5d05832e5530d722b2d2218e2193f270e0f
+R
+"src/main/webapp/WEB-INF/spring.xml,a\6\a6bd71535088e3c7ca3c67cbf293ce0a1a217511
+W
+'src/main/webapp/WEB-INF/view/prekes.jsp,4\c\4c9795b46a8a9dd03460ae9ee2dea656c5ecd470

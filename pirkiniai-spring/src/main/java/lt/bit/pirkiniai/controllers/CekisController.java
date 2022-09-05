@@ -1,10 +1,13 @@
 package lt.bit.pirkiniai.controllers;
 
+import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.List;
 import java.util.Optional;
 import lt.bit.pirkiniai.dao.CekisDAO;
 import lt.bit.pirkiniai.data.Cekis;
+import lt.bit.pirkiniai.data.Preke;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -87,5 +90,32 @@ public class CekisController {
     public ModelAndView delete(@RequestParam("id") Integer id) {
         cekisDAO.deleteById(id);
         return sarasas();
+    }
+
+    @GetMapping("pagalLaika")
+    public String pagalLaika(){
+        return "pagalLaika";
+    }
+
+    @PostMapping("laikas")
+    public ModelAndView laikas(
+            @RequestParam("dataNuo") String dataNuo,
+            @RequestParam("dataIki") String dataIki
+    ) throws ParseException {
+        ModelAndView mav = new ModelAndView("cekiai");
+        List<Cekis> visiCekiai = cekisDAO.pagalLaika(sdf.parse(dataNuo),sdf.parse(dataIki));
+        mav.addObject("list", visiCekiai);
+
+        BigDecimal islaidos = new BigDecimal(0);
+
+        for (Cekis cekis:visiCekiai){
+
+                for (Preke preke:cekis.getPrekes()){
+                    islaidos= islaidos.add(preke.getKaina().multiply(preke.getKiekis()));
+                }
+
+        }
+        mav.addObject("suma",islaidos);
+        return mav;
     }
 }

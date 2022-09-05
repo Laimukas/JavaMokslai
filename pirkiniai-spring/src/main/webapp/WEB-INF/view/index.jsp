@@ -17,7 +17,7 @@
         <a href="<%=application.getContextPath()%>/cekis">Išlaidos pagal tipą</a><br>
         <br>
         <hr>
-        <a href="<%=application.getContextPath()%>/tipas">Išlaidos už nurodytą laiko tarpą</a>
+        <a href="<%=application.getContextPath()%>/cekis/pagalLaika">Išlaidos už nurodytą laiko tarpą</a>
         </div>
     </body>
 </html>

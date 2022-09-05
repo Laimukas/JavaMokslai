@@ -55,6 +55,7 @@ public class PrekeController {
                 mav = sarasas(cekisId);
             }
         }
+        mav.addObject("tipai",tipasDAO.findAll());
         return mav;
     }
 

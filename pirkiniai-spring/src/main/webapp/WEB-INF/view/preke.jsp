@@ -36,7 +36,15 @@
                 </tr>
                 <tr>
                     <th>Tipas id:</th>
-                    <th><input type="text" name="tipas_id" value="${value.tipas.id}"></th>
+                    <th>
+                    <select name="tipas_id">
+                        <c:forEach var="tipas" items="${tipai}">
+                        <option value="${tipas.id}" <c:if test="${tipas.id==value.tipas.id}">selected</c:if>>
+                        ${tipas.pavadinimas}
+                        </option>
+                        </c:forEach>
+                    </select>
+                    </th>
                 </tr> 
                 <tr>
                 <th> <input type="submit" value="Save"></th>
