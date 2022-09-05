@@ -15,3 +15,15 @@ O
 src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 R
 "src/main/webapp/WEB-INF/spring.xml,a\6\a6bd71535088e3c7ca3c67cbf293ce0a1a217511
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+^
+.src/main/java/lt/bit/pirkiniai/data/Preke.java,9\3\935b6f6e44e6c5ce8dd05e8ecd229222412494a9
+`
+0src/main/java/lt/bit/pirkiniai/dao/CekisDAO.java,8\4\843740bc7176b8b51623b85a2300621731f66250
+^
+.src/main/java/lt/bit/pirkiniai/data/Cekis.java,8\3\83574145183cba12bbdbe1d1f7682a1f30315113
+[
++src/main/webapp/WEB-INF/view/pagalLaika.jsp,0\f\0fe61b02f73fdffed5e3fc6d98a56d3000ded25a
+`
+0src/main/java/lt/bit/pirkiniai/dao/PrekeDAO.java,0\f\0fc3e9c4473f7a867b20c53f3bdcfc838cc463e3

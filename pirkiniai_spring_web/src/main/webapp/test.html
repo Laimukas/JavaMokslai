@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+
+        <button onclick="getAll();">GetAll</button>
+        <button onclick="getOne();">Get</button>
+        <button onclick="deleteOne();">Delete</button>
+        <button onclick="getAllPrekes();">GetAllPrekes</button>
+        <hr>
+
+        <table border="1" cellpadding="5">
+
+            <tr>
+                <th>id:</th>
+                <td><input id="cekisId" type="number"></td>
+            </tr>
+            <tr>
+                <th>data:</th>
+                <td><input id="data" type="date"></td>
+            </tr>
+            <tr>
+                <th>parduotuve:</th>
+                <td><input id="parduotuve" type="text"></td>
+            </tr>
+            <tr>
+                <th>aprasymas:</th>
+                <td><input id="aprasymas" type="text"></td>
+            </tr>
+            <tr>
+                <td><button onclick="update();">Update</button></td>
+                <td><button onclick="insert();">Insert</button></td>
+            </tr>
+        </table>
+        <div id="app">
+            
+        </div>
+
+    </body>
+</html>

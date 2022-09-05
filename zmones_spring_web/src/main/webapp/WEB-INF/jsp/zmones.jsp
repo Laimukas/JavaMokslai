@@ -32,14 +32,26 @@
         <input type="submit" value="Pavarde">
         <input type="submit" value="Unsorted">
         <ul>
+        <table border="1" cellpadding="5">
+
+                <tr>
+                    <th>Vardas</th>
+                    <th>Pavardė</th>
+                    <th>Amžius</th>
+                    <th>Funkcijos</th>
+                </tr>
         <c:forEach var="zmogus" items="${zmones}">
-            <li>
-                ${zmogus.vardas}
-                ${zmogus.pavarde}
-                ${zmogus.amzius}
-                <a href="zmogus/${zmogus.id}">edit</a>
-                <a href="zmogus/${zmogus.id}/delete">delete</a>
-            </li>
+
+            <tr>
+                 <td>${zmogus.vardas}</td>
+                 <td>${zmogus.pavarde}</td>
+                 <td>${zmogus.amzius}</td>
+                 <td>
+                     <a href="zmogus/${zmogus.id}">edit</a>
+                     <a href="zmogus/${zmogus.id}/delete">delete</a>
+                 </td>
+            </tr>
+
         </c:forEach>
         </ul>
 

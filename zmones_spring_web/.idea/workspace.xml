@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai-spring/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/src/main/webapp/WEB-INF/view/cekiai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai-spring/src/main/webapp/WEB-INF/view/cekiai.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/src/main/webapp/WEB-INF/view/cekis.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai-spring/src/main/webapp/WEB-INF/view/cekis.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai-spring/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/target/classes/lt/bit/pirkiniai/dao/PrekeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai-spring/target/classes/lt/bit/pirkiniai/dao/PrekeDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03704af4a922d72cd4b5ba1f3962afd5a83d9eac" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/1921536c1540575e1307a52dcdca227d9ee43ee7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4650ec7cb33497577c8511c18ed3c4ae44680dc0" beforeDir="false" />
@@ -19,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d59812da4d2ff41418724d60bd9415f2383fa272" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
