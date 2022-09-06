@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/.idea/sonarlint/issuestore/0/f/0fc3e9c4473f7a867b20c53f3bdcfc838cc463e3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai-spring/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/target/classes/lt/bit/pirkiniai/dao/PrekeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai-spring/target/classes/lt/bit/pirkiniai/dao/PrekeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03704af4a922d72cd4b5ba1f3962afd5a83d9eac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/1921536c1540575e1307a52dcdca227d9ee43ee7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4650ec7cb33497577c8511c18ed3c4ae44680dc0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/5610820762bc3ec47cc9dbd7324c057405172b6d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68c5bb9af25f0ddf1e5c985c2380a8cd33afacdd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/764cd03b687ba73b102a212783b9ca08a5cb8241" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6bd71535088e3c7ca3c67cbf293ce0a1a217511" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d59812da4d2ff41418724d60bd9415f2383fa272" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/target/classes/lt/bit/pirkiniai/controllers/PrekeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai-spring/target/classes/lt/bit/pirkiniai/controllers/PrekeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/src/main/java/lt/bit/pirkiniai/controllers/PrekeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/src/main/java/lt/bit/pirkiniai/controllers/PrekeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/src/main/java/lt/bit/pirkiniai/controllers/PrekeREST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/src/main/java/lt/bit/pirkiniai/controllers/PrekeREST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/src/main/webapp/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/src/main/webapp/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/src/main/webapp/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/src/main/webapp/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeREST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeREST.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661881786075</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update">
+      <created>1662415543568</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662415543568</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

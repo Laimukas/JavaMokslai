@@ -21,15 +21,23 @@ public class PrekeREST {
     private PrekeDAO prekeDAO;
 
     @Autowired
+    private CekisDAO cekisDAO;
+
+    @Autowired
     private HttpServletResponse response;
 
     @GetMapping
-    public List<Preke> list() {
+//    @GetMapping("{id}")
+    public List<Preke> list(
+//            @PathVariable("id") Integer id
+    ) {
         return prekeDAO.findAll();
     }
 
     @GetMapping("{id}")
-    public Preke getOne(@PathVariable("id") Integer id) {
+    public Preke getOne(
+            @PathVariable("id") Integer id
+    ) {
         Optional<Preke> oPreke = prekeDAO.findById(id);
         if (oPreke.isPresent()) {
             return oPreke.get();

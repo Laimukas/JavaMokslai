@@ -119,8 +119,10 @@ public class PrekeController {
     }
 
     @GetMapping("pagalTipa")
-    public String pagalTipa(){
-        return "pagalTipa";
+    public ModelAndView pagalTipa(){
+        ModelAndView mav = new ModelAndView("pagalTipa");
+        mav.addObject("tipai", tipasDAO.findAll());
+        return mav;
     }
 
     @PostMapping("tipas")
@@ -128,7 +130,7 @@ public class PrekeController {
             @RequestParam("tipas_id") Integer tipasId
     ) {
 
-        ModelAndView mav = new ModelAndView("prekes");
+        ModelAndView mav = new ModelAndView("prekesPagalTipa");
         List<Preke> visosPrekes = prekeDAO.pagalTipa(tipasId);
         mav.addObject("list", visosPrekes);
 
@@ -137,7 +139,6 @@ public class PrekeController {
         for (Preke preke:visosPrekes){
             islaidos= islaidos.add(preke.getKaina().multiply(preke.getKiekis()));
         }
-
         mav.addObject("suma",islaidos);
         return mav;
     }

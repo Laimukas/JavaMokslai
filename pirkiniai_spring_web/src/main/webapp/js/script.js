@@ -167,6 +167,8 @@ function deleteOne() {
 //--------------------------------------------------------------
 
 function getAllPrekes() {
+//    const cekisId = document.getElementById("cekisId").value;
+//    fetch("ws/cekis/"+cekisId+"/preke", {
     fetch("ws/preke", {
         method: "GET",
         headers: {
