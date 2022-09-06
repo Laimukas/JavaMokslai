@@ -41,3 +41,13 @@ V
 &src/main/webapp/WEB-INF/view/cekis.jsp,b\a\ba8484bc5901fdc42b38631b18eff003799c028d
 V
 &src/main/webapp/WEB-INF/view/tipas.jsp,5\0\506b051eec3843a48c76c1c7860288401c885b88
+o
+?src/main/java/lt/bit/pirkiniai/controllers/CekisController.java,1\c\1ca4401c9218260867ed20f52a61e5bfc824cfd2
+W
+'src/main/webapp/WEB-INF/view/cekiai.jsp,8\3\8329bae9b5509b1f2b5d5a80d7fc96aaef8290c5
+`
+0src/main/webapp/WEB-INF/view/prekesPagalTipa.jsp,a\b\ab6b1c444ff70cc1beff079cd1c0026addcf7c65
+o
+?src/main/java/lt/bit/pirkiniai/controllers/PrekeController.java,5\1\5112599cf518e907fb424390df34541d3a9f0ff6
+`
+0src/main/java/lt/bit/pirkiniai/dao/PrekeDAO.java,0\f\0fc3e9c4473f7a867b20c53f3bdcfc838cc463e3

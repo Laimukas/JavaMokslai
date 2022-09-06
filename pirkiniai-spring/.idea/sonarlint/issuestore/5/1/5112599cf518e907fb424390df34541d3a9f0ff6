@@ -1,0 +1,17 @@
+
+a
+java:S1192'"FDefine a constant instead of duplicating this literal "cekis" 3 times.(øîÒÑÿÿÿÿÿ
+a
+java:S11927"FDefine a constant instead of duplicating this literal "value" 5 times.(¸â…Èûÿÿÿÿ
+P
+java:S3655a"5Call "oCekis.isPresent()" before accessing the value.(†°Œ‹øÿÿÿÿ
+R
+java:S3655'"7Call "Optional#isPresent()" before accessing the value.(øîÒÑÿÿÿÿÿ
+P
+java:S3655O"5Call "oCekis.isPresent()" before accessing the value.(†°Œ‹øÿÿÿÿ
+P
+java:S3655h"5Call "oTipas.isPresent()" before accessing the value.(î•¶Þøÿÿÿÿ
+P
+java:S3655V"5Call "oTipas.isPresent()" before accessing the value.(î•¶Þøÿÿÿÿ
+R
+java:S1128"5Remove this unused import 'java.text.ParseException'.(ñ®ï•8ª„öù°0

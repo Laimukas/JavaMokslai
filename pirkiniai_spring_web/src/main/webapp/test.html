@@ -11,16 +11,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <script src="js/script.js"></script>
     </head>
     <body>
-    <td>
+    <div align="center">
+
         <button onclick="getAll();">GetAll</button>
         <button onclick="getOne();">Get</button>
         <button onclick="deleteOne();">Delete</button>
-    </td>
-    <td>
-        <button onclick="getAllPrekes();">GetAllPrekes</button>
-        <button onclick="getOnePreke();">GetOnePreke</button>
-    </td>
-
         <hr>
 
         <table border="1" cellpadding="5">
@@ -45,6 +40,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <td><button onclick="update();">Update</button></td>
                 <td><button onclick="insert();">Insert</button></td>
             </tr>
+        </table><br>
+        <hr>
+        <button onclick="getAllPrekes();">GetAllPrekes</button>
+        <button onclick="getOnePreke();">GetOnePreke</button>
+        <hr>
+        <table border="1" cellpadding="5">
 
             <tr>
                 <th>preke id:</th>
@@ -64,7 +65,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </tr>
             <tr>
                 <th>tipo id:</th>
-                <td><input id="tipasId" type="text"></td>
+                <td><input id="tipasId" type="number"></td>
             </tr>
             <tr>
                 <th>tipo pav.:</th>
@@ -76,9 +77,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             </tr>
 
         </table>
-        <div id="app">
-            
-        </div>
-
+    </div>
+    <div id="app">
+    </div>
     </body>
 </html>

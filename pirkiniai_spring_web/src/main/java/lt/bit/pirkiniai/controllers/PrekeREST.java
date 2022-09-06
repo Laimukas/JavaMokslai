@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+//@RequestMapping("ws/cekis/{cekisId}/preke")
 @RequestMapping("ws/preke")
 public class PrekeREST {
 
@@ -26,12 +27,16 @@ public class PrekeREST {
     @Autowired
     private HttpServletResponse response;
 
-    @GetMapping
-//    @GetMapping("{id}")
+//    @GetMapping
+    @GetMapping("{cekisId}")
     public List<Preke> list(
-//            @PathVariable("id") Integer id
+            @PathVariable("cekisId") Integer id
     ) {
-        return prekeDAO.findAll();
+        Optional<Cekis> oCekis = cekisDAO.findById(id);
+        if (oCekis.isPresent()) {
+            return oCekis.get().getPrekes();
+        }
+        return null;
     }
 
     @GetMapping("{id}")
