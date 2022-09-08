@@ -1,0 +1,15 @@
+
+a
+java:S1192&"FDefine a constant instead of duplicating this literal "cekis" 3 times.(øîÒÑÿÿÿÿÿ
+a
+java:S11926"FDefine a constant instead of duplicating this literal "value" 5 times.(¸â…Èûÿÿÿÿ
+P
+java:S3655N"5Call "oCekis.isPresent()" before accessing the value.(†°Œ‹øÿÿÿÿ
+P
+java:S3655`"5Call "oCekis.isPresent()" before accessing the value.(†°Œ‹øÿÿÿÿ
+P
+java:S3655g"5Call "oTipas.isPresent()" before accessing the value.(î•¶Þøÿÿÿÿ
+R
+java:S3655&"7Call "Optional#isPresent()" before accessing the value.(øîÒÑÿÿÿÿÿ
+P
+java:S3655U"5Call "oTipas.isPresent()" before accessing the value.(î•¶Þøÿÿÿÿ

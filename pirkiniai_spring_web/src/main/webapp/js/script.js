@@ -167,9 +167,10 @@ function deleteOne() {
 //--------------------------------------------------------------
 
 function getAllPrekes() {
-//    const cekisId = document.getElementById("cekisId").value;
-//    fetch("ws/cekis/"+cekisId+"/preke", {
-    fetch("ws/preke", {
+    const cekisId = document.getElementById("cekisId").value;
+    console.log("ws/cekis/"+ cekisId +"/preke");
+    fetch("ws/cekis/"+ cekisId +"/preke", {
+
         method: "GET",
         headers: {
             "Accept": "application/json"
@@ -200,8 +201,10 @@ function getAllPrekes() {
 }
 
 function getOnePreke() {
+    const cekisId = document.getElementById("cekisId").value;
     const prekeId = document.getElementById("prekeId").value;
-    fetch("ws/preke/" + prekeId, {
+    console.log("ws/cekis/"+ cekisId +"/preke/" + prekeId);
+    fetch("ws/cekis/"+ cekisId +"/preke/" + prekeId, {
         method: "GET",
         headers: {
             "Accept": "application/json"
@@ -223,11 +226,18 @@ function getOnePreke() {
             appDiv.innerHTML = "Nera tokio";
         } else {
             document.getElementById("prekeId").value = data.id;
-            document.getElementById("cekis").value = data.cekis;
+
+            document.getElementById("cekisId").value = data.cekis.id;
+            document.getElementById("data").value = data.cekis.data;
+            document.getElementById("parduotuve").value = data.cekis.parduotuve;
+            document.getElementById("aprasymas").value = data.cekis.aprasymas;
+
             document.getElementById("preke").value = data.preke;
             document.getElementById("kaina").value = data.kaina;
             document.getElementById("kiekis").value = data.kiekis;
-            document.getElementById("tipas").value = data.tipas;
+
+            document.getElementById("tipasId").value = data.tipas.id;
+            document.getElementById("pavadinimas").value = data.tipas.pavadinimas;
             appDiv.innerHTML = JSON.stringify(data);
         }
     })
@@ -238,21 +248,31 @@ function getOnePreke() {
 }
 
 function updatePreke() {
+    const cekisId = document.getElementById("cekisId").value;
+    const cekisData = document.getElementById("data").value;
+    const cekisParduotuve = document.getElementById("parduotuve").value;
+    const cekisAprasymas = document.getElementById("aprasymas").value;
+
     const prekeId = document.getElementById("prekeId").value;
-    const prekeCekis = document.getElementById("cekis").value;
+//    const prekeCekis = document.getElementById("cekis").value;
     const prekePreke = document.getElementById("preke").value;
     const prekeKiekis = document.getElementById("kiekis").value;
     const prekeKaina = document.getElementById("kaina").value;
-    const prekeTipas = document.getElementById("tipas").value;
+
+    const tipasId = document.getElementById("tipasId").value;
+    const tipasPav = document.getElementById("pavadinimas").value;
+//    const prekeTipas = document.getElementById("tipas").value;
     const preke = {
         id: prekeId,
-        cekis: prekeCekis,
+        cekis_id: cekisId,
+//        cekis: prekeCekis,
         preke: prekePreke,
         kiekis: prekeKiekis,
         kaina: prekeKaina,
-        tipas: prekeTipas
+//        tipas: prekeTipas
+        tipas_id: tipasId
     };
-    fetch("ws/preke/" + prekeId, {
+    fetch("ws/cekis/"+ cekisId +"/preke/" + prekeId, {
         method: "PUT",
         headers: {
             "Accept": "application/json",
@@ -274,19 +294,31 @@ function updatePreke() {
 }
 
 function insertPreke() {
-    const prekeCekis = document.getElementById("cekis").value;
-    const prekePreke = document.getElementById("preke").value;
-    const prekeKiekis = document.getElementById("kiekis").value;
-    const prekeKaina = document.getElementById("kaina").value;
-    const prekeTipas = document.getElementById("tipas").value;
-    const preke = {
-        cekis: prekeCekis,
-        preke: prekePreke,
-        kiekis: prekeKiekis,
-        kaina: prekeKaina,
-        tipas: prekeTipas
+     const cekisId = document.getElementById("cekisId").value;
+        const cekisData = document.getElementById("data").value;
+        const cekisParduotuve = document.getElementById("parduotuve").value;
+        const cekisAprasymas = document.getElementById("aprasymas").value;
+
+//        const prekeId = document.getElementById("prekeId").value;
+    //    const prekeCekis = document.getElementById("cekis").value;
+        const prekePreke = document.getElementById("preke").value;
+        const prekeKiekis = document.getElementById("kiekis").value;
+        const prekeKaina = document.getElementById("kaina").value;
+
+        const tipasId = document.getElementById("tipasId").value;
+        const tipasPav = document.getElementById("pavadinimas").value;
+    //    const prekeTipas = document.getElementById("tipas").value;
+        const preke = {
+            id: prekeId,
+            cekis_id: cekisId,
+    //        cekis: prekeCekis,
+            preke: prekePreke,
+            kiekis: prekeKiekis,
+            kaina: prekeKaina,
+    //        tipas: prekeTipas
+            tipas_id: tipasId
     };
-    fetch("ws/preke", {
+    fetch("ws/cekis/"+ cekisId +"/preke", {
         method: "POST",
         headers: {
             "Accept": "application/json",
@@ -309,12 +341,13 @@ function insertPreke() {
         if (data === null) {
             appDiv.innerHTML = "Nera tokio";
         } else {
-            document.getElementById("prekeId").value = data.id;
-            document.getElementById("cekis").value = data.cekis;
+            document.getElementById("cekisId").value = data.cekis.id;
+//            document.getElementById("cekis").value = data.cekis;
             document.getElementById("preke").value = data.preke;
             document.getElementById("kiekis").value = data.kiekis;
             document.getElementById("kaina").value = data.kaina;
-            document.getElementById("tipas").value = data.tipas;
+            document.getElementById("tipasId").value = data.tipas.id;
+//            document.getElementById("tipas").value = data.tipas;
             appDiv.innerHTML = "inserted: " + JSON.stringify(data);
         }
     })
@@ -325,8 +358,9 @@ function insertPreke() {
 }
 
 function deleteOnePreke() {
+    const cekisId = document.getElementById("cekisId").value;
     const prekeId = document.getElementById("prekeId").value;
-    fetch("ws/preke/" + prekeId, {
+    fetch("ws/cekis/"+ cekisId +"/preke/" + prekeId, {
         method: "DELETE"
     })
     .then(response => {

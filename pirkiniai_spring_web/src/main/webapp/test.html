@@ -5,20 +5,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Spring Web Pirkiniai</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/script.js"></script>
     </head>
     <body>
     <div align="center">
-
         <button onclick="getAll();">GetAll</button>
         <button onclick="getOne();">Get</button>
         <button onclick="deleteOne();">Delete</button>
+
         <hr>
 
         <table border="1" cellpadding="5">
+            <tr>
+                <div align="center">
+                <h3>Čekis</h3>
+                </div>
+            </tr>
 
             <tr>
                 <th>id:</th>
@@ -44,9 +49,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <hr>
         <button onclick="getAllPrekes();">GetAllPrekes</button>
         <button onclick="getOnePreke();">GetOnePreke</button>
+        <button onclick="deleteOnePreke();">DeletePreke</button>
         <hr>
         <table border="1" cellpadding="5">
 
+            <tr>
+                <div align="center">
+                    <h3>Prekė</h3>
+                </div>
+            </tr>
             <tr>
                 <th>preke id:</th>
                 <td><input id="prekeId" type="number"></td>

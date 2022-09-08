@@ -14,8 +14,8 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-//@RequestMapping("ws/cekis/{cekisId}/preke")
-@RequestMapping("ws/preke")
+@RequestMapping("ws/cekis/{cekisId}/preke")
+
 public class PrekeREST {
 
     @Autowired
@@ -27,8 +27,7 @@ public class PrekeREST {
     @Autowired
     private HttpServletResponse response;
 
-//    @GetMapping
-    @GetMapping("{cekisId}")
+    @GetMapping
     public List<Preke> list(
             @PathVariable("cekisId") Integer id
     ) {
@@ -39,30 +38,32 @@ public class PrekeREST {
         return null;
     }
 
-    @GetMapping("{id}")
+    @GetMapping("{prekeId}")
     public Preke getOne(
-            @PathVariable("id") Integer id
+            @PathVariable("cekisId") Integer cekisId,
+            @PathVariable("prekeId") Integer id
     ) {
+        Optional<Cekis> oCekis = cekisDAO.findById(cekisId);
         Optional<Preke> oPreke = prekeDAO.findById(id);
-        if (oPreke.isPresent()) {
+        if (oPreke.isPresent() && oCekis.isPresent()) {
             return oPreke.get();
         }
         response.setStatus(HttpServletResponse.SC_NO_CONTENT);
         return null;
     }
 
-    @PutMapping("{id}")
+    @PutMapping("{prekeId}")
     @Transactional
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void update(@PathVariable("id") Integer id, @RequestBody Preke preke) {
+    public void update(@PathVariable("prekeId") Integer id, @RequestBody Preke preke) {
         Optional<Preke> oPreke = prekeDAO.findById(id);
         if (oPreke.isPresent()) {
             Preke dbPreke = oPreke.get();
-            dbPreke.setCekis(preke.getCekis());
+//            dbPreke.setCekis(preke.getCekis());
             dbPreke.setPreke(preke.getPreke());
             dbPreke.setKaina(preke.getKaina());
             dbPreke.setKiekis(preke.getKiekis());
-            dbPreke.setTipas(preke.getTipas());
+//            dbPreke.setTipas(preke.getTipas());
             prekeDAO.save(dbPreke);
         }
     }
@@ -75,10 +76,10 @@ public class PrekeREST {
         return preke;
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("{prekeId}")
     @Transactional
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable("id") Integer id) {
+    public void delete(@PathVariable("prekeId") Integer id) {
         Optional<Preke> oPreke = prekeDAO.findById(id);
         if (oPreke.isPresent()) {
             prekeDAO.delete(oPreke.get());
