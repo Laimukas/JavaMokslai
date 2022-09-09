@@ -299,24 +299,23 @@ function insertPreke() {
         const cekisParduotuve = document.getElementById("parduotuve").value;
         const cekisAprasymas = document.getElementById("aprasymas").value;
 
-//        const prekeId = document.getElementById("prekeId").value;
-    //    const prekeCekis = document.getElementById("cekis").value;
+        const prekeId = document.getElementById("prekeId").value;
         const prekePreke = document.getElementById("preke").value;
         const prekeKiekis = document.getElementById("kiekis").value;
         const prekeKaina = document.getElementById("kaina").value;
 
         const tipasId = document.getElementById("tipasId").value;
         const tipasPav = document.getElementById("pavadinimas").value;
-    //    const prekeTipas = document.getElementById("tipas").value;
+
         const preke = {
             id: prekeId,
-            cekis_id: cekisId,
-    //        cekis: prekeCekis,
+
             preke: prekePreke,
             kiekis: prekeKiekis,
             kaina: prekeKaina,
-    //        tipas: prekeTipas
-            tipas_id: tipasId
+            tipas: {
+            id: tipasId
+            }
     };
     fetch("ws/cekis/"+ cekisId +"/preke", {
         method: "POST",
@@ -342,12 +341,10 @@ function insertPreke() {
             appDiv.innerHTML = "Nera tokio";
         } else {
             document.getElementById("cekisId").value = data.cekis.id;
-//            document.getElementById("cekis").value = data.cekis;
             document.getElementById("preke").value = data.preke;
             document.getElementById("kiekis").value = data.kiekis;
             document.getElementById("kaina").value = data.kaina;
             document.getElementById("tipasId").value = data.tipas.id;
-//            document.getElementById("tipas").value = data.tipas;
             appDiv.innerHTML = "inserted: " + JSON.stringify(data);
         }
     })

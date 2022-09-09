@@ -2,8 +2,10 @@ package lt.bit.pirkiniai.controllers;
 
 import lt.bit.pirkiniai.dao.CekisDAO;
 import lt.bit.pirkiniai.dao.PrekeDAO;
+import lt.bit.pirkiniai.dao.TipasDAO;
 import lt.bit.pirkiniai.data.Cekis;
 import lt.bit.pirkiniai.data.Preke;
+import lt.bit.pirkiniai.data.Tipas;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,6 +25,9 @@ public class PrekeREST {
 
     @Autowired
     private CekisDAO cekisDAO;
+
+    @Autowired
+    private TipasDAO tipasDAO;
 
     @Autowired
     private HttpServletResponse response;
@@ -59,19 +64,24 @@ public class PrekeREST {
         Optional<Preke> oPreke = prekeDAO.findById(id);
         if (oPreke.isPresent()) {
             Preke dbPreke = oPreke.get();
-//            dbPreke.setCekis(preke.getCekis());
             dbPreke.setPreke(preke.getPreke());
             dbPreke.setKaina(preke.getKaina());
             dbPreke.setKiekis(preke.getKiekis());
-//            dbPreke.setTipas(preke.getTipas());
             prekeDAO.save(dbPreke);
         }
     }
 
     @PostMapping
     @Transactional
-    public Preke add(@RequestBody Preke preke) {
+    public Preke add(
+            @PathVariable("cekisId") Integer cekisId,
+            @RequestBody Preke preke
+    ) {
         preke.setId(null);
+        Cekis c = cekisDAO.findById(cekisId).get();
+        preke.setCekis(c);
+        Tipas tipas = tipasDAO.findById(preke.getTipas().getId()).get();
+        preke.setTipas(tipas);
         prekeDAO.save(preke);
         return preke;
     }

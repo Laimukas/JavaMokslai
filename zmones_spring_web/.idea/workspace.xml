@@ -5,8 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/../pirkiniai-spring/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai-spring/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/8/4/843740bc7176b8b51623b85a2300621731f66250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/CekisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/CekisController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/CekisREST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/CekisREST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeREST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeREST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/TipasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/TipasController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/CekisDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/CekisDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/PrekeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/PrekeDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/TipasDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/TipasDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Cekis.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Cekis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Preke.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Preke.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Tipas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Tipas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03704af4a922d72cd4b5ba1f3962afd5a83d9eac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/1921536c1540575e1307a52dcdca227d9ee43ee7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4650ec7cb33497577c8511c18ed3c4ae44680dc0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/5610820762bc3ec47cc9dbd7324c057405172b6d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68c5bb9af25f0ddf1e5c985c2380a8cd33afacdd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/764cd03b687ba73b102a212783b9ca08a5cb8241" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6bd71535088e3c7ca3c67cbf293ce0a1a217511" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d59812da4d2ff41418724d60bd9415f2383fa272" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

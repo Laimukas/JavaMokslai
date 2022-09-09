@@ -1,20 +1,14 @@
 
-`
-0src/main/java/lt/bit/pirkiniai/dao/CekisDAO.java,8\4\843740bc7176b8b51623b85a2300621731f66250
 n
 >src/main/java/lt/bit/pirkiniai/controllers/MainController.java,1\5\15a471a00c8f883f4dcd9b25864bf3008c4a5e17
 ^
 .src/main/java/lt/bit/pirkiniai/data/Cekis.java,8\3\83574145183cba12bbdbe1d1f7682a1f30315113
-^
-.src/main/java/lt/bit/pirkiniai/data/Preke.java,9\3\935b6f6e44e6c5ce8dd05e8ecd229222412494a9
 o
 ?src/main/java/lt/bit/pirkiniai/controllers/TipasController.java,8\9\89f1794b0f6641b69ecb878203530251e587ec81
 [
 +src/main/webapp/WEB-INF/view/pagalLaika.jsp,0\f\0fe61b02f73fdffed5e3fc6d98a56d3000ded25a
 o
 ?src/main/java/lt/bit/pirkiniai/controllers/CekisController.java,1\c\1ca4401c9218260867ed20f52a61e5bfc824cfd2
-`
-0src/main/java/lt/bit/pirkiniai/dao/PrekeDAO.java,0\f\0fc3e9c4473f7a867b20c53f3bdcfc838cc463e3
 W
 'src/main/webapp/WEB-INF/view/cekiai.jsp,8\3\8329bae9b5509b1f2b5d5a80d7fc96aaef8290c5
 V
@@ -29,3 +23,11 @@ W
 0src/main/webapp/WEB-INF/view/prekesPagalTipa.jsp,a\b\ab6b1c444ff70cc1beff079cd1c0026addcf7c65
 o
 ?src/main/java/lt/bit/pirkiniai/controllers/PrekeController.java,5\1\5112599cf518e907fb424390df34541d3a9f0ff6
+^
+.src/main/java/lt/bit/pirkiniai/data/Tipas.java,8\b\8b0eec9126beee1aa3cd77e9b320322061d4a744
+V
+&src/main/webapp/WEB-INF/view/cekis.jsp,b\a\ba8484bc5901fdc42b38631b18eff003799c028d
+^
+.src/main/webapp/WEB-INF/dispatcher-servlet.xml,5\6\5610820762bc3ec47cc9dbd7324c057405172b6d
+R
+"src/main/webapp/WEB-INF/spring.xml,a\6\a6bd71535088e3c7ca3c67cbf293ce0a1a217511
