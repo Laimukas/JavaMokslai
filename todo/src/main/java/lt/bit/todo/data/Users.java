@@ -138,7 +138,7 @@ public class Users implements Serializable {
 
     @Override
     public String toString() {
-        return "lt.bit.todo.data.Users[ id=" + id + " ]";
+        return "Users{" + "id=" + id + ", userName=" + userName + ", userPassword=" + userPassword + '}';
     }
     
 }

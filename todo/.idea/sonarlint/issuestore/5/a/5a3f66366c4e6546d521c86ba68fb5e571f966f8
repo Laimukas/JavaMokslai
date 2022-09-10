@@ -1,25 +1,0 @@
-
-t
-java:S1488:"YImmediately return this expression instead of assigning it to the temporary variable "h".(‰ıÖÙ˘ˇˇˇˇ
-n
-java:S3305"SInject this field value directly into "authProvider", the only method that uses it.(ŸÕïØ¸ˇˇˇˇ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ω»ˆ˚
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÉˇΩ√˛ˇˇˇˇ
-S	java:S106 "9Replace this use of System.out or System.err by a logger.(‡ü≥¬˙ˇˇˇˇ
-S	java:S106&"9Replace this use of System.out or System.err by a logger.(ìòÚ¯˛ˇˇˇˇ
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(ÉˇΩ√˛ˇˇˇˇ
-S	java:S106("9Replace this use of System.out or System.err by a logger.(’ÿ“Ö˙ˇˇˇˇ
-N	java:S106*"9Replace this use of System.out or System.err by a logger.(«À‘Ò
-N	java:S106>"9Replace this use of System.out or System.err by a logger.(®¡‰Í
-t
-java:S1488:"YImmediately return this expression instead of assigning it to the temporary variable "h".(‰ıÖÙ˘ˇˇˇˇ
-n
-java:S3305"SInject this field value directly into "authProvider", the only method that uses it.(ŸÕïØ¸ˇˇˇˇ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ω»ˆ˚
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÉˇΩ√˛ˇˇˇˇ
-S	java:S106 "9Replace this use of System.out or System.err by a logger.(‡ü≥¬˙ˇˇˇˇ
-S	java:S106&"9Replace this use of System.out or System.err by a logger.(ìòÚ¯˛ˇˇˇˇ
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(ÉˇΩ√˛ˇˇˇˇ
-S	java:S106("9Replace this use of System.out or System.err by a logger.(’ÿ“Ö˙ˇˇˇˇ
-N	java:S106*"9Replace this use of System.out or System.err by a logger.(«À‘Ò
-N	java:S106>"9Replace this use of System.out or System.err by a logger.(®¡‰Í

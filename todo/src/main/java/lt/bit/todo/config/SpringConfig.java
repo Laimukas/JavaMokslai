@@ -22,27 +22,28 @@ public class SpringConfig {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new PasswordEncoder() {
-            PasswordEncoder pe = new Argon2PasswordEncoder();
-            @Override
-            public String encode(CharSequence rawPassword) {
-                System.out.println("encoding");
-                System.out.println(rawPassword);
-                String encoded = pe.encode(rawPassword);
-                System.out.println(encoded);
-                return encoded;
-            }
-
-            @Override
-            public boolean matches(CharSequence rawPassword, String encodedPassword) {
-                System.out.println("Does it match");
-                System.out.println(rawPassword);
-                System.out.println(encodedPassword);
-                boolean ok = pe.matches(rawPassword, encodedPassword);
-                System.out.println(ok);
-                return ok;
-            }
-        };
+        return new Argon2PasswordEncoder();
+//        return new PasswordEncoder() {
+//            PasswordEncoder pe = new Argon2PasswordEncoder();
+//            @Override
+//            public String encode(CharSequence rawPassword) {
+//                System.out.println("encoding");
+//                System.out.println(rawPassword);
+//                String encoded = pe.encode(rawPassword);
+//                System.out.println(encoded);
+//                return encoded;
+//            }
+//
+//            @Override
+//            public boolean matches(CharSequence rawPassword, String encodedPassword) {
+//                System.out.println("Does it match");
+//                System.out.println(rawPassword);
+//                System.out.println(encodedPassword);
+//                boolean ok = pe.matches(rawPassword, encodedPassword);
+//                System.out.println(ok);
+//                return ok;
+//            }
+//        };
     }
 
     @Bean
@@ -65,6 +66,5 @@ public class SpringConfig {
         };
         return h;
     }
-
 
 }

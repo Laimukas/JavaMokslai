@@ -286,6 +286,7 @@ function updatePreke() {
         }
         const appDiv = document.getElementById("app");
         appDiv.innerHTML = "updated";
+        appDiv.innerHTML = JSON.stringify(data);
     })
     .catch(err => {
         const appDiv = document.getElementById("app");

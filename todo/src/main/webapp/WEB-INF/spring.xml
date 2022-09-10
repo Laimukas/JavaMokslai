@@ -56,14 +56,16 @@ http://www.springframework.org/schema/security http://www.springframework.org/sc
     </security:authentication-manager>
 
     <security:http auto-config="true">
-        <!--<security:intercept-url pattern="/admin/*" access="hasAuthority('Admin')" />-->
-        <security:intercept-url pattern="/todo" access="isAuthenticated()" />
+        <security:intercept-url pattern="/admin/*" access="hasAuthority('admin')" />
+        <security:intercept-url pattern="/todo*/*" access="isAuthenticated()" />
         <security:form-login
             login-page="/login"
-            authentication-success-forward-url="/todo"
+            default-target-url="/todo"
             authentication-failure-url="/login?error=true"
         />
             <!--authentication-success-handler-ref="loggedIn"-->
+            <!--default-target-url="/todo"-->
+            <!--authentication-success-forward-url="/todo"-->
         <security:logout invalidate-session="true" logout-success-url="/index.html" />
     </security:http>
 

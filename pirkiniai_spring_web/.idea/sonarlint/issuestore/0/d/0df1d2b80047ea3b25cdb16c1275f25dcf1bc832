@@ -1,0 +1,11 @@
+
+f
+java:S3655Q"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(•ª¹˜
+k
+java:S3655S"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Ä†´—ıÿÿÿÿ
+A
+java:S1168+"+Return an empty collection instead of null.(¥¹ï
+V
+java:S4684?"@Replace this persistent entity with a simple POJO or DTO object.(ÄÜÏ±
+V
+java:S4684N"@Replace this persistent entity with a simple POJO or DTO object.(Áƒ¥¥
