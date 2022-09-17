@@ -1,8 +1,8 @@
-1 Tadas Tadzius 38.000000 
+1 Tadas Tadziausku 36.000000 
 2 Lukas Lukauskas 35.000000 
 3 Domas Domantas 28.000000 
 4 Tedis Tedzius 30.000000 
-8 Tukas Laikrastukas 18.000000 
+8 Tukas Laikrastukas 20.000000 
 9 Trolis Molis 24.000000 
 10 Steve Jobs 60.000000 
 11 Bill Gates 66.000000 
@@ -12,5 +12,4 @@
 15 Gautam Adani 60.000000 
 16 Larry Ellison 77.000000 
 17 Warren Buffet 91.000000 
-18 Larry Page 49.000000
-
+18 Larry Page 49.000000 

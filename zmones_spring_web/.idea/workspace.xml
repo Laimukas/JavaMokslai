@@ -5,32 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/8/4/843740bc7176b8b51623b85a2300621731f66250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/5/1/5112599cf518e907fb424390df34541d3a9f0ff6" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/5/1/5112599cf518e907fb424390df34541d3a9f0ff6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/CekisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/CekisController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/CekisREST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/CekisREST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeREST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/PrekeREST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/TipasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/controllers/TipasController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/CekisDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/CekisDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/PrekeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/PrekeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/TipasDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/dao/TipasDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Cekis.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Cekis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Preke.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Preke.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Tipas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/target/classes/lt/bit/pirkiniai/data/Tipas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03704af4a922d72cd4b5ba1f3962afd5a83d9eac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0cc17286d817c0af89c03169306493ae9bb82974" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/1921536c1540575e1307a52dcdca227d9ee43ee7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4650ec7cb33497577c8511c18ed3c4ae44680dc0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/5610820762bc3ec47cc9dbd7324c057405172b6d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68c5bb9af25f0ddf1e5c985c2380a8cd33afacdd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/764cd03b687ba73b102a212783b9ca08a5cb8241" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6bd71535088e3c7ca3c67cbf293ce0a1a217511" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cbfb0d2e9b2b9fbf9d54374577c894a38643c6d0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d59812da4d2ff41418724d60bd9415f2383fa272" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/zmones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/zmones.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/zmones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/zmones.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zmones_spring_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/meeting_spring.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,7 +81,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOPDesimtasProjektas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../meeting_spring" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -77,7 +89,7 @@
   <component name="RunManager" selected="Smart Tomcat.spring-web">
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lt.bit.spring_web.data.Run" />
-      <module name="zmones_spring_web" />
+      <module name="meeting_spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lt.bit.spring_web.data.*" />
@@ -103,7 +115,9 @@
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/spring_web" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
       <option name="tomcatInfo">

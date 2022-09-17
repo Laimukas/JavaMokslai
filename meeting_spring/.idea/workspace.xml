@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/5/1/5112599cf518e907fb424390df34541d3a9f0ff6" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/5/1/5112599cf518e907fb424390df34541d3a9f0ff6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../todo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_spring_web/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_spring_web/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_spring_web/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/0/3/03704af4a922d72cd4b5ba1f3962afd5a83d9eac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/0/c/0cc17286d817c0af89c03169306493ae9bb82974" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/1/9/1921536c1540575e1307a52dcdca227d9ee43ee7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/4/6/4650ec7cb33497577c8511c18ed3c4ae44680dc0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/5/6/5610820762bc3ec47cc9dbd7324c057405172b6d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/6/8/68c5bb9af25f0ddf1e5c985c2380a8cd33afacdd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/7/6/764cd03b687ba73b102a212783b9ca08a5cb8241" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/a/6/a6bd71535088e3c7ca3c67cbf293ce0a1a217511" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/c/b/cbfb0d2e9b2b9fbf9d54374577c894a38643c6d0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/d/5/d59812da4d2ff41418724d60bd9415f2383fa272" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_spring_web/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_spring_web/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/src/main/resources/data/zmones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_spring_web/src/main/resources/data/zmones.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/target/classes/data/zmones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_spring_web/target/classes/data/zmones.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zmones_spring_web/zmones_spring_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_spring_web/meeting_spring.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2E5NpLVwWfk7V7YtuOx6junmUeB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="EditorConfig" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/service" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lt.bit.spring_web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dokumentai\Coding\Pamokos\JavaMokslai\meeting_spring\src\main\java\lt\bit\spring_web\service" />
+      <recent name="D:\Dokumentai\Coding\Pamokos\JavaMokslai\meeting_spring\src\main\java\lt\bit\spring_web\data" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lt.bit.spring_web.db" />
+      <recent name="lt.bit.spring_web" />
+      <recent name="lt.bit.spring_web.repository" />
+      <recent name="lt.bit.spring_web.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Smart Tomcat.meeting_spring">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lt.bit.spring_web.data.Main" />
+      <module name="meeting_spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lt.bit.spring_web.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="meeting_spring" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="/meeting_spring" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.64" />
+          <option name="number" value="0" />
+          <option name="path" value="D:\Dokumentai\Coding\Pamokos\22sav\5\apache-tomcat-9.0.64" />
+          <option name="version" value="9.0.64.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Smart Tomcat.meeting_spring" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="" />
+      <created>1661881673368</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661881673368</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1661881786075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661881786075</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update">
+      <created>1662415543568</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662415543568</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+  </component>
+</project>
