@@ -17,10 +17,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         ObjectMapper mapper = new ObjectMapper();
-//
-//        List<Meeting> meetings = mapper.readValue(new File(MEETING_FILE_PATH), new TypeReference<>() {
-//        });
-//        System.out.println(meetings.getClass());
+
+        List<Meeting> meetings = mapper.readValue(new File(MEETING_FILE_PATH), new TypeReference<>() {
+        });
+        System.out.println(meetings);
 
 //        Meeting[] meetingList = mapper.readValue(new File(MEETING_FILE_PATH), Meeting[].class);
 //        Person[] peopleList = mapper.readValue(new File(PERSON_FILE_PATH), Person[].class);

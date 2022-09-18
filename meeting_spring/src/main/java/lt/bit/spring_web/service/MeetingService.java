@@ -6,12 +6,13 @@ import lt.bit.spring_web.db.Db;
 import lt.bit.spring_web.exceptions.ApiException;
 import org.springframework.stereotype.Repository;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 //@Service
 //@AllArgsConstructor
-@Repository
+
 public class MeetingService {
 
     private final Db db;
@@ -113,7 +114,7 @@ public class MeetingService {
         return sortas;
     }
 
-    public Meeting getOneMeeting(List<Meeting> list, Integer id) {
+    public Meeting getOneMeeting(List<Meeting> list, Integer id) throws IOException{
         if (id == null) {
             throw new NullPointerException("You have to get id for meeting");
         }
@@ -140,17 +141,19 @@ public class MeetingService {
         db.writeToJsonFile(meetings);
     }
 
-    public List<Meeting> deleteMeeting(Integer id) {
+    public List<Meeting> deleteMeeting(Integer id) throws IOException {
         List<Meeting> meetings = getAllMeetings();
+        if (id == null) {
+            throw new NullPointerException("You must to have id");
+        }
         for (Meeting meeting : meetings) {
             if (id.equals(meeting.getId())) {
                 meetings.remove(meeting);
                 db.writeToJsonFile(meetings);
                 break;
             } else {
-                throw new ApiException(
-                        "Cannot delete meeting because you are not" +
-                                "this meeting's responsible person", 4024);
+                throw new IOException(
+                        "Cannot delete meeting because you are not");
             }
         }
         return meetings;

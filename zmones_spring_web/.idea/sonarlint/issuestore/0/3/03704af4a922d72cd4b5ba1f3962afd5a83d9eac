@@ -1,0 +1,12 @@
+
+J
+java:S1481"/Remove this unused "zmogusList" local variable.(Θ®Χ¤ύÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(”υ„
+N	java:S106"9Replace this use of System.out or System.err by a logger.(γ§…“
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(κη‹±
+V	java:S125""<This block of commented-out lines of code should be removed.(€ÿ’΄ύÿÿÿÿ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(ϊ•€Λ
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(γ§…“8›¤¦―0
+Q	java:S1254"<This block of commented-out lines of code should be removed.(τ±ªΈ
+p
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Μ³8›¤¦―0

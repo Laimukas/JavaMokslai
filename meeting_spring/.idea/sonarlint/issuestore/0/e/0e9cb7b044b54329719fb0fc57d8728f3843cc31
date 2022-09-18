@@ -1,13 +1,0 @@
-
-W
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(âò¾ð
-U
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(÷ÖB
-B
-java:S1481",Remove this unused "meeting" local variable.(í”Âñ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Û±ˆú
-N	java:S106#"9Replace this use of System.out or System.err by a logger.(š¾µÒ
-N	java:S106/"9Replace this use of System.out or System.err by a logger.(™Îª©
-N	java:S106:"9Replace this use of System.out or System.err by a logger.(œ•é‹
-O
-java:S1068"4Remove this unused "PERSON_FILE_PATH" private field.(¦¿½±ýÿÿÿÿ
