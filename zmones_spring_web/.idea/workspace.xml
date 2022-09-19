@@ -5,39 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/libraries/Maven__javax_javaee_web_api_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/sonarlint/issuestore/1/4/14a7828aad7f7b7280bac8c9631ad8bf9adef3d0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/sonarlint/issuestore/b/f/bf3e8733ef94faaa8a3e7ce41ca16fa6268d2e08" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/sonarlint/issuestore/e/d/edd8f2e43ae3bcfd4ea5850f60b8214752d950de" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/sonarlint/issuestore/f/d/fd7a589b7553e66f9199bd005dfa4b3fe953f541" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/meeting_spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/meeting_spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/data/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/data/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/exceptions/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/service/MeetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/service/MeetingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/target/classes/lt/bit/spring_web/data/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/target/classes/lt/bit/spring_web/data/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/target/classes/lt/bit/spring_web/data/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/target/classes/lt/bit/spring_web/data/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/target/classes/lt/bit/spring_web/exceptions/ApiException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/target/classes/lt/bit/spring_web/service/MeetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/target/classes/lt/bit/spring_web/service/MeetingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/target/classes/lt/bit/spring_web/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/target/classes/lt/bit/spring_web/service/PersonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/4/c/4c9795b46a8a9dd03460ae9ee2dea656c5ecd470" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/5/1/5112599cf518e907fb424390df34541d3a9f0ff6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/8/3/8329bae9b5509b1f2b5d5a80d7fc96aaef8290c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/8/9/89f1794b0f6641b69ecb878203530251e587ec81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/a/4/a48403258fe4818219eb066d53485a1f30081afd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03704af4a922d72cd4b5ba1f3962afd5a83d9eac" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/1921536c1540575e1307a52dcdca227d9ee43ee7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4650ec7cb33497577c8511c18ed3c4ae44680dc0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cbfb0d2e9b2b9fbf9d54374577c894a38643c6d0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/d/fd7a589b7553e66f9199bd005dfa4b3fe953f541" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68c5bb9af25f0ddf1e5c985c2380a8cd33afacdd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d59812da4d2ff41418724d60bd9415f2383fa272" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/data/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/classes/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/data/Zmogus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/classes/Zmogus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/data/ZmogusDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/db/ZmogusDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/data/Run.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/data/Zmogus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/data/ZmogusDb.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +84,11 @@
   </component>
   <component name="RunManager" selected="Smart Tomcat.spring-web">
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lt.bit.spring_web.data.Run" />
+      <option name="MAIN_CLASS_NAME" value="lt.bit.spring_web.classes.Run" />
       <module name="meeting_spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lt.bit.spring_web.data.*" />
+          <option name="PATTERN" value="lt.bit.spring_web.db.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

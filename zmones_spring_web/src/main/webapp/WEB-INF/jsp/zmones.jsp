@@ -1,5 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page import="lt.bit.spring_web.data.Zmogus"%>
+<%@page import="lt.bit.spring_web.classes.Zmogus"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
@@ -49,6 +49,7 @@
                  <td>
                      <a href="zmogus/${zmogus.id}">edit</a>
                      <a href="zmogus/${zmogus.id}/delete">delete</a>
+                     <a href="zmogus/${zmogus.id}/kontaktai">kontaktai</a>
                  </td>
             </tr>
 
