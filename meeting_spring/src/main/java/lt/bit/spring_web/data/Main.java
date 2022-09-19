@@ -18,7 +18,7 @@ public class Main {
 
         ObjectMapper mapper = new ObjectMapper();
 
-        List<Meeting> meetings = mapper.readValue(new File(MEETING_FILE_PATH), new TypeReference<>() {
+        ArrayList<Meeting> meetings = mapper.readValue(new File(MEETING_FILE_PATH), new TypeReference<>() {
         });
         System.out.println(meetings);
 

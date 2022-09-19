@@ -3,8 +3,6 @@ package lt.bit.spring_web.service;
 import lt.bit.spring_web.data.Meeting;
 import lt.bit.spring_web.data.Person;
 import lt.bit.spring_web.db.Db;
-import lt.bit.spring_web.exceptions.ApiException;
-import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -130,6 +128,9 @@ public class MeetingService {
     public void addAttendee(Person attendee,
                             Integer meetingId) {
         List<Meeting> meetings = getAllMeetings();
+        if (meetingId == null) {
+            throw new NullPointerException("You have to get id for meeting");
+        }
         for (Meeting meeting : meetings) {
             if (meetingId.equals(meeting.getId())) {
                 List<Integer> attendees = meeting.getAtendees();

@@ -1,19 +1,20 @@
 package lt.bit.spring_web.service;
 
-
-import lombok.AllArgsConstructor;
 import lt.bit.spring_web.data.Person;
 import lt.bit.spring_web.db.Db;
-import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
-@AllArgsConstructor
+//@Service
+//@AllArgsConstructor
 public class PersonService {
 
     private final Db db;
+
+    public PersonService(Db db) {
+        this.db = db;
+    }
 
     public List<Person> getAllPeople() {
         return db.readJsonFilePeople();
