@@ -15,15 +15,15 @@ public class Kontaktas {
         this.kontId = nextId++;
     }
 
-    public Kontaktas(Integer kontId, Integer zmId, String tipas, String reiksme) {
-        this.kontId = kontId;
+    public Kontaktas(Integer zmId, String tipas, String reiksme) {
+        this.kontId = nextId++;
         this.zmId = zmId;
         this.tipas = tipas;
         this.reiksme = reiksme;
     }
 
-    public Kontaktas(Integer zmId, String tipas, String reiksme) {
-        this.kontId = nextId++;
+    public Kontaktas(Integer kontId, Integer zmId, String tipas, String reiksme) {
+        this.kontId = kontId;
         this.zmId = zmId;
         this.tipas = tipas;
         this.reiksme = reiksme;

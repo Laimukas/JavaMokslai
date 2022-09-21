@@ -7,12 +7,13 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.List;
 
 public class KontaktasDB {
 
-    private static final ArrayList<Kontaktas> kontaktai = new ArrayList<>();
+    private static final List<Kontaktas> kontaktai = new ArrayList<>();
 
-    public static ArrayList<Kontaktas> getListOfKontaktai() {
+    public static List<Kontaktas> getListOfKontaktai() {
         return kontaktai;
     }
 
@@ -30,9 +31,9 @@ public class KontaktasDB {
         throw new IllegalArgumentException("Kontaktas nerastas");
     }
 
-    public ArrayList<Kontaktas> getKontaktaiByZmogus(Integer id, File outputFile) throws IOException {
+    public List<Kontaktas> getKontaktaiByZmogus(Integer id, File outputFile) throws IOException {
         KontaktasDB kontaktasDB = new KontaktasDB();
-        ArrayList<Kontaktas> reikalingiKontaktai = new ArrayList<>();
+        List<Kontaktas> reikalingiKontaktai = new ArrayList<>();
         if (id == null) {
             throw new NullPointerException("Zmogaus id privalomas");
         }

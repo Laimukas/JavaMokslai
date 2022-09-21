@@ -47,7 +47,7 @@ public class Run {
 //            System.out.println(zmogus);
 //        }
 
-        ArrayList<Kontaktas> kontaktai = new ArrayList<>();
+        List<Kontaktas> kontaktai = new ArrayList<>();
         KontaktasDB kontaktasDB = new KontaktasDB();
         kontaktai = kontaktasDB.getArrayListFromFile(new File(KONTAKTAI_FILE_PATH));
         for (Kontaktas kont : kontaktai){

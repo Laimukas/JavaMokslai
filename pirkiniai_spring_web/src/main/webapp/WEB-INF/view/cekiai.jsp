@@ -44,7 +44,7 @@
         </div>
         <div align="center">
         <c:if test = "${suma!=null}">
-                Bendra suma: ${suma}
+                Bendra suma: ${suma} Eur
         </c:if>
         </div>
         <hr>
