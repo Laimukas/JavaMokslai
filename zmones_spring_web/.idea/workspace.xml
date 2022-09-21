@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/4/c/4c9795b46a8a9dd03460ae9ee2dea656c5ecd470" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/5/1/5112599cf518e907fb424390df34541d3a9f0ff6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/8/3/8329bae9b5509b1f2b5d5a80d7fc96aaef8290c5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/8/9/89f1794b0f6641b69ecb878203530251e587ec81" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/a/4/a48403258fe4818219eb066d53485a1f30081afd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03704af4a922d72cd4b5ba1f3962afd5a83d9eac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/1921536c1540575e1307a52dcdca227d9ee43ee7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4650ec7cb33497577c8511c18ed3c4ae44680dc0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68c5bb9af25f0ddf1e5c985c2380a8cd33afacdd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d59812da4d2ff41418724d60bd9415f2383fa272" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/data/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/classes/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/data/Zmogus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/classes/Zmogus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/data/ZmogusDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/db/ZmogusDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/data/Run.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/data/Zmogus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/data/ZmogusDb.class" beforeDir="false" />
-    </list>
+    <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662415543568</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update">
+      <created>1663791051437</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663791051437</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
