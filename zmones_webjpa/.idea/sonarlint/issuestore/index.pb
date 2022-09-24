@@ -3,8 +3,6 @@ Q
 !src/main/webapp/kontaktaiList.jsp,2\a\2a9cad54086707d369dc371346470fecd908b398
 O
 src/main/webapp/adresasEdit.jsp,d\9\d9bdbd6ec482c42d2eb794a54b39c3dfed8611ab
-d
-4src/main/java/lt/bit/zmones_webjpa/data/Adresas.java,f\b\fba1a0fd90d085fd9ec8cb347d2167bac75e2a8c
 k
 ;src/main/java/lt/bit/zmones_webjpa/servlet/AdresasSave.java,b\4\b4c7193d88e2c88769a283dc15bd06fe90c392ef
 m
@@ -19,8 +17,6 @@ O
 src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 T
 $src/main/webapp/META-INF/context.xml,c\b\cbfb0d2e9b2b9fbf9d54374577c894a38643c6d0
-c
-3src/main/java/lt/bit/zmones_webjpa/data/Zmogus.java,7\d\7d70a97bbae0469383a02325c99b7373ab1809f8
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 D
@@ -33,8 +29,6 @@ Q
 !src/main/webapp/kontaktasEdit.jsp,8\3\834c3487e453bfaf288deee88875bfbe77fddc74
 m
 =src/main/java/lt/bit/zmones_webjpa/servlet/KontaktasSave.java,d\c\dc18562a6e914eafde71d494f7fb072d10315d40
-f
-6src/main/java/lt/bit/zmones_webjpa/data/Kontaktas.java,e\5\e59f9983396280ca9fbdb70829bbe3e1bcac7657
 l
 <src/main/java/lt/bit/zmones_webjpa/servlet/ZmogusDelete.java,2\7\27b212d4ff85dd530b742c4d818cb06f13d113cb
 o
@@ -43,3 +37,9 @@ o
 +src/main/resources/META-INF/persistence.xml,3\b\3be4f79b5828b3982f3f6a62bf8fc67b3adedf58
 I
 src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
+d
+4src/main/java/lt/bit/zmones_webjpa/data/Adresas.java,f\b\fba1a0fd90d085fd9ec8cb347d2167bac75e2a8c
+f
+6src/main/java/lt/bit/zmones_webjpa/data/Kontaktas.java,e\5\e59f9983396280ca9fbdb70829bbe3e1bcac7657
+c
+3src/main/java/lt/bit/zmones_webjpa/data/Zmogus.java,7\d\7d70a97bbae0469383a02325c99b7373ab1809f8

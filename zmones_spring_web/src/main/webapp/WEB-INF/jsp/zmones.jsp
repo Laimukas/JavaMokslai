@@ -10,13 +10,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Zmones Spring</title>
     </head>
     <body>
         <form method="GET" action="zmogus/new">
         <input type="submit" value="ADD Zmogus" >
         </form>
         <hr>
+         <div align="center">
         <form method="POST" action="../search">
                    <c:if test="${zmogus.id != null}">
                        <input type="hidden" name="id" value="${zmogus.id}">
@@ -35,6 +36,7 @@
         <table border="1" cellpadding="5">
 
                 <tr>
+                    <th>Eil.Nr.</th>
                     <th>Vardas</th>
                     <th>Pavardė</th>
                     <th>Amžius</th>
@@ -43,6 +45,7 @@
         <c:forEach var="zmogus" items="${zmones}">
 
             <tr>
+                 <td>${zmogus.id}</td>
                  <td>${zmogus.vardas}</td>
                  <td>${zmogus.pavarde}</td>
                  <td>${zmogus.amzius}</td>
@@ -57,6 +60,6 @@
         </ul>
 
         <hr>
-
+     </div>
     </body>
 </html>

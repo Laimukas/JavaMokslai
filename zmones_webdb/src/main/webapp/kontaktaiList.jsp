@@ -42,14 +42,20 @@
              } else {
          %>
          <ul>
+         <table border="1" cellpadding="5">
+
+                         <tr>
+                             <th>Kontaktas</th>
+                             <th>Funkcijos</th>
+                         </tr>
              <%
                  for (Kontaktas kontaktas : kontaktai) {
              %>
-             <li>
-                 <%=kontaktas%>
-                 <a href="deleteKontaktas?id=<%=kontaktas.getId()%>">delete</a>
-                 <a href="kontaktasEdit.jsp?id=<%=kontaktas.getId()%>">edit</a>
-             </li>
+             <tr>
+                 <td><%=kontaktas%></td>
+                 <td><a href="deleteKontaktas?id=<%=kontaktas.getId()%>">delete</a>
+                 <a href="kontaktasEdit.jsp?id=<%=kontaktas.getId()%>">edit</a></td>
+              </tr>
              <%
                  }
              %>

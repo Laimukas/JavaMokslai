@@ -4,7 +4,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     List<Kontaktas> list = (List<Kontaktas>) request.getAttribute("kontaktai");
-
 %>
 <!DOCTYPE html>
 <html>
@@ -13,7 +12,8 @@
         <title>Kontaktai</title>
     </head>
     <body>
-        <form method="GET" action="kontaktas/new">
+     <div align="center">
+        <form method="GET" action="kontNew">
         <input type="submit" value="ADD Kontaktas" >
         </form>
         <a href="<%=application.getContextPath()%>/">Go Back</a>
@@ -44,8 +44,6 @@
 
         </c:forEach>
         </ul>
-
-        <hr>
-
+    </div>
     </body>
 </html>

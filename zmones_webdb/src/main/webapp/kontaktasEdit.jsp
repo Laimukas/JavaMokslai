@@ -59,6 +59,8 @@
           <title><%=z.getVardas()%> <%=z.getPavarde()%> kontakto redagavimas</title>
       </head>
       <body>
+       <div align="center">
+      <table border="1" cellpadding="5">
           <form action="saveKontaktas" method="POST">
               <%
                   if (k != null) {
@@ -71,10 +73,11 @@
               <%
                   }
               %>
-              Tipas: <input name="tipas" value="<%=k != null ? k.getTipas(): ""%>"><br>
-              Reiksme: <input name="reiksme" value="<%=k != null ? k.getReiksme(): ""%>"><br>
-              <input type="submit" value="Save">
+              <tr><th>Tipas:</th> <td><input name="tipas" value="<%=k != null ? k.getTipas(): ""%>"></td></tr>
+              <tr><th>Reiksme:</th> <td><input name="reiksme" value="<%=k != null ? k.getReiksme(): ""%>"></td></tr>
+              <tr><td><input type="submit" value="Save"></td>
           </form>
-          <a href="kontaktaiList.jsp?zmogusId=<%=z.getId()%>">Cancel</a>
+          <td><a href="kontaktaiList.jsp?zmogusId=<%=z.getId()%>">Cancel</a></td></tr>
+          </div>
       </body>
   </html>

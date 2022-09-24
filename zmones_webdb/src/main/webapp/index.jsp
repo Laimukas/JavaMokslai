@@ -24,16 +24,21 @@
           } else {
           %>
           <ul>
+          <table border="1" cellpadding="5">
+          <tr>
+                              <th>Sarasas</th>
+                              <th>Funkcijos</th>
+                              </tr>
               <%
                   for (Zmogus zmogus : list) {
               %>
-              <li>
-                  <%=zmogus%>
-                  <a href="zmogusEdit.jsp?id=<%=zmogus.getId()%>">Edit</a>
+              <tr>
+                 <td> <%=zmogus%></td>
+                 <td><a href="zmogusEdit.jsp?id=<%=zmogus.getId()%>">Edit</a>
                   <a href="deleteZmogus?id=<%=zmogus.getId()%>">Delete</a>
                   <a href="kontaktaiList.jsp?zmogusId=<%=zmogus.getId()%>">Kontaktai</a>
-                  <a href="adresaiList.jsp?zmogusId=<%=zmogus.getId()%>">Adresai</a>
-              </li>
+                  <a href="adresaiList.jsp?zmogusId=<%=zmogus.getId()%>">Adresai</a></td>
+              </tr>
               <%
                   }
               %>

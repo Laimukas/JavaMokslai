@@ -6,16 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="meeting_spring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="meeting_spring" target="8" />
+      <module name="zmones_spring_web" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="meeting_spring" options="-endorseddirs D:\Dokumentai\Coding\Pamokos\JavaMokslai\zmones_spring_web\target/endorsed" />
+      <module name="zmones_spring_web" options="-endorseddirs D:\Dokumentai\Coding\Pamokos\JavaMokslai\zmones_spring_web\target/endorsed" />
     </option>
   </component>
 </project>

@@ -1,0 +1,12 @@
+
+S
+java:S18542"=Remove this useless assignment to local variable "kontaktai".(áµá¥
+V	java:S125"<This block of commented-out lines of code should be removed.(šþÿùÿÿÿÿ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(ËÞÉ·øÿÿÿÿ
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(È©ƒ«8ääŒ¶0
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(ËÞÉ·øÿÿÿÿ8²«‘Œ¶0
+Q	java:S125B"<This block of commented-out lines of code should be removed.(ô±ª¸
+U
+java:S1128":Remove this unused import 'lt.bit.spring_web.db.ZmogusDb'.(ÚôÒåøÿÿÿÿ
+O
+java:S1068"4Remove this unused "ZMONES_FILE_PATH" private field.(³ãÞ“ùÿÿÿÿ

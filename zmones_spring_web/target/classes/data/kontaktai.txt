@@ -17,3 +17,5 @@
 18 18 email bb@gmail.com 
 19 9 FB facebook/reiksme 
 21 9 whatsapp 863344455 
+22 2 mob 865544332 
+23 4 skype skype/naujokas 

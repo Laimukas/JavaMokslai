@@ -58,6 +58,8 @@
         <title><%=z.getVardas()%> <%=z.getPavarde()%> kontakto redagavimas</title>
     </head>
     <body>
+     <div align="center">
+      <table border="1" cellpadding="5">
         <form action="saveAdresas" method="POST">
             <%
                 if (a != null) {
@@ -70,11 +72,13 @@
             <%
                 }
             %>
-            Adresas: <input name="adresas" value="<%=a != null ? a.getAdresas(): ""%>"><br>
-            Miestas: <input name="miestas" value="<%=a != null ? a.getMiestas(): ""%>"><br>
-            Pasto kodas: <input name="pastoKodas" value="<%=a != null ? a.getPastoKodas(): ""%>"><br>
-            <input type="submit" value="Save">
+            <tr><th>Adresas:</th><td> <input name="adresas" value="<%=a != null ? a.getAdresas(): ""%>"></td><tr>
+            <tr><th>Miestas:</th> <td><input name="miestas" value="<%=a != null ? a.getMiestas(): ""%>"></td><tr>
+            <tr><th>Pasto kodas:</th> <td><input name="pastoKodas" value="<%=a != null ? a.getPastoKodas(): ""%>"></td><tr>
+            <tr><td><input type="submit" value="Save"></td>
         </form>
-        <a href="adresaiList.jsp?zmogusId=<%=z.getId()%>">Cancel</a>
+        <td><a href="adresaiList.jsp?zmogusId=<%=z.getId()%>">Cancel</a></td><tr>
+        </tr>
+        </div>
     </body>
 </html>
