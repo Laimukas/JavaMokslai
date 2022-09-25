@@ -1,0 +1,14 @@
+
+f
+java:S1192"KDefine a constant instead of duplicating this literal "kontaktai" 10 times.(¹ÌƒÜüÿÿÿÿ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(õë¹
+S
+java:S1854>"8Remove this useless assignment to local variable "list".(›Å°Ïüÿÿÿÿ
+S
+java:S1854]"8Remove this useless assignment to local variable "list".(›Å°Ïüÿÿÿÿ
+]	java:S125c"<This block of commented-out lines of code should be removed.(ÂÚ¤…øÿÿÿÿ8•®Çˆ·0
+_
+java:S1128"=Remove this unused import 'lt.bit.spring_web.classes.Zmogus'.(á„‰Ëûÿÿÿÿ8‰ÔÏˆ·0
+\
+java:S1128":Remove this unused import 'lt.bit.spring_web.db.ZmogusDb'.(ÚôÒåøÿÿÿÿ8‰ÔÏˆ·0
