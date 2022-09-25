@@ -112,4 +112,19 @@ public class KontaktasDB {
         return kontaktai;
     }
 
+    public Integer getZmogusByKontaktas(Integer id, File outputFile) throws IOException {
+        Integer zmId = null;
+        KontaktasDB kontaktasDB = new KontaktasDB();
+        if (id == null) {
+            throw new NullPointerException("Kontakto id privalomas");
+        }
+        for (Kontaktas kontaktas : kontaktasDB.getArrayListFromFile(outputFile)) {
+            if (id.equals(kontaktas.getKontId())) {
+                zmId = kontaktas.getZmId();
+                System.out.println("Zmogus atitinkantis pagal kontakta turi id: " + zmId);
+            }
+        }
+        return zmId;
+    }
+
 }

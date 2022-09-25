@@ -2,17 +2,11 @@
 `
 0src/main/java/lt/bit/spring_web/classes/Run.java,8\8\883bbedfb4161bdaf9c3feea3b71cc819e0aa1a5
 c
-3src/main/java/lt/bit/spring_web/db/KontaktasDB.java,c\f\cf0c97d8fa34c91e8726d2143ca98cbdfeba2dee
-c
 3src/main/java/lt/bit/spring_web/classes/Zmogus.java,0\5\05026bde7a2781cabc3a2596de885111f640df5c
-t
-Dsrc/main/java/lt/bit/spring_web/controllers/KontaktasController.java,f\6\f65ca9f3b03a885fd10cc8dec76b11b2d7e14b28
 V
 &src/main/webapp/WEB-INF/jsp/zmones.jsp,1\9\1921536c1540575e1307a52dcdca227d9ee43ee7
 V
 &src/main/webapp/WEB-INF/jsp/zmogus.jsp,7\6\764cd03b687ba73b102a212783b9ca08a5cb8241
-o
-?src/main/java/lt/bit/spring_web/controllers/MainController.java,6\7\67bd802e917fe7b2374aa7b137f77d0c73fb9dfb
 f
 6src/main/java/lt/bit/spring_web/classes/Kontaktas.java,2\1\21019f52317ae88d8366fe5e677b7122d277d729
 `
@@ -39,5 +33,3 @@ D
 nb-configuration.xml,3\7\37f39013c8e074c1c1924d690948a7bdf73c6e1d
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-E
-zmones_spring_web.iml,0\c\0cc17286d817c0af89c03169306493ae9bb82974

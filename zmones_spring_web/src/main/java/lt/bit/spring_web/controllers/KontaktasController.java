@@ -52,7 +52,7 @@ public class KontaktasController {
     @PostMapping("zmogus/{zmId}/saveKont/{kontId}")
     public ModelAndView saveKont(
 
-            @RequestParam(value = "kontId", required = false) Integer kontId,
+            @PathVariable(value = "kontId", required = false) Integer kontId,
             @PathVariable("zmId") Integer zmId,
             @RequestParam("tipas") String tipas,
             @RequestParam("reiksme") String reiksme
@@ -76,34 +76,51 @@ public class KontaktasController {
         return mav;
     }
 
-    //------------------sita tvarkytis nes nesigauna naujo kontakto kurtis
-    @GetMapping("../zmogus/{zmId}/kontNew")
-//    @GetMapping("zmogus/{zmId}/kontNew")
-//    @GetMapping("kontNew")
-//    public ModelAndView newRecordKont(
-    public String newRecordKont(
-            @RequestParam(value = "kontId", required = false) Integer kontId,
-//            @RequestParam("zmId") Integer zmId,
+    @PostMapping("zmogus/{zmId}/saveKont")
+    public ModelAndView saveNewKont(
+
+            @PathVariable(value = "kontId", required = false) Integer kontId,
             @PathVariable("zmId") Integer zmId,
-            @RequestParam(value = "tipas", required = false) String tipas,
-            @RequestParam(value = "reiksme", required = false) String reiksme
+            @RequestParam("tipas") String tipas,
+            @RequestParam("reiksme") String reiksme
     ) throws IOException {
         ModelAndView mav;
         KontaktasDB kontaktasDB = new KontaktasDB();
         List<Kontaktas> list = new ArrayList<>();
-        Kontaktas k = new Kontaktas(zmId, tipas, reiksme);
-        kontaktasDB.addKontaktas(k, new File(KONTAKTAI_FILE_PATH));
-        list = kontaktasDB.getKontaktaiByZmogus(zmId, new File(KONTAKTAI_FILE_PATH));
-        mav = new ModelAndView("kontaktai");
-        mav.addObject("kontaktai", list);
-//        return mav;
-        return "redirect:/";
+        if (kontId == null) {
+            Kontaktas k = new Kontaktas(zmId, tipas, reiksme);
+            kontaktasDB.addKontaktas(k, new File(KONTAKTAI_FILE_PATH));
+            list = kontaktasDB.getKontaktaiByZmogus(zmId, new File(KONTAKTAI_FILE_PATH));
+            mav = new ModelAndView("kontaktai");
+            mav.addObject("kontaktai", list);
+        } else {
+            Kontaktas k = new Kontaktas(kontId, zmId, tipas, reiksme);
+            kontaktasDB.kontaktasUpdate(k, new File(KONTAKTAI_FILE_PATH));
+            list = kontaktasDB.getKontaktaiByZmogus(zmId, new File(KONTAKTAI_FILE_PATH));
+            mav = new ModelAndView("kontaktai");
+            mav.addObject("kontaktai", list);
+        }
+        return mav;
+    }
+
+    @GetMapping("zmogus/{zmId}/kontNew")
+    public ModelAndView newRecordKont(
+    ) throws IOException {
+        ModelAndView mav;
+        mav = new ModelAndView("kontaktasnew");
+        return mav;
     }
 
     @GetMapping("kontaktas/{kontId}/delete")
-    public String deleteKont(@PathVariable("kontId") Integer id) throws IOException {
+    public ModelAndView deleteKont(@PathVariable("kontId") Integer id) throws IOException {
+        ModelAndView mav;
+        List<Kontaktas> list = new ArrayList<>();
         KontaktasDB kontaktasDB = new KontaktasDB();
+        Integer zmId = kontaktasDB.getZmogusByKontaktas(id,new File(KONTAKTAI_FILE_PATH));
         kontaktasDB.kontaktasDelete(id, new File(KONTAKTAI_FILE_PATH));
-        return "redirect:/";
+        list = kontaktasDB.getKontaktaiByZmogus(zmId, new File(KONTAKTAI_FILE_PATH));
+        mav = new ModelAndView("kontaktai");
+        mav.addObject("kontaktai", list);
+        return mav;
     }
 }
