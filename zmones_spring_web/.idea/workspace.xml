@@ -5,43 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/0/d/0df1d2b80047ea3b25cdb16c1275f25dcf1bc832" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/0/d/0df1d2b80047ea3b25cdb16c1275f25dcf1bc832" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/5/1/5112599cf518e907fb424390df34541d3a9f0ff6" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/5/1/5112599cf518e907fb424390df34541d3a9f0ff6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/3/3/33842cf3f736633104328cbb6f15a991602ae87a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/6/1/6188cbacbbac7302830c953c98299ef1d149ff87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/7/f/7f6da8d76ae1de2aeb91e7d506b3c209c51341b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/8/f/8f09035c2adc99f480806aeba94c834ca0725df0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/9/9/99aa84ddd9cc4b28997550dd1b97febdf644d10f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/a/9/a960b1406d36af5cd172372552ad588a913ba6d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/a/c/ace37e4791b84204b7d1fb4fe045af84ea917bf3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/b/f/bf61f1c36a0c64508ae3ba33dff21c03fd4e8ad1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/d/4/d48ac8386ffa5e88b4c2145151bccb2f2e7011fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/d/8/d8847a44870e131e7311a8ccadc62e43f2104b83" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/0/d/0df1d2b80047ea3b25cdb16c1275f25dcf1bc832" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/0/f/0fc3e9c4473f7a867b20c53f3bdcfc838cc463e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/1/5/15a471a00c8f883f4dcd9b25864bf3008c4a5e17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/1/c/1ca4401c9218260867ed20f52a61e5bfc824cfd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/5/1/5112599cf518e907fb424390df34541d3a9f0ff6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/8/3/8329bae9b5509b1f2b5d5a80d7fc96aaef8290c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/8/3/83574145183cba12bbdbe1d1f7682a1f30315113" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/8/9/89f1794b0f6641b69ecb878203530251e587ec81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/b/a/ba8484bc5901fdc42b38631b18eff003799c028d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/d/6/d6cf3aadaceaa71c8026343d1f2a4348b7edb25c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../pirkiniai_spring_web/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/d/fd7a589b7553e66f9199bd005dfa4b3fe953f541" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d6ece21ca906819a561e8be0efbdad6c035b549" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meeting_spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zmones_spring_web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/controllers/KontaktasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/controllers/KontaktasController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/kontaktai.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/kontaktai.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/tmp_kontaktai.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/tmp_kontaktai.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/zmones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/zmones.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/kontaktai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/kontaktai.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/kontaktas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/kontaktas.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmogus.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmogus.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/db/ZmogusDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/bit/spring_web/db/ZmogusDb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/zmones.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/kontaktai.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/kontaktai.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/controllers/KontaktasController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/controllers/KontaktasController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/2/a/2a9cad54086707d369dc371346470fecd908b398" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/2/a/2a9cad54086707d369dc371346470fecd908b398" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/8/3/834c3487e453bfaf288deee88875bfbe77fddc74" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/8/3/834c3487e453bfaf288deee88875bfbe77fddc74" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/8/8/881e4660f4792b7676c1815bc39c5b28e4a4d604" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/8/8/881e4660f4792b7676c1815bc39c5b28e4a4d604" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/d/9/d9bdbd6ec482c42d2eb794a54b39c3dfed8611ab" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/d/9/d9bdbd6ec482c42d2eb794a54b39c3dfed8611ab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/adresaiList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/adresaiList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/adresasEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/adresasEdit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/kontaktaiList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/kontaktaiList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/kontaktasEdit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webdb/src/main/webapp/kontaktasEdit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webjpa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webjpa/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zmones_webjpa/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../zmones_webjpa/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/db/ZmogusDb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lt/bit/spring_web/db/ZmogusDb.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663878849571</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update">
+      <created>1664049589256</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664049589256</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,36 +1,0 @@
-
-i
-java:S1192("NDefine a constant instead of duplicating this literal "%d %s %s %f 
-" 6 times.(ÀñÈ¡øÿÿÿÿ
-{
-java:S1319L"fThe type of "zmones" should be an interface such as "List" rather than the implementation "ArrayList".(ôÚ·*
-‹
-java:S1319V"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ğ•ğ“ûÿÿÿÿ
->
-java:S1643("Use a StringBuilder instead.(ÀñÈ¡øÿÿÿÿ8ğÅµåµ0
-9
-java:S1643*"Use a StringBuilder instead.(„§Ê¿8ğÅµåµ0
-9
-java:S1643:"Use a StringBuilder instead.(„§Ê¿8ğÅµåµ0
->
-java:S1643D"Use a StringBuilder instead.(ÀñÈ¡øÿÿÿÿ8ğÅµåµ0
-9
-java:S1643P"Use a StringBuilder instead.(„§Ê¿8ÿÅµåµ0
-S	java:S106"9Replace this use of System.out or System.err by a logger.(„ûÿ¥şÿÿÿÿ
-s
-java:S3457("Q%n should be used in place of \n to produce the platform-specific line separator.(ÀñÈ¡øÿÿÿÿ8¥Æµåµ0
-n
-java:S3457*"Q%n should be used in place of \n to produce the platform-specific line separator.(„§Ê¿8¥Æµåµ0
-N	java:S1068"9Replace this use of System.out or System.err by a logger.(òî‚Í
-n
-java:S3457:"Q%n should be used in place of \n to produce the platform-specific line separator.(„§Ê¿8¥Æµåµ0
-s
-java:S3457D"Q%n should be used in place of \n to produce the platform-specific line separator.(ÀñÈ¡øÿÿÿÿ8¥Æµåµ0
-n
-java:S3457F"Q%n should be used in place of \n to produce the platform-specific line separator.(„§Ê¿8¥Æµåµ0
-n
-java:S3457P"Q%n should be used in place of \n to produce the platform-specific line separator.(„§Ê¿8¥Æµåµ0
-U
-java:S1117[":Rename "zmones" which hides the field declared at line 14.(•Õ…ıÿÿÿÿ
-X
-java:S2696d"6Make the enclosing method "static" or remove this set.(ŞÄìıÿÿÿÿÿ8¥Æµåµ0

@@ -18,20 +18,27 @@
         </form>
         <hr>
          <div align="center">
-        <form method="POST" action="../search">
-                   <c:if test="${zmogus.id != null}">
-                       <input type="hidden" name="id" value="${zmogus.id}">
-                   </c:if>
-                   Vardas: <input type="text" name="vardas" value="${zmogus.vardas}">
-                   Pavarde: <input type="text" name="pavarde" value="${zmogus.pavarde}">
-                        <input type="hidden" name="amzius" value="${zmogus.amzius}">
-                   <input type="submit" value="Search">
-
-        </form>
+         <a> Paieška pagal vardą arba pavardę...</a>
+          <table>
+                 <tr>
+        <form method="GET" action="paieska">
+                   <th>Vardas:</th> <td><input type="text" name="vardas" value="${vardas}"></td>
+                   <th>Pavarde:</th> <td> <input type="text" name="pavarde" value="${pavarde}"></td>
+                   <td><input type="submit" value="Search"></td>
+        </form></tr></table>
         <hr>
-        <input type="submit" value="Vardas">
-        <input type="submit" value="Pavarde">
-        <input type="submit" value="Unsorted">
+        <a> Rikiavimas pagal:</a>
+        <table>
+        <tr>
+        <td><form method="GET" action="pagalVarda">
+          <input type="submit" value="Vardas">
+        </form></td>
+        <td><form method="GET" action="pagalPavarde">
+          <input type="submit" value="Pavarde">
+        </form></td>
+        <td><form method="GET" action="<%=application.getContextPath()%>/">
+          <input type="submit" value="Unsorted">
+        </form></td>
         <ul>
         <table border="1" cellpadding="5">
 

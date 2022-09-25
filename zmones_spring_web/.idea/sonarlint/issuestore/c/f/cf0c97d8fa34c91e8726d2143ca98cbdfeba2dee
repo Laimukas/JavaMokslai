@@ -1,0 +1,30 @@
+
+i
+java:S11924"NDefine a constant instead of duplicating this literal "%d %d %s %s 
+" 5 times.(¤¬üÿÿÿÿ
+‹
+java:S1319\"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(º›öùÿÿÿÿ
+7
+java:S16434"Use a StringBuilder instead.(¤¬üÿÿÿÿ
+7
+java:S1643D"Use a StringBuilder instead.(¤¬üÿÿÿÿ
+2
+java:S1643F"Use a StringBuilder instead.( ëÁ»
+2
+java:S1643V"Use a StringBuilder instead.( ëÁ»
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Êæ˜Ù
+l
+java:S34574"Q%n should be used in place of \n to produce the platform-specific line separator.(¤¬üÿÿÿÿ
+g
+java:S34576"Q%n should be used in place of \n to produce the platform-specific line separator.( ëÁ»
+l
+java:S3457D"Q%n should be used in place of \n to produce the platform-specific line separator.(¤¬üÿÿÿÿ
+g
+java:S3457F"Q%n should be used in place of \n to produce the platform-specific line separator.( ëÁ»
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(´‚ğÃ
+g
+java:S3457V"Q%n should be used in place of \n to produce the platform-specific line separator.( ëÁ»
+X
+java:S1117a"=Rename "kontaktai" which hides the field declared at line 14.(‘é™¯øÿÿÿÿ
+Q
+java:S2696m"6Make the enclosing method "static" or remove this set.(åØ¾ÿÿÿÿÿ

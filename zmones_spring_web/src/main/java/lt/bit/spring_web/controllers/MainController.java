@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.swing.*;
+
 @Controller
 public class MainController {
 
@@ -29,6 +31,34 @@ public class MainController {
     public ModelAndView list() throws IOException {
         ZmogusDb zmonesS = new ZmogusDb();
         ArrayList<Zmogus> list = zmonesS.getArrayListFromFile(new File(ZMONES_FILE_PATH));
+        ModelAndView mav = new ModelAndView("zmones");
+        mav.addObject("zmones", list);
+        return mav;
+    }
+    @GetMapping("/pagalVarda")
+    public ModelAndView listByName() throws IOException {
+        ZmogusDb zmonesS = new ZmogusDb();
+        ArrayList<Zmogus> list = zmonesS.rikiavimasPagalVarda(SortOrder.ASCENDING,new File(ZMONES_FILE_PATH));
+        ModelAndView mav = new ModelAndView("zmones");
+        mav.addObject("zmones", list);
+        return mav;
+    }
+
+    @GetMapping("/pagalPavarde")
+    public ModelAndView listBySurname() throws IOException {
+        ZmogusDb zmonesS = new ZmogusDb();
+        ArrayList<Zmogus> list = zmonesS.rikiavimasPagalPavarde(SortOrder.ASCENDING,new File(ZMONES_FILE_PATH));
+        ModelAndView mav = new ModelAndView("zmones");
+        mav.addObject("zmones", list);
+        return mav;
+    }
+    @GetMapping("/paieska")
+    public ModelAndView searching(
+            @RequestParam("vardas") String vardas,
+            @RequestParam("pavarde") String pavarde
+    ) throws IOException {
+        ZmogusDb zmonesS = new ZmogusDb();
+        ArrayList<Zmogus> list = zmonesS.paieskaPagalVardaPavarde(vardas,pavarde,new File(ZMONES_FILE_PATH));
         ModelAndView mav = new ModelAndView("zmones");
         mav.addObject("zmones", list);
         return mav;

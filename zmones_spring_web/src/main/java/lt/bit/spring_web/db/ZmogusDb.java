@@ -3,6 +3,7 @@ package lt.bit.spring_web.db;
 import lt.bit.spring_web.classes.Zmogus;
 import org.apache.commons.io.FileUtils;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -101,5 +102,51 @@ public class ZmogusDb {
             }
         }
         return zmones;
+    }
+    public ArrayList<Zmogus> rikiavimasPagalVarda(SortOrder sortOrder,File outputFile) throws IOException {
+        ArrayList<Zmogus> zmones = getArrayListFromFile(outputFile);
+        System.out.println("Rikiavimas pagal varda "+ sortOrder.name()+" tvarka.");
+        if (SortOrder.ASCENDING.equals(sortOrder)) {
+            zmones.sort((o1, o2) -> o1.getVardas().compareTo(o2.getVardas()));
+            zmones.forEach(zmogus -> System.out.println(zmogus));
+        }
+
+        if (SortOrder.DESCENDING.equals(sortOrder)) {
+            zmones.sort((o1, o2) -> o2.getVardas().compareTo(o1.getVardas()));
+            zmones.forEach(zmogus -> System.out.println(zmogus));
+        }
+        return zmones;
+    }
+    public ArrayList<Zmogus> rikiavimasPagalPavarde(SortOrder sortOrder,File outputFile) throws IOException {
+        ArrayList<Zmogus> zmones = getArrayListFromFile(outputFile);
+        System.out.println("Rikiavimas pagal pavarde "+ sortOrder.name()+" tvarka.");
+        if (SortOrder.ASCENDING.equals(sortOrder)) {
+            zmones.sort((o1, o2) -> o1.getPavarde().compareTo(o2.getPavarde()));
+            zmones.forEach(zmogus -> System.out.println(zmogus));
+        }
+
+        if (SortOrder.DESCENDING.equals(sortOrder)) {
+            zmones.sort((o1, o2) -> o2.getPavarde().compareTo(o1.getPavarde()));
+            zmones.forEach(zmogus -> System.out.println(zmogus));
+        }
+        return zmones;
+    }
+
+    public ArrayList<Zmogus> paieskaPagalVardaPavarde(String vardas, String pavarde,File outputFile) throws IOException {
+        if (pavarde !=null && pavarde.equals("")){
+            System.out.println("Deja, nurodyta pavarde neegzistuoja!");
+        }else if (vardas !=null && vardas.equals("")){
+            System.out.println("Deja, nurodytas vardas neegzistuoja!");
+        }
+        ArrayList<Zmogus> naujas = new ArrayList<>();
+        ArrayList<Zmogus> zmones = getArrayListFromFile(outputFile);
+        System.out.println("Paieska pagal Varda,Pavarde.");
+        zmones.forEach(zmogus -> {
+            if (zmogus.getVardas().startsWith(vardas)
+                    && zmogus.getPavarde().startsWith(pavarde)) {
+                System.out.println(zmogus);
+                naujas.add(zmogus);
+            }
+        });return naujas;
     }
 }
