@@ -7,7 +7,11 @@
     <body>
         <br>
         <div align="center">
-          <h1>edit</h1>  
+          <h1>edit</h1>
+          <form method="POST" action="../todo">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+            <input type="submit" value="GoBack">
+          </form></td>
         </div>        
     </body>
 </html>

@@ -1,10 +1,6 @@
 
-`
-0src/main/java/lt/bit/spring_web/classes/Run.java,8\8\883bbedfb4161bdaf9c3feea3b71cc819e0aa1a5
 c
 3src/main/java/lt/bit/spring_web/classes/Zmogus.java,0\5\05026bde7a2781cabc3a2596de885111f640df5c
-V
-&src/main/webapp/WEB-INF/jsp/zmones.jsp,1\9\1921536c1540575e1307a52dcdca227d9ee43ee7
 V
 &src/main/webapp/WEB-INF/jsp/zmogus.jsp,7\6\764cd03b687ba73b102a212783b9ca08a5cb8241
 f
@@ -29,7 +25,33 @@ p
 @.idea/libraries/Maven__org_springframework_spring_web_5_3_22.xml,c\9\c90343bde870a92f172fa219c0d22ecafd280ca5
 s
 C.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_22.xml,6\1\61d8add40c88c57b0b3de48a0060cdb0c2414b4e
+T
+$src/main/webapp/META-INF/context.xml,c\b\cbfb0d2e9b2b9fbf9d54374577c894a38643c6d0
+^
+.src/main/webapp/WEB-INF/dispatcher-servlet.xml,5\6\5610820762bc3ec47cc9dbd7324c057405172b6d
+R
+"src/main/webapp/WEB-INF/spring.xml,a\6\a6bd71535088e3c7ca3c67cbf293ce0a1a217511
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+Y
+)src/main/webapp/WEB-INF/jsp/kontaktai.jsp,0\6\06657b01ed6a843604e1ef0f9af92a3356572dba
+Y
+)src/main/webapp/WEB-INF/jsp/kontaktas.jsp,8\e\8e04ca4377b6c288fc4f9fd2e63fbcd99062a971
+\
+,src/main/webapp/WEB-INF/jsp/kontaktasnew.jsp,e\1\e11a18e0558912041163a21d6c2df4a491e55019
+E
+zmones_spring_web.iml,0\c\0cc17286d817c0af89c03169306493ae9bb82974
 D
 nb-configuration.xml,3\7\37f39013c8e074c1c1924d690948a7bdf73c6e1d
+t
+Dsrc/main/java/lt/bit/spring_web/controllers/KontaktasController.java,f\6\f65ca9f3b03a885fd10cc8dec76b11b2d7e14b28
+`
+0src/main/java/lt/bit/spring_web/classes/Run.java,8\8\883bbedfb4161bdaf9c3feea3b71cc819e0aa1a5
+V
+&src/main/webapp/WEB-INF/jsp/zmones.jsp,1\9\1921536c1540575e1307a52dcdca227d9ee43ee7
+c
+3src/main/java/lt/bit/spring_web/db/KontaktasDB.java,c\f\cf0c97d8fa34c91e8726d2143ca98cbdfeba2dee
+o
+?src/main/java/lt/bit/spring_web/controllers/MainController.java,6\7\67bd802e917fe7b2374aa7b137f77d0c73fb9dfb
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

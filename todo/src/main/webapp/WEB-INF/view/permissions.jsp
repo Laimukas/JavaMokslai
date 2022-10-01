@@ -4,14 +4,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>User List</title>
+        <title>Permission List</title>
     </head>
     <body>
         <div align="center">
         <table>
         <tr>
         <td>
-        <a href="editUser">New user</a></td>
+        <a href="editPermission">New permission</a></td>
         <td>
         <form method="POST" action="../todo">
               <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
@@ -22,16 +22,15 @@
 
         <table border="1" cellpadding="5">
         <ul>
-        <c:forEach var="user" items="${list}">
+        <c:forEach var="permission" items="${list}">
             <tr>
                 <th>
-                  ${user.userName}  
+                  ${permission.permissionName}
                 </th>
                 <td>
-                <a href="editUser?id=${user.id}">edit</a>
-                <a href="deleteUser?id=${user.id}">delete</a>
-                <a href="userPermissions?id=${user.id}">User Permissions</a>
-                </td>                
+                <a href="editPermission?id=${permission.id}">edit</a>
+                <a href="deletePermission?id=${permission.id}">delete</a>
+                </td>
             </tr>
         </c:forEach>
         </ul>

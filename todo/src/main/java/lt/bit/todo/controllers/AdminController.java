@@ -1,7 +1,10 @@
 package lt.bit.todo.controllers;
 
 import java.util.Optional;
+
+import lt.bit.todo.dao.PermissionsDAO;
 import lt.bit.todo.dao.UsersDAO;
+import lt.bit.todo.data.Permissions;
 import lt.bit.todo.data.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -19,6 +22,9 @@ public class AdminController {
     
     @Autowired
     private UsersDAO usersDAO;
+
+    @Autowired
+    private PermissionsDAO permissionsDAO;
     
     @Autowired
     private PasswordEncoder pe;
@@ -79,5 +85,56 @@ public class AdminController {
         }
         return "redirect:./users";
     }
-    
+
+    @GetMapping("permissions")
+    public ModelAndView permissionList() {
+        ModelAndView mav = new ModelAndView("permissions");
+        mav.addObject("list", permissionsDAO.findAll());
+        return mav;
+    }
+    @GetMapping("editPermission")
+    public ModelAndView editPermission(@RequestParam(value = "id", required = false) Integer id) {
+        ModelAndView mav = new ModelAndView("editPermission");
+        if (id == null) {
+            return mav;
+        }
+        Optional<Permissions> oPerm = permissionsDAO.findById(id);
+        if (oPerm.isPresent()) {
+            mav.addObject("permission", oPerm.get());
+            return mav;
+        }
+        return new ModelAndView("redirect:./permissions");
+    }
+    @PostMapping("savePermission")
+    @Transactional
+    public String savePerm(
+            @RequestParam(value = "id", required = false) Integer id,
+            @RequestParam(value = "permissionName") String permissionName
+    ) {
+        Permissions p;
+        if (id != null) {
+            Optional<Permissions> oPerm = permissionsDAO.findById(id);
+            if (oPerm.isEmpty()) {
+                return "redirect:./permissions";
+            }
+            p = oPerm.get();
+        } else {
+            p = new Permissions();
+        }
+        p.setPermissionName(permissionName);
+        permissionsDAO.save(p);
+        return "redirect:./permissions";
+    }
+    @GetMapping("deletePermission")
+    @Transactional
+    public String deletePerm(@RequestParam(value = "id") Integer id) {
+        if (id == null) {
+            return "redirect:./permissions";
+        }
+        Optional<Permissions> oPerm = permissionsDAO.findById(id);
+        if (oPerm.isPresent()) {
+            permissionsDAO.delete(oPerm.get());
+        }
+        return "redirect:./permissions";
+    }
 }
