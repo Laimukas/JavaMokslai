@@ -1,3 +1,19 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+\
+,src/main/java/lt/bit/todo/data/UserInfo.java,1\8\186ac6cb90114ef834a4e850a08cab2a38d134dd
+V
+&src/main/webapp/WEB-INF/view/login.jsp,2\1\213f7d7619b7dd55c44027fbd885fd8deacd498e
+J
+src/main/webapp/index.html,1\3\1337d72a3b1928dba82aa5210f5cdc0e88ce895b
+j
+:src/main/java/lt/bit/todo/config/MyUserDetailsService.java,5\6\56d24a528cfc225c2f9b8b9dbcd6da5409324066
+^
+.src/main/webapp/WEB-INF/dispatcher-servlet.xml,5\6\5610820762bc3ec47cc9dbd7324c057405172b6d
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+b
+2src/main/java/lt/bit/todo/config/SpringConfig.java,5\a\5a3f66366c4e6546d521c86ba68fb5e571f966f8
+c
+3src/main/java/lt/bit/todo/config/MyUserDetails.java,0\4\04d7171823c546f79cb43250bdcc5ca57d3046fb

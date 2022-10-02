@@ -20,13 +20,17 @@
                  <a href="admin/users">Users</a>
             </td>
             <td>
-                <a href="todo/edit">Edit</a>
-            </td>
-            <td>
               <a href="admin/permissions">Permissions</a>
             </td>
         </tr>
         </table>
+        <hr>
+        <a href="todo/edit">Nauja Uzduotis</a>
+        <table border="1" cellpadding="5">
+                <ul>
+
+                </ul>
+                </table>
     </div>
     </body>
 </html>

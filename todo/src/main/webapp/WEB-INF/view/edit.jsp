@@ -7,11 +7,31 @@
     <body>
         <br>
         <div align="center">
-          <h1>edit</h1>
-          <form method="POST" action="../todo">
-            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-            <input type="submit" value="GoBack">
-          </form></td>
+          <h1>Uzduotis</h1>
+          <form method="POST" action="save">
+                      <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+                      <c:if test="${todo != null}">
+                          <input type="hidden" name="id" value="${todo.id}">
+                      </c:if>
+                      <table border="1" cellpadding="5">
+                          <tr>
+                              <th>
+                                  Kokia:
+                              </th>
+                              <td>
+                                  <input type="text" name="desc" value="${todo.desc}">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                <input type="submit" value="Save">
+                              </td>
+                              <td>
+                                  <a href="../todo">Cancel</a>
+                              </td>
+                          </tr>
+                  </table>
+                  </form>
         </div>        
     </body>
 </html>
