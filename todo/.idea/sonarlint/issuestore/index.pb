@@ -1,10 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-\
-,src/main/java/lt/bit/todo/data/UserInfo.java,1\8\186ac6cb90114ef834a4e850a08cab2a38d134dd
-V
-&src/main/webapp/WEB-INF/view/login.jsp,2\1\213f7d7619b7dd55c44027fbd885fd8deacd498e
 J
 src/main/webapp/index.html,1\3\1337d72a3b1928dba82aa5210f5cdc0e88ce895b
 j
@@ -17,3 +13,15 @@ b
 2src/main/java/lt/bit/todo/config/SpringConfig.java,5\a\5a3f66366c4e6546d521c86ba68fb5e571f966f8
 c
 3src/main/java/lt/bit/todo/config/MyUserDetails.java,0\4\04d7171823c546f79cb43250bdcc5ca57d3046fb
+Y
+)src/main/webapp/WEB-INF/view/editUser.jsp,8\d\8d67c869338d9012ec0ce21e8c75b4252f5adb6d
+w
+G.idea/sonarlint/issuestore/1/8/186ac6cb90114ef834a4e850a08cab2a38d134dd,0\7\07fe74e9df10118333e7fda906b3606f29cc7334
+w
+G.idea/sonarlint/issuestore/5/6/56d24a528cfc225c2f9b8b9dbcd6da5409324066,d\2\d2c125208193398631192b5998757589f071537f
+w
+G.idea/sonarlint/issuestore/5/a/5a3f66366c4e6546d521c86ba68fb5e571f966f8,5\6\56d555ccbcd4d8d0c6bd5cb9a5459bcccd40cf64
+w
+G.idea/sonarlint/issuestore/5/6/5610820762bc3ec47cc9dbd7324c057405172b6d,a\d\adf3bf4e8655be59ab12b00023b74ac5bf1ca094
+w
+G.idea/sonarlint/issuestore/2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392,1\8\188792529ee886cbdc6616248007f7a96c73e03d

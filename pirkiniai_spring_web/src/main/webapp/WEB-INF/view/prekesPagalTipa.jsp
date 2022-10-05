@@ -33,7 +33,7 @@
         <hr>
         <div align="center">
                 <c:if test = "${suma!=null}">
-                        Bendra suma: ${suma}
+                        Bendra suma: ${suma} Eur.
                 </c:if>
                 </div>
         <a href="<%=application.getContextPath()%>/">Pagrindinis puslapis</a>

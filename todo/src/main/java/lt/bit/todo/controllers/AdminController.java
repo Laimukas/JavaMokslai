@@ -1,5 +1,7 @@
 package lt.bit.todo.controllers;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import lt.bit.todo.dao.PermissionsDAO;
@@ -136,5 +138,19 @@ public class AdminController {
             permissionsDAO.delete(oPerm.get());
         }
         return "redirect:./permissions";
+    }
+    @GetMapping("userPermissions")
+    public ModelAndView userPermissions(@RequestParam(value = "id", required = false) Integer id) {
+        ModelAndView mav = new ModelAndView("userPermissions");
+        if (id == null) {
+            return mav;
+        }
+        Optional<Users> oUser = usersDAO.findById(id);
+        if (oUser.isPresent()) {
+            mav.addObject("user", oUser.get());
+            mav.addObject("list",userPermissions(id));
+            return mav;
+        }
+        return new ModelAndView("redirect:./users");
     }
 }

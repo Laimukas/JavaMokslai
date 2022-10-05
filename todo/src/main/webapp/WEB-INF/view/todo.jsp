@@ -7,30 +7,31 @@
     </head>
     <body>
         <div align="center">
-        <h2>Prisijunges vartotojas: ${user.userName}</h2>
-        <table border="1" cellpadding="5">
+        <table cellpadding="5">
         <tr>
             <td>
+                <h2>Prisijunges vartotojas: ${user.userName}</h2>
+            </td>
+            <td>
               <form method="POST" action="logout">
-                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-                 <input type="submit" value="Logout">
+                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+                <input type="submit" value="Logout">
               </form>
             </td>
             <td>
-                 <a href="admin/users">Users</a>
+                <a href="admin/users">Users</a>
             </td>
             <td>
-              <a href="admin/permissions">Permissions</a>
+                <a href="admin/permissions">Permissions</a>
             </td>
+             <td>
+                <a href="viewer/todoView">Todo list</a>
+             </td>
         </tr>
         </table>
         <hr>
         <a href="todo/edit">Nauja Uzduotis</a>
-        <table border="1" cellpadding="5">
-                <ul>
 
-                </ul>
-                </table>
     </div>
     </body>
 </html>
