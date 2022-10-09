@@ -12,10 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -111,7 +108,8 @@ public class AdminController {
     @Transactional
     public String savePerm(
             @RequestParam(value = "id", required = false) Integer id,
-            @RequestParam(value = "permissionName") String permissionName
+            @RequestParam(value = "permissionName") String permissionName,
+            @RequestParam(value = "desc") String desc
     ) {
         Permissions p;
         if (id != null) {
@@ -124,6 +122,7 @@ public class AdminController {
             p = new Permissions();
         }
         p.setPermissionName(permissionName);
+        p.setDesc(desc);
         permissionsDAO.save(p);
         return "redirect:./permissions";
     }
@@ -140,7 +139,9 @@ public class AdminController {
         return "redirect:./permissions";
     }
     @GetMapping("userPermissions")
-    public ModelAndView userPermissions(@RequestParam(value = "id", required = false) Integer id) {
+    public ModelAndView userPermissions(
+            @PathVariable(value = "id", required = false) Integer id
+    ) {
         ModelAndView mav = new ModelAndView("userPermissions");
         if (id == null) {
             return mav;

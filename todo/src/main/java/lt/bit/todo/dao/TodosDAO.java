@@ -10,9 +10,9 @@ import java.util.List;
 
 public interface TodosDAO extends JpaRepository<Todos, Integer>{
 
-    @Query("SELECT t FROM Todos t WHERE t.userId = :usrId")
+    @Query("SELECT t FROM Todos t WHERE t.userId.id = :user_id")
     public List<Todos> pagalUseri(
-            @Param("usrId")
-            Integer usrId);
+            @Param("user_id")
+            Integer user_id);
 
 }

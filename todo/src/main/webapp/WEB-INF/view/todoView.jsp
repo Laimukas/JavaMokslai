@@ -20,22 +20,37 @@
                                       </option>
                                     </c:forEach>
                                   </select>
+                                  <h3>Pilnas todo sarasas</h3>
 <table border="1" cellpadding="5">
         <ul>
         <c:forEach var="todo" items="${todos}">
             <tr>
                 <th>
-                  ${todo.desc}
+                  ${todo.userId.id}
                 </th>
                 <td>
-                <a href="editUser?id=${user.id}">edit</a>
-                <a href="deleteUser?id=${user.id}">delete</a>
-                <a href="userPermissions?id=${user.id}">User Permissions</a>
+                ${todo.desc}
                 </td>
             </tr>
         </c:forEach>
         </ul>
         </table>
+        <hr>
+         <h3>Pasirinkto asmens: ${user.userName} todo sarasas</h3>
+        <table border="1" cellpadding="5">
+                <ul>
+                <c:forEach var="todo" items="${user.todosList}">
+                    <tr>
+                        <th>
+                          ${todo.userId.id}
+                        </th>
+                        <td>
+                        ${todo.desc}
+                        </td>
+                    </tr>
+                </c:forEach>
+                </ul>
+                </table>
 
     </div>
     </body>

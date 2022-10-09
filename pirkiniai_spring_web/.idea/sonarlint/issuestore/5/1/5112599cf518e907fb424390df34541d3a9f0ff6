@@ -4,12 +4,12 @@ java:S1192&"FDefine a constant instead of duplicating this literal "cekis" 3 ti
 h
 java:S11926"FDefine a constant instead of duplicating this literal "value" 5 times.(¸â…Èûÿÿÿÿ8ª»ƒ¸0
 n
+java:S3655g"LCall "oTipas.isPresent()" or "!oTipas.isEmpty()" before accessing the value.(î•¶Şøÿÿÿÿ8Ï»ƒ¸0
+n
 java:S3655N"LCall "oCekis.isPresent()" or "!oCekis.isEmpty()" before accessing the value.(†°Œ‹øÿÿÿÿ8Ï»ƒ¸0
 n
 java:S3655U"LCall "oTipas.isPresent()" or "!oTipas.isEmpty()" before accessing the value.(î•¶Şøÿÿÿÿ8Ï»ƒ¸0
-r
-java:S3655&"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(øîÒÑÿÿÿÿÿ8Î»ƒ¸0
-n
-java:S3655g"LCall "oTipas.isPresent()" or "!oTipas.isEmpty()" before accessing the value.(î•¶Şøÿÿÿÿ8Ï»ƒ¸0
 n
 java:S3655`"LCall "oCekis.isPresent()" or "!oCekis.isEmpty()" before accessing the value.(†°Œ‹øÿÿÿÿ8Î»ƒ¸0
+r
+java:S3655&"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(øîÒÑÿÿÿÿÿ8Î»ƒ¸0

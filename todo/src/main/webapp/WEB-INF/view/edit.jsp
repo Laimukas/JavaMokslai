@@ -16,6 +16,14 @@
                       <table border="1" cellpadding="5">
                           <tr>
                               <th>
+                                  User Id:
+                              </th>
+                              <td>
+                                  <input type="number" name="user_id" value="${todo.user_id}">
+                              </td>
+                          </tr>
+                          <tr>
+                              <th>
                                   Kokia:
                               </th>
                               <td>
