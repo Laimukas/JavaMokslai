@@ -1,0 +1,7 @@
+
+{
+java:S1488;"YImmediately return this expression instead of assigning it to the temporary variable "h".(äõ…ôùÿÿÿÿ8şËí–¼0
+u
+java:S3305"SInject this field value directly into "authProvider", the only method that uses it.(ÙÍ•¯üÿÿÿÿ8™Ìí–¼0
+]	java:S125"<This block of commented-out lines of code should be removed.(ïıÈøûÿÿÿÿ8¤Ìí–¼0
+U	java:S106?"9Replace this use of System.out or System.err by a logger.(¨Áäê8ºÌí–¼0

@@ -27,14 +27,10 @@
              <td>
                 <a href="viewer/todoView?user_id=${user.id}">Todo list</a>
              </td>
-             <td>
-                 <a href="viewer/todos?user_id=${user.id}">My Todos</a>
-             </td>
         </tr>
         </table>
         <hr>
         <a href="todo/edit?user_id=${user.id}">Nauja Uzduotis</a>
-
 
     </div>
     </body>

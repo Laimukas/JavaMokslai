@@ -13,6 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
+     <div align="center">
         <form method="GET" action="meeting/new">
         <input type="submit" value="ADD Meeting" >
         </form>
@@ -29,7 +30,7 @@
                    <input type="submit" value="Search">
 
         </form>
-        <hr>
+
         <ul>
         <table border="1" cellpadding="5">
 
@@ -60,6 +61,6 @@
         </ul>
 
         <hr>
-
+    </div>
     </body>
 </html>

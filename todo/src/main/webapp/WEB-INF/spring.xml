@@ -68,5 +68,18 @@ http://www.springframework.org/schema/security http://www.springframework.org/sc
             <!--authentication-success-forward-url="/todo"-->
         <security:logout invalidate-session="true" logout-success-url="/index.html" />
     </security:http>
+<!--    <security:http auto-config="true">-->
+<!--        <security:intercept-url pattern="/view/*" access="hasAuthority('view')" />-->
+<!--        <security:intercept-url pattern="/todo*/*" access="isAuthenticated()" />-->
+<!--        <security:form-login-->
+<!--                login-page="/login"-->
+<!--                default-target-url="/todo"-->
+<!--                authentication-failure-url="/login?error=true"-->
+<!--        />-->
+<!--        &lt;!&ndash;authentication-success-handler-ref="loggedIn"&ndash;&gt;-->
+<!--        &lt;!&ndash;default-target-url="/todo"&ndash;&gt;-->
+<!--        &lt;!&ndash;authentication-success-forward-url="/todo"&ndash;&gt;-->
+<!--        <security:logout invalidate-session="true" logout-success-url="/index.html" />-->
+<!--    </security:http>-->
 
 </beans>

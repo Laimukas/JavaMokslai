@@ -4,6 +4,7 @@ import lt.bit.spring_web.data.Meeting;
 import lt.bit.spring_web.data.Person;
 import lt.bit.spring_web.db.Db;
 import lt.bit.spring_web.service.MeetingService;
+import lt.bit.spring_web.service.PersonService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,8 +21,9 @@ public class MeetingController {
     private final Db db = new Db();
 
     private final MeetingService meetingService=new MeetingService(db);
+    private final PersonService personService=new PersonService(db);
 
-    @GetMapping("meetings")
+    @GetMapping("/")
     public ModelAndView list() throws IOException {
         List<Meeting> list = meetingService.getAllMeetings();
         ModelAndView mav = new ModelAndView("meetings");
@@ -32,14 +34,18 @@ public class MeetingController {
     @GetMapping("meeting/{id}")
     public ModelAndView show(@PathVariable("id") Integer id) throws IOException {
         Meeting m = meetingService.getOneMeeting (meetingService.getAllMeetings(), id);
+        Person p = m.getResponsiblePerson();
         ModelAndView mav = new ModelAndView("meeting");
         mav.addObject("meeting", m);
+        mav.addObject("person" , p);
         return mav;
     }
 
     @GetMapping("meeting/new")
     public ModelAndView newRecord() {
-        ModelAndView mav = new ModelAndView("meeting");
+        List<Person> respPersons = personService.getResponsiblePersonList(personService.getAllPeople());
+        ModelAndView mav = new ModelAndView("newMeeting");
+        mav.addObject("list",respPersons);
         return mav;
     }
 

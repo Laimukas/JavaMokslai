@@ -17,7 +17,7 @@
         <table border="1" cellpadding="5">
         <c:forEach var="permission" items="${list}">
             <tr>
-                 <td>${permission.permissionName}
+                 <td>${permission}
                  </td>
             </tr>
         </c:forEach>

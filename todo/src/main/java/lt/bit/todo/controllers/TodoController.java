@@ -31,6 +31,7 @@ public class TodoController {
         ModelAndView mav = new ModelAndView("todo");
         MyUserDetails userDet = (MyUserDetails) auth.getPrincipal();
         mav.addObject("user", userDet.getUser());
+        mav.addObject("todos", todosDAO.pagalUseri(userDet.getUser().getId()));
 //        Users user = userDet.getUser();
 //        List<Todos> visiTodos = user.getTodosList();
 //        for (Todos todo:visiTodos){

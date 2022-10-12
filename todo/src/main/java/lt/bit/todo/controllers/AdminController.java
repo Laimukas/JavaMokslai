@@ -149,7 +149,7 @@ public class AdminController {
         Optional<Users> oUser = usersDAO.findById(id);
         if (oUser.isPresent()) {
             mav.addObject("user", oUser.get());
-            mav.addObject("list",userPermissions(id));
+            mav.addObject("list",oUser.get().getPermissionsList());
             return mav;
         }
         return new ModelAndView("redirect:./users");

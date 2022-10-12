@@ -1,10 +1,0 @@
-
-^
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(âò¾ğ8˜±È‹µ0
-\
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(÷ÖB8›±È‹µ0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ñÒÊ8°±È‹µ0
-]	java:S125"<This block of commented-out lines of code should be removed.(€œ°¦ÿÿÿÿÿ8±±È‹µ0
-]	java:S125="<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8²±È‹µ0
-V
-java:S1068"4Remove this unused "PERSON_FILE_PATH" private field.(¦¿½±ıÿÿÿÿ8²±È‹µ0

@@ -14,9 +14,9 @@ import java.util.List;
 @Repository
 public class Db {
     private static final String MEETING_FILE_PATH =
-            "src/main/resources/data/meeting.json";
+            "D:\\Dokumentai\\Coding\\Pamokos\\JavaMokslai\\meeting_spring\\src\\main\\resources\\data\\meeting.json";
     private static final String PERSON_FILE_PATH =
-            "src/main/resources/data/people.json";
+            "D:\\Dokumentai\\Coding\\Pamokos\\JavaMokslai\\meeting_spring\\src\\main\\resources\\data\\people.json";
 
     private final ObjectMapper mapper = createObjectMapper();
 

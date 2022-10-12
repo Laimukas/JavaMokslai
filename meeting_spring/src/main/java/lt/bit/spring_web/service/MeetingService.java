@@ -50,6 +50,16 @@ public class MeetingService {
         return sortas;
     }
 
+    public Person getResponsiblePersonByMeeting(List<Meeting> list, Integer meetingId) {
+        Person person = new Person();
+        for (Meeting meetas : list) {
+            if (meetas.getId().equals(meetingId)) {
+                person = meetas.getResponsiblePerson();
+            }
+        }
+        return person;
+    }
+
     public List<Meeting> getMeetingsByCategory(List<Meeting> list, String category) {
         List<Meeting> sortas = new ArrayList<>();
         for (Meeting meetas : list) {

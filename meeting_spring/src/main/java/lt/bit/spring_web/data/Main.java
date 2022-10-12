@@ -2,6 +2,9 @@ package lt.bit.spring_web.data;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lt.bit.spring_web.db.Db;
+import lt.bit.spring_web.service.MeetingService;
+import lt.bit.spring_web.service.PersonService;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,21 +20,24 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         ObjectMapper mapper = new ObjectMapper();
+        final Db db = new Db();
 
+        final MeetingService meetingService = new MeetingService(db);
+        final PersonService personService = new PersonService(db);
         ArrayList<Meeting> meetings = mapper.readValue(new File(MEETING_FILE_PATH), new TypeReference<>() {
         });
         System.out.println(meetings);
 
-//        Meeting[] meetingList = mapper.readValue(new File(MEETING_FILE_PATH), Meeting[].class);
-//        Person[] peopleList = mapper.readValue(new File(PERSON_FILE_PATH), Person[].class);
+        Meeting[] meetingList = mapper.readValue(new File(MEETING_FILE_PATH), Meeting[].class);
+        Person[] peopleList = mapper.readValue(new File(PERSON_FILE_PATH), Person[].class);
 //        System.out.println("--------------- Meeting List --------------------------");
 //        for (Meeting meet : meetings) {
 //            System.out.println(meet);
 //        }
-//        System.out.println("--------------- People List --------------------------");
-//        for (Person person:peopleList){
-//            System.out.println(person);
-//        }
+        System.out.println("--------------- People List --------------------------");
+        for (Person person : peopleList) {
+            System.out.println(person);
+        }
 //
 ////        System.out.println(peopleList[10]);
 //        List<Integer> dalyviai = new ArrayList<>();
@@ -59,5 +65,12 @@ public class Main {
 //        System.out.println("Done");
 
 //        }
+        System.out.println("------------------Tikrinam ar duoda respPersonu lista ---------------");
+        List<Person> list = personService.getResponsiblePersonList(personService.getAllPeople());
+        for (Person person:list){
+            System.out.println(person.getPrname());
+        }
+
+
     }
 }

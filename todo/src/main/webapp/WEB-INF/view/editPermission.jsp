@@ -23,13 +23,13 @@
                     </td>
                 </tr>
                 <tr>
-                                    <th>
-                                        Description:
-                                    </th>
-                                    <td>
-                                        <input type="text" name="desc" value="${permission.desc}">
-                                    </td>
-                                </tr>
+                    <th>
+                        Description:
+                    </th>
+                    <td>
+                        <input type="text" name="desc" value="${permission.desc}">
+                    </td>
+                </tr>
                 <tr>
                     <td>
                       <input type="submit" value="Save">

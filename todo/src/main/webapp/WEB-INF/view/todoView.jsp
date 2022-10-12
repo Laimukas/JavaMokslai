@@ -12,7 +12,6 @@
            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
            <input type="submit" value="GoBack">
         </form><br>
-
         <select name="user_id">
                                     <c:forEach var="user" items="${list}">
                                       <option value="${user.id}" <c:if test="${user.id==value.user.id}">selected</c:if>>

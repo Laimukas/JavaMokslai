@@ -64,4 +64,13 @@ public class PersonService {
         }
         return sortas;
     }
+    public List<Person> getResponsiblePersonList(List<Person> list) {
+        List<Person> sortas = new ArrayList<>();
+        for (Person person : list) {
+            if (person.getStatus().toLowerCase().equals("responsiblePerson".toLowerCase())) {
+                sortas.add(person);
+            }
+        }
+        return sortas;
+    }
 }
