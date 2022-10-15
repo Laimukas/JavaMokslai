@@ -2,7 +2,8 @@ package lt.bit.spring_web.service;
 
 import lt.bit.spring_web.data.Meeting;
 import lt.bit.spring_web.data.Person;
-import lt.bit.spring_web.db.Db;
+import lt.bit.spring_web.db.MeetingDb;
+import lt.bit.spring_web.db.PersonDb;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,27 +14,35 @@ import java.util.List;
 
 public class MeetingService {
 
-    private final Db db;
+    private final PersonDb personDb = new PersonDb();
 
-    public MeetingService(Db db) {
-        this.db = db;
+    private final MeetingDb meetingDb;
+
+    public MeetingService(MeetingDb meetingDb) {
+        this.meetingDb = meetingDb;
     }
 
     public List<Meeting> getAllMeetings() {
-        return db.readJsonFile();
+        return meetingDb.readJsonFile();
     }
 
     public Meeting addNewMeeting(Meeting meeting) {
         List<Meeting> meetings = getAllMeetings();
         meetings.add(meeting);
-        db.writeToJsonFile(meetings);
+        meetingDb.writeToJsonFile(meetings);
         return meeting;
     }
 
-    public List<Meeting> getMeetingByDescription(List<Meeting> list, String description) {
+    public List<Meeting> getMeetingByDescriptionOrName(List<Meeting> list, String description, String name) {
+        if (name != null && name.equals("")) {
+            System.out.println("Deja, nurodytas pavadinimas neegzistuoja!");
+        } else if (description != null && description.equals("")) {
+            System.out.println("Deja, nurodytas paaiskinimas neegzistuoja!");
+        }
         List<Meeting> sortas = new ArrayList<>();
         for (Meeting meetas : list) {
-            if (meetas.getDescription().toLowerCase().contains(description.toLowerCase())) {
+            if (meetas.getDescription().toLowerCase().contains(description.toLowerCase())
+                    && meetas.getName().toLowerCase().contains(name.toLowerCase())) {
                 sortas.add(meetas);
             }
         }
@@ -122,7 +131,7 @@ public class MeetingService {
         return sortas;
     }
 
-    public Meeting getOneMeeting(List<Meeting> list, Integer id) throws IOException{
+    public Meeting getOneMeeting(List<Meeting> list, Integer id) throws IOException {
         if (id == null) {
             throw new NullPointerException("You have to get id for meeting");
         }
@@ -135,8 +144,8 @@ public class MeetingService {
         throw new IllegalArgumentException("Meeting not found");
     }
 
-    public void addAttendee(Person attendee,
-                            Integer meetingId) {
+    public List<Meeting> addAttendee(Person attendee,
+                                     Integer meetingId) {
         List<Meeting> meetings = getAllMeetings();
         if (meetingId == null) {
             throw new NullPointerException("You have to get id for meeting");
@@ -146,10 +155,25 @@ public class MeetingService {
                 List<Integer> attendees = meeting.getAtendees();
                 attendees.add(attendee.getId());
                 meeting.setAtendees(attendees);
+                meetingDb.writeToJsonFile(meetings);
                 break;
             }
         }
-        db.writeToJsonFile(meetings);
+        return meetings;
+    }
+
+    public List<Integer> getAttendeesIdFromMeeting(Integer meetingId) {
+        List<Meeting> meetings = getAllMeetings();
+        List<Integer> attendeesId = new ArrayList<>();
+        if (meetingId == null) {
+            throw new NullPointerException("You have to get id for meeting");
+        }
+        for (Meeting meeting : meetings) {
+            if (meetingId.equals(meeting.getId())) {
+                attendeesId = meeting.getAtendees();
+                break;
+            }
+        }return attendeesId;
     }
 
     public List<Meeting> deleteMeeting(Integer id) throws IOException {
@@ -160,7 +184,7 @@ public class MeetingService {
         for (Meeting meeting : meetings) {
             if (id.equals(meeting.getId())) {
                 meetings.remove(meeting);
-                db.writeToJsonFile(meetings);
+                meetingDb.writeToJsonFile(meetings);
                 break;
             } else {
                 throw new IOException(
@@ -183,7 +207,7 @@ public class MeetingService {
                 meeting.setEndDate(setMeeting.getEndDate());
                 meeting.setAtendees(setMeeting.getAtendees());
                 meetings.set(meeting.getId(), meeting);
-                db.writeToJsonFile(meetings);
+                meetingDb.writeToJsonFile(meetings);
             }
         }
         return meetings;

@@ -1,8 +1,10 @@
 package lt.bit.spring_web.service;
 
 import lt.bit.spring_web.data.Person;
-import lt.bit.spring_web.db.Db;
+import lt.bit.spring_web.db.MeetingDb;
+import lt.bit.spring_web.db.PersonDb;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,19 +12,19 @@ import java.util.List;
 //@AllArgsConstructor
 public class PersonService {
 
-    private final Db db;
+    private final PersonDb personDb;
 
-    public PersonService(Db db) {
-        this.db = db;
+    public PersonService(PersonDb personDb) {
+        this.personDb = personDb;
     }
 
     public List<Person> getAllPeople() {
-        return db.readJsonFilePeople();
+        return personDb.readJsonFilePeople();
     }
     public Person addNewPerson(Person person) {
         List<Person> list = getAllPeople();
         list.add(person);
-        db.writeToJsonFilePeople(list);
+        personDb.writeToJsonFilePeople(list);
         return person;
     }
     public Person getOnePerson(List<Person> list,Integer id) {
@@ -46,10 +48,21 @@ public class PersonService {
         }
         return sortas;
     }
-    public List<Person> getPersonById(List<Person> list, Integer id) {
-        List<Person> sortas = new ArrayList<>();
+    public Person getPersonById(List<Person> list, Integer id) {
+        Person sortas = new Person();
         for (Person person : list) {
             if (person.getId()==(id)) {
+                sortas=person;
+            }
+        }
+        return sortas;
+    }
+    public List<Person> getPersonsByIds(List<Person> list, List<Integer> Ids) {
+        List<Person> sortas = new ArrayList<>();
+        for (Person person : list) {
+            Integer perId = person.getId();
+            for (Integer id : Ids)
+            if ((id).equals(perId)) {
                 sortas.add(person);
             }
         }

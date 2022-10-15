@@ -2,7 +2,8 @@ package lt.bit.spring_web.controllers;
 
 import lt.bit.spring_web.data.Meeting;
 import lt.bit.spring_web.data.Person;
-import lt.bit.spring_web.db.Db;
+import lt.bit.spring_web.db.MeetingDb;
+import lt.bit.spring_web.db.PersonDb;
 import lt.bit.spring_web.service.MeetingService;
 import lt.bit.spring_web.service.PersonService;
 import org.springframework.stereotype.Controller;
@@ -18,10 +19,11 @@ import java.util.List;
 @Controller
 public class MeetingController {
 
-    private final Db db = new Db();
+    private final MeetingDb meetingDb = new MeetingDb();
+    private final PersonDb personDb = new PersonDb();
 
-    private final MeetingService meetingService=new MeetingService(db);
-    private final PersonService personService=new PersonService(db);
+    private final MeetingService meetingService=new MeetingService(meetingDb);
+    private final PersonService personService=new PersonService(personDb);
 
     @GetMapping("/")
     public ModelAndView list() throws IOException {
@@ -76,5 +78,29 @@ public class MeetingController {
     public String delete(@PathVariable("id") Integer id) throws IOException {
         meetingService.deleteMeeting(id);
         return "redirect:/";
+    }
+
+    @GetMapping("/search")
+    public ModelAndView searching(
+            @RequestParam("name") String name,
+            @RequestParam("description") String description
+    ) throws IOException {
+        List<Meeting> list = meetingService.getMeetingByDescriptionOrName(meetingService.getAllMeetings(),description,name);
+        ModelAndView mav = new ModelAndView("meetings");
+        mav.addObject("meetings", list);
+        return mav;
+    }
+
+    @GetMapping("meeting/{id}/atendees")
+    public ModelAndView atendees(@PathVariable("id") Integer id) throws IOException {
+        List<Person> allPeople = personService.getAllPeople();
+        Meeting m = meetingService.getOneMeeting (meetingService.getAllMeetings(), id);
+        List<Integer> Ids = meetingService.getAttendeesIdFromMeeting(id);
+        List<Person> atendees = personService.getPersonsByIds(personDb.readJsonFilePeople(),Ids);
+        ModelAndView mav = new ModelAndView("atendees");
+        mav.addObject("people", allPeople);
+        mav.addObject("list", atendees);
+        mav.addObject("meeting" , m);
+        return mav;
     }
 }

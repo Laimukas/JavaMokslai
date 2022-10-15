@@ -18,15 +18,9 @@
         <input type="submit" value="ADD Meeting" >
         </form>
         <hr>
-        <form method="POST" action="../search">
-                   <c:if test="${meeting.id != null}">
-                       <input type="hidden" name="id" value="${meeting.id}">
-                   </c:if>
-                   Name: <input type="text" name="name" value="${meeting.name}">
-                   Description: <input type="text" name="description" value="${meeting.description}">
-                        <input type="hidden" name="category" value="${meeting.category}">
-                        <input type="hidden" name="type" value="${meeting.type}">
-                        <input type="hidden" name="startDate" value="${meeting.startDate}">
+        <form method="GET" action="search">
+                   Name: <input type="text" name="name" value="${name}">
+                   Description: <input type="text" name="description" value="${description}">
                    <input type="submit" value="Search">
 
         </form>
@@ -53,7 +47,7 @@
                  <td>
                      <a href="meeting/${meeting.id}">edit</a>
                      <a href="meeting/${meeting.id}/delete">delete</a>
-                     <a href="meeting/${meeting.id}">edit</a>
+                     <a href="meeting/${meeting.id}/atendees">atendees</a>
                  </td>
             </tr>
 
