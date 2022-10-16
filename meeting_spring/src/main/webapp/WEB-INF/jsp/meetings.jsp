@@ -14,17 +14,29 @@
     </head>
     <body>
      <div align="center">
+     <table>
+     <tr>
+     <td>
         <form method="GET" action="meeting/new">
         <input type="submit" value="ADD Meeting" >
         </form>
+     </td>
+     <td>
+             <form method="GET" action="<%=application.getContextPath()%>/">
+                     <input type="submit" value="Go to Home page" >
+                     </form>
+          </td></tr></table>
         <hr>
+         <table><tr><td>
         <form method="GET" action="search">
                    Name: <input type="text" name="name" value="${name}">
                    Description: <input type="text" name="description" value="${description}">
                    <input type="submit" value="Search">
-
         </form>
-
+        </td><td>
+        <form method="GET" action="<%=application.getContextPath()%>/meetings">
+                   <input type="submit" value="Full List" >
+                   </form></td></tr></table>
         <ul>
         <table border="1" cellpadding="5">
 
@@ -45,9 +57,9 @@
                  <td>${meeting.type}</td>
                  <td>${meeting.startDate}</td>
                  <td>
-                     <a href="meeting/${meeting.id}">edit</a>
-                     <a href="meeting/${meeting.id}/delete">delete</a>
-                     <a href="meeting/${meeting.id}/atendees">atendees</a>
+                     <a href="<%=application.getContextPath()%>/meeting/${meeting.id}">edit</a>
+                     <a href="<%=application.getContextPath()%>/meeting/${meeting.id}/delete">delete</a>
+                     <a href="<%=application.getContextPath()%>/meeting/${meeting.id}/atendees">atendees</a>
                  </td>
             </tr>
 

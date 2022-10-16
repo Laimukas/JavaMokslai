@@ -17,20 +17,21 @@
      <h3> Susitikimo " ${meeting.name} " dalyvių sąrašas</h3><br>
      <table>
      <tr>
-     <td>
-                         <select name="atendId">
-                             <c:forEach var="person" items="${people}">
-                             <option value="${person.id}" <c:if test="${person.id==value.person.id}">selected</c:if>>
-                             ${person.prname}
-                             </option>
-                             </c:forEach>
-                         </select>
-                         </td>
-     <td>
-        <form method="GET" action="addAtendee">
+     <td>Atendee to choose:
+     </td><td>
+        <form method="GET" action="addAtendee/${atendId}">
+        <select name="atendId">
+          <c:forEach var="person" items="${people}">
+          <option value="${person.id}" <c:if test="${person.id==value.person.id}">selected</c:if>>
+          Id:${person.id};
+          Name:${person.prname}
+          </option>
+          </c:forEach>
+        </select>
         <input type="submit" value="ADD Atendee" >
         </form>
      </td>
+
      <td>
         <form method="GET" action="<%=application.getContextPath()%>/">
         <input type="submit" value="Go Back" >
@@ -53,7 +54,7 @@
                  <td>${atendee.prname}</td>
                  <td>${atendee.status}</td>
                  <td>
-                     <a href="meeting/${atendee.id}/remove">remove</a>
+                     <a href="atendee/${atendee.id}/remove">remove</a>
                  </td>
             </tr>
 

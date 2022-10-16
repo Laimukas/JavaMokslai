@@ -1,0 +1,11 @@
+
+^
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(âò¾ğ8±µœœ¼0
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(÷ÖB8®Ğœ¼0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Œîäèøÿÿÿÿ8î–œ¼0
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(ÀŸü8Ÿî–œ¼0
+\
+java:S1128":Remove this unused import 'lt.bit.spring_web.data.Person'.(óïİ”üÿÿÿÿ8 ‡Ÿİ½0
+V
+java:S1068"4Remove this unused "PERSON_FILE_PATH" private field.(¦¿½±ıÿÿÿÿ8 ‡Ÿİ½0

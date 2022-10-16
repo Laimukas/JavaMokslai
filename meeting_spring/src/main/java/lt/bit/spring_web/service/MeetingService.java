@@ -162,6 +162,28 @@ public class MeetingService {
         return meetings;
     }
 
+    public List<Meeting> removeAttendee(Integer meetingId,Integer atendeeId) {
+        List<Meeting> meetings = getAllMeetings();
+        List<Integer> attendees = new ArrayList<>();
+        if (meetingId == null && atendeeId == null) {
+            throw new NullPointerException("You have to get ids for meeting or atendee");
+        }
+        for (Meeting meeting : meetings) {
+            if (meetingId.equals(meeting.getId())) {
+                attendees = meeting.getAtendees();
+                for (int i = 0;i<attendees.size();i++){
+                    if (attendees.get(i).equals(atendeeId)){
+                        attendees.remove(i);
+                    }
+                }
+                meeting.setAtendees(attendees);
+                meetingDb.writeToJsonFile(meetings);
+                break;
+            }
+        }
+        return meetings;
+    }
+
     public List<Integer> getAttendeesIdFromMeeting(Integer meetingId) {
         List<Meeting> meetings = getAllMeetings();
         List<Integer> attendeesId = new ArrayList<>();

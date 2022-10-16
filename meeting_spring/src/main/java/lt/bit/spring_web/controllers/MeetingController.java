@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -25,7 +26,7 @@ public class MeetingController {
     private final MeetingService meetingService=new MeetingService(meetingDb);
     private final PersonService personService=new PersonService(personDb);
 
-    @GetMapping("/")
+    @GetMapping("/meetings")
     public ModelAndView list() throws IOException {
         List<Meeting> list = meetingService.getAllMeetings();
         ModelAndView mav = new ModelAndView("meetings");
@@ -51,12 +52,11 @@ public class MeetingController {
         return mav;
     }
 
-    @PostMapping("save")
-    public String save(
-
-            @RequestParam(value = "id", required = false) Integer id,
+    @PostMapping("meeting/{id}/save")
+    public ModelAndView save(
+            @PathVariable(value = "id", required = false) Integer id,
             @RequestParam("name") String name,
-            @RequestParam("responsiblePerson") Person respPerson,
+            @RequestParam("respPerName") String respPerName,
             @RequestParam("description") String description,
             @RequestParam("category") String category,
             @RequestParam("type") String type,
@@ -64,20 +64,64 @@ public class MeetingController {
             @RequestParam("endDate") String endDate,
             @RequestParam("atendees") List<Integer> atendees
     ) throws IOException{
+        ModelAndView mav;
+        List<Meeting> list = new ArrayList<>();
         if (id == null) {
-            Meeting meeting = new Meeting(name,respPerson,description,category,type,startDate,endDate,atendees);
+            Person person = personService.getPersonByName(personService.getAllPeople(),respPerName);
+            Meeting meeting = new Meeting(name,person,description,category,type,startDate,endDate,atendees);
             meetingService.addNewMeeting(meeting);
+            list = meetingService.getAllMeetings();
+            mav = new ModelAndView("meetings");
+            mav.addObject("meetings", list);
         } else {
-            Meeting meeting = new Meeting(id,name,respPerson,description,category,type,startDate,endDate,atendees);
+            Person person = personService.getPersonByName(personService.getAllPeople(),respPerName);
+            Meeting meeting = new Meeting(id,name,person,description,category,type,startDate,endDate,atendees);
             meetingService.updateMeeting(meeting);
+            list = meetingService.getAllMeetings();
+            mav = new ModelAndView("meetings");
+            mav.addObject("meetings", list);
         }
-        return "redirect:/";
+        return mav;
+    }
+    @PostMapping("meeting/saveNew")
+    public ModelAndView saveNewMeet(
+            @PathVariable(value = "id", required = false) Integer id,
+            @RequestParam("name") String name,
+            @RequestParam("respPerName") String respPerName,
+            @RequestParam("description") String description,
+            @RequestParam("category") String category,
+            @RequestParam("type") String type,
+            @RequestParam("startDate") String startDate,
+            @RequestParam("endDate") String endDate,
+            @RequestParam("atendees") List<Integer> atendees
+    ) throws IOException{
+        ModelAndView mav;
+        List<Meeting> list = new ArrayList<>();
+        if (id == null) {
+            Person person = personService.getPersonByName(personService.getAllPeople(),respPerName);
+            Meeting meeting = new Meeting(name,person,description,category,type,startDate,endDate,atendees);
+            meetingService.addNewMeeting(meeting);
+            list = meetingService.getAllMeetings();
+            mav = new ModelAndView("meetings");
+            mav.addObject("meetings", list);
+        } else {
+            Person person = personService.getPersonByName(personService.getAllPeople(),respPerName);
+            Meeting meeting = new Meeting(id,name,person,description,category,type,startDate,endDate,atendees);
+            meetingService.updateMeeting(meeting);
+            list = meetingService.getAllMeetings();
+            mav = new ModelAndView("meetings");
+            mav.addObject("meetings", list);
+        }
+        return mav;
     }
 
     @GetMapping("meeting/{id}/delete")
-    public String delete(@PathVariable("id") Integer id) throws IOException {
+    public ModelAndView delete(@PathVariable("id") Integer id) throws IOException {
         meetingService.deleteMeeting(id);
-        return "redirect:/";
+        List<Meeting> list = meetingService.getAllMeetings();
+        ModelAndView mav = new ModelAndView("meetings");
+        mav.addObject("meetings", list);
+        return mav;
     }
 
     @GetMapping("/search")
@@ -101,6 +145,33 @@ public class MeetingController {
         mav.addObject("people", allPeople);
         mav.addObject("list", atendees);
         mav.addObject("meeting" , m);
+        return mav;
+    }
+    @GetMapping("meeting/{id}/atendee/{atendee_id}/remove")
+    public String removeAtendee(@PathVariable("id") Integer id,@PathVariable("atendee_id") Integer atendee_id) throws IOException {
+        meetingService.removeAttendee(id,atendee_id);
+        return "redirect:/meeting/{id}/atendees";
+    }
+    @GetMapping("meeting/{id}/addAtendee/")
+    public String addAtendee (@PathVariable("id") Integer id,@RequestParam("atendId") Integer atendee_id) throws IOException {
+        Person person = personService.getPersonById(personService.getAllPeople(),atendee_id);
+        meetingService.addAttendee(person,id);
+        return "redirect:/meeting/{id}/atendees";
+    }
+    @GetMapping("pagalRespPers")
+    public ModelAndView chooseResp () throws IOException {
+        List<Person> responsiblePersonList = personService.getResponsiblePersonList(personService.getAllPeople());
+        ModelAndView mav = new ModelAndView("pagalRespPers");
+        mav.addObject("list", responsiblePersonList);
+        return mav;
+    }
+    @GetMapping("/choose")
+    public ModelAndView pagalResp(
+            @RequestParam("respPers") Integer id
+    ) throws IOException {
+        List<Meeting> list = meetingService.getMeetingsByResponsiblePerson(meetingService.getAllMeetings(),id);
+        ModelAndView mav = new ModelAndView("meetings");
+        mav.addObject("meetings", list);
         return mav;
     }
 }

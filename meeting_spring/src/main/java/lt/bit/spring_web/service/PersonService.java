@@ -1,5 +1,6 @@
 package lt.bit.spring_web.service;
 
+import lt.bit.spring_web.data.Meeting;
 import lt.bit.spring_web.data.Person;
 import lt.bit.spring_web.db.MeetingDb;
 import lt.bit.spring_web.db.PersonDb;
@@ -39,11 +40,11 @@ public class PersonService {
         }
         throw new IllegalArgumentException("Person not found");
     }
-    public List<Person> getPersonByName(List<Person> list, String name) {
-        List<Person> sortas = new ArrayList<>();
+    public Person getPersonByName(List<Person> list, String name) {
+        Person sortas = new Person();
         for (Person person : list) {
             if (person.getPrname().toLowerCase().contains(name.toLowerCase())) {
-                sortas.add(person);
+                sortas=person;
             }
         }
         return sortas;
@@ -85,5 +86,18 @@ public class PersonService {
             }
         }
         return sortas;
+    }
+    public List<Person> updatePerson(Person setPerson) {
+        List<Person> persons = getAllPeople();
+        for (Person person : persons) {
+            if (setPerson.getId().equals(person.getId())) {
+                person.setPrname(setPerson.getPrname());
+                person.setStatus(setPerson.getStatus());
+                person.setMeetings(setPerson.getMeetings());
+                persons.set(person.getId(),person);
+                personDb.writeToJsonFilePeople(persons);
+            }
+        }
+        return persons;
     }
 }
