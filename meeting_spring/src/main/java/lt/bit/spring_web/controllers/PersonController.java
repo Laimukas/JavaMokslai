@@ -71,4 +71,36 @@ public class PersonController {
         }
         return mav;
     }
+//    @PostMapping("editPerson")
+//    public ModelAndView editPerson(
+//            @PathVariable(value = "id", required = false) Integer id,
+//            @RequestParam("prname") String name,
+//            @RequestParam("status") String status,
+//            @RequestParam("meetings") Integer[] meetings
+//    ) throws IOException{
+//        ModelAndView mav;
+//        List<Person> list = new ArrayList<>();
+//        if (id == null) {
+//            Person newPerson = new Person(name,status,meetings);
+//            personService.addNewPerson(newPerson);
+//            list = personService.getAllPeople();
+//            mav = new ModelAndView("persons");
+//            mav.addObject("persons", list);
+//        } else {
+//            Person newPerson = new Person(id,name,status,meetings);
+//            personService.updatePerson(newPerson);
+//            list = personService.getAllPeople();
+//            mav = new ModelAndView("persons");
+//            mav.addObject("persons", list);
+//        }
+//        return mav;
+//    }
+
+    @GetMapping("person/{id}")
+    public ModelAndView showPerson(@PathVariable("id") Integer id) throws IOException {
+        Person person = personService.getOnePerson (personService.getAllPeople(), id);
+        ModelAndView mav = new ModelAndView("person");
+        mav.addObject("person", person);
+        return mav;
+    }
 }

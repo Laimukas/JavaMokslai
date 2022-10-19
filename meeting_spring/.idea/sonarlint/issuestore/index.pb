@@ -59,3 +59,13 @@ a
 .src/main/java/lt/bit/spring_web/data/Main.java,1\9\1983208f724b7eece4c307bc356fcdaabe2d793e
 a
 1src/main/java/lt/bit/spring_web/data/Meeting.java,2\5\256155c4f4f38c21f2974440cd0dba8a6598fb99
+]
+-src/main/webapp/WEB-INF/jsp/pagalRespPers.jsp,e\9\e9a3280cbdff6905e2c29db530780dc898d19dc3
+X
+(src/main/webapp/WEB-INF/jsp/atendees.jsp,e\c\ecdb673ed0d0e0994d6b11fba1df4ddbaba47528
+X
+(src/main/webapp/WEB-INF/jsp/meetings.jsp,e\d\edd8f2e43ae3bcfd4ea5850f60b8214752d950de
+U
+%src/main/webapp/WEB-INF/jsp/index.jsp,f\1\f16d1c46eaaabb105b651081f6c87e034b2028d2
+o
+?src/main/java/lt/bit/spring_web/controllers/MainController.java,6\7\67bd802e917fe7b2374aa7b137f77d0c73fb9dfb

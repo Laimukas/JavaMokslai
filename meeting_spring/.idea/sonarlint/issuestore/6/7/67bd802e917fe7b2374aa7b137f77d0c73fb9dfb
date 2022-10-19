@@ -1,0 +1,9 @@
+
+x
+java:S1488"[Immediately return this expression instead of assigning it to the temporary variable "mav".(ßòª¹8ËøÒ‘¾0
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(àøĞ¹8ñÑ‘¾0
+]
+java:S1128";Remove this unused import 'lt.bit.spring_web.data.Meeting'.(¸ìôğûÿÿÿÿ8×øÒ‘¾0
+M
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ØøÒ‘¾0

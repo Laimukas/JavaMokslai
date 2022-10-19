@@ -12,18 +12,16 @@
     <body>
 
 <div align="center">
+<h3> Making new person</h3>
     <table border="1" cellpadding="5">
-        <form method="POST" action="../save">
-            <c:if test="${meeting.id != null}">
-                <input type="hidden" name="id" value="${meeting.id}">
+        <form method="POST" action="../editPerson">
+            <c:if test="${person.id != null}">
+                <input type="hidden" name="id" value="${person.id}">
             </c:if>
-            <tr><th>Name:</th> <td> <input type="text" name="name" value="${meeting.name}"></td> </tr>
-            <tr><th>Responsible person:</th> <td> <input type="text" name="responsiblePerson" value="${meeting.responsiblePerson.prname}"></td> </tr>
-            <tr><th>Description:</th> <td> <input type="text" name="description" value="${meeting.description}"></td> </tr>
-            <tr><th>Category:</th> <td> <input type="text" name="category" value="${meeting.category}"></td> </tr>
-            <tr><th>Type:</th> <td> <input type="text" name="type" value="${meeting.type}"></td> </tr>
-            <tr><th>Start Date:</th> <td> <input type="text" name="startDate" value="${meeting.startDate}"></td> </tr>
-            <tr><td><input type="submit" value="save"></td>
+            <tr><th>Name:</th> <td> <input type="text" name="prname" value="${person.prname}"></td> </tr>
+            <tr><th>Status:</th> <td> <input type="text" name="status" value="${person.status}"></td> </tr>
+            <tr><th>Meetings:</th> <td> <input type="text" name="meetings" value="${person.meetings}"></td> </tr>
+            <tr><td><input type="submit" value="Save"></td>
             <td><a href="../">Cancel</a></td> </tr>
         </form>
         </div>

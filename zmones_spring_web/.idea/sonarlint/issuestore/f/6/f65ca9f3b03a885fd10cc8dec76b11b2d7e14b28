@@ -1,0 +1,19 @@
+
+f
+java:S1192"KDefine a constant instead of duplicating this literal "kontaktai" 14 times.(¹ÌƒÜüÿÿÿÿ
+s
+java:S4144P"XUpdate this method so that its implementation is not identical to "saveKont" on line 53.(à”éàúÿÿÿÿ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(õë¹
+S
+java:S1854>"8Remove this useless assignment to local variable "list".(›Å°Ïüÿÿÿÿ
+S
+java:S1854Y"8Remove this useless assignment to local variable "list".(›Å°Ïüÿÿÿÿ
+‡
+java:S1130l"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(Á•ªîşÿÿÿÿ
+Z
+java:S1854u"8Remove this useless assignment to local variable "list".(›Å°Ïüÿÿÿÿ8ÅëÎ²·0
+_
+java:S1128"=Remove this unused import 'lt.bit.spring_web.classes.Zmogus'.(á„‰Ëûÿÿÿÿ8†¾à²·0
+\
+java:S1128":Remove this unused import 'lt.bit.spring_web.db.ZmogusDb'.(ÚôÒåøÿÿÿÿ8†¾à²·0

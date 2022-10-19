@@ -43,3 +43,15 @@ c
 3src/main/java/lt/bit/spring_web/db/KontaktasDB.java,c\f\cf0c97d8fa34c91e8726d2143ca98cbdfeba2dee
 o
 ?src/main/java/lt/bit/spring_web/controllers/MainController.java,6\7\67bd802e917fe7b2374aa7b137f77d0c73fb9dfb
+t
+Dsrc/main/java/lt/bit/spring_web/controllers/KontaktasController.java,f\6\f65ca9f3b03a885fd10cc8dec76b11b2d7e14b28
+Y
+)src/main/webapp/WEB-INF/jsp/kontaktai.jsp,0\6\06657b01ed6a843604e1ef0f9af92a3356572dba
+Y
+)src/main/webapp/WEB-INF/jsp/kontaktas.jsp,8\e\8e04ca4377b6c288fc4f9fd2e63fbcd99062a971
+\
+,src/main/webapp/WEB-INF/jsp/kontaktasnew.jsp,e\1\e11a18e0558912041163a21d6c2df4a491e55019
+V
+&src/main/webapp/WEB-INF/jsp/zmogus.jsp,7\6\764cd03b687ba73b102a212783b9ca08a5cb8241
+V
+&src/main/webapp/WEB-INF/jsp/zmones.jsp,1\9\1921536c1540575e1307a52dcdca227d9ee43ee7

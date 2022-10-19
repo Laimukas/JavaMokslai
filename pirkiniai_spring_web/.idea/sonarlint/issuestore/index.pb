@@ -41,3 +41,23 @@ o
 0src/main/java/lt/bit/pirkiniai/dao/TipasDAO.java,7\4\7452da1b2c49e8271dcff33a2591c5db61532ea1
 `
 0src/main/java/lt/bit/pirkiniai/dao/CekisDAO.java,8\4\843740bc7176b8b51623b85a2300621731f66250
+n
+>src/main/java/lt/bit/pirkiniai/controllers/MainController.java,1\5\15a471a00c8f883f4dcd9b25864bf3008c4a5e17
+T
+$src/main/webapp/META-INF/context.xml,c\b\cbfb0d2e9b2b9fbf9d54374577c894a38643c6d0
+^
+.src/main/webapp/WEB-INF/dispatcher-servlet.xml,5\6\5610820762bc3ec47cc9dbd7324c057405172b6d
+R
+"src/main/webapp/WEB-INF/spring.xml,a\6\a6bd71535088e3c7ca3c67cbf293ce0a1a217511
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+V
+&src/main/webapp/WEB-INF/view/tipai.jsp,5\a\5a48d5d05832e5530d722b2d2218e2193f270e0f
+V
+&src/main/webapp/WEB-INF/view/preke.jsp,d\6\d6cf3aadaceaa71c8026343d1f2a4348b7edb25c
+`
+0src/main/webapp/WEB-INF/view/prekesPagalTipa.jsp,a\b\ab6b1c444ff70cc1beff079cd1c0026addcf7c65
+Z
+*src/main/webapp/WEB-INF/view/pagalTipa.jsp,0\0\00db4064f759dbd14e7573f927d7a17fc8855590
+o
+?src/main/java/lt/bit/pirkiniai/controllers/PrekeController.java,5\1\5112599cf518e907fb424390df34541d3a9f0ff6

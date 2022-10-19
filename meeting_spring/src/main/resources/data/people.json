@@ -108,4 +108,9 @@
   "prname" : "Domas Domauskas",
   "status" : "participant",
   "meetings" : [ ]
+}, {
+  "id" : 23,
+  "prname" : "Naujokas",
+  "status" : "participant",
+  "meetings" : [ 2 ]
 } ]

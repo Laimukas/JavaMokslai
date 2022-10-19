@@ -6,13 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7ac80fde-291f-42b5-bc52-d4c85e3674b0" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/sonarlint/issuestore/f/1/f16d1c46eaaabb105b651081f6c87e034b2028d2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../meeting_spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/controllers/MeetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/controllers/MeetingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/service/MeetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/service/MeetingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/java/lt/bit/spring_web/service/PersonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/resources/data/meeting.json" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/resources/data/meeting.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/resources/data/meeting_new.json" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/resources/data/meeting_new.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/resources/data/people.json" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/resources/data/people.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/webapp/WEB-INF/jsp/atendees.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/webapp/WEB-INF/jsp/atendees.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../meeting_spring/src/main/webapp/WEB-INF/jsp/meeting.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../meeting_spring/src/main/webapp/WEB-INF/jsp/meeting.jsp" afterDir="false" />
